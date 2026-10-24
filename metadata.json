@@ -23,7 +23,7 @@
     "cli": "python run.py --input input_examples/example_1.json",
     "evaluation": "python eval.py",
     "setup_check": "python smoke_test.py",
-    "tests": "python -m pytest -q tests (43 tests)",
+    "tests": "python -m pytest -q tests (45 tests)",
     "docker": "docker build -t lotline . && docker run -p 8000:8000 lotline"
   },
   "runs_without_keys": true,

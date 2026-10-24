@@ -160,3 +160,10 @@ class WorldStoreService:
         with self._lock:
             rows = self._conn.execute("SELECT data FROM cases").fetchall()
         return [json.loads(r[0]) for r in rows]
+
+    def clear_demo_data(self):
+        # Demo reset: wipe what people did (ticks, readings, notices, approved spellings), keep the schema
+        with self._lock:
+            for table in ("cases", "learned_aliases", "entities", "relations"):
+                self._conn.execute(f"DELETE FROM {table}")
+            self._conn.commit()

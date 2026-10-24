@@ -1096,3 +1096,5 @@ body.resizing { cursor: col-resize; user-select: none; }
 .notice-track { justify-content: space-between; border-top: 1px solid var(--line); }
 .sent-btn { min-height: 0; height: 32px; padding: 0 14px; font-size: 13.5px; border-radius: 8px; }
 .pc-note { font-size: 13px; color: var(--text-2); margin-top: -2px; }
+#demo-reset-btn { border-color: var(--red-line); color: var(--red); }
+#demo-reset-btn:hover { background: var(--red-line); color: #fff; }

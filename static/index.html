@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap">
-  <link rel="stylesheet" href="/static/app.css?v=50">
+  <link rel="stylesheet" href="/static/app.css?v=51">
 </head>
 <body>
   <div class="app">
@@ -213,6 +213,11 @@
         <div id="sys-rows"></div>
         <button type="button" class="ghost" id="test-btn">Test the AI connection</button>
       </section>
+      <section class="set-group demo-group" id="demo-group" hidden>
+        <h4>Demo deployment</h4>
+        <p class="set-help">Everyone who opens this link shares the same data. Reset it so the next person starts from a clean recall list.</p>
+        <button type="button" class="ghost" id="demo-reset-btn">Reset demo data</button>
+      </section>
     </div>
   </dialog>
 
@@ -268,6 +273,6 @@
     </form>
   </dialog>
 
-  <script type="module" src="/static/app.js?v=50"></script>
+  <script type="module" src="/static/app.js?v=51"></script>
 </body>
 </html>

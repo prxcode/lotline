@@ -113,6 +113,22 @@ async function testConnection() {
   }
 }
 
+async function resetDemo() {
+  const ok = await confirmDialog({
+    title: "Reset demo data?",
+    body: [el("p", { text: "This clears every tick, package reading, confirmed spelling and sent notice on this shared link. It does not touch the recall data itself." })],
+    ok: "Reset",
+  });
+  if (!ok) return;
+  try {
+    await api("/api/demo/reset", { method: "POST" });
+    toast("Demo reset. Reloading...");
+    setTimeout(() => location.reload(), 600);
+  } catch (err) {
+    toast(`Reset failed: ${err.message}`);
+  }
+}
+
 function setMode(mode) {
   state.mode = mode;
   store.set("lotline:mode", mode);
@@ -1170,6 +1186,7 @@ async function boot() {
   $("account-close").addEventListener("click", () => $("account").close());
   $("account").addEventListener("click", (e) => { if (e.target === e.currentTarget) e.currentTarget.close(); });
   $("test-btn").addEventListener("click", testConnection);
+  $("demo-reset-btn").addEventListener("click", resetDemo);
   $("ai-toggle").addEventListener("click", () => {
     if (!state.config?.live_available) return;
     setMode(state.mode === "live" ? "sample" : "live");
@@ -1204,6 +1221,7 @@ async function boot() {
     return;
   }
   renderHeader();
+  $("demo-group").hidden = !state.config.demo_mode;
   try {
     for (const r of await api("/api/runs")) {
       if (r.status === "success" && r.recall_id && !state.serverRuns[r.recall_id]) state.serverRuns[r.recall_id] = r.run_id;

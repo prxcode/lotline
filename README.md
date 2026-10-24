@@ -180,13 +180,14 @@ Fill in `.env` (never commit it):
 | `NVIDIA_API_KEY` | Nemotron; free developer key from build.nvidia.com (rate-limited [VERIFY current limits]) |
 | `DATA_BACKEND=zetaris`, `ZETARIS_*` | Zetaris; register the tables with `zetaris/setup.sql` first |
 | `METERLESS_RUNTIME_TOKEN` | Optional, not run in this build |
+| `DEMO_MODE=true` | Shows a "Reset demo data" button in Settings, for a shared public link where everyone sees the same server state |
 
 Then turn on **AI suggestions** in the header (checks then run only when you press the button), or pass `--mode live`.
 
 ### Tests and evaluation
 
 ```bash
-.venv\Scripts\python -m pytest -q tests                # 43 tests
+.venv\Scripts\python -m pytest -q tests                # 45 tests
 .venv\Scripts\python eval.py                           # every recall against the answer key
 .venv\Scripts\python eval.py --recalls R-006..R-010     # held-out FDA recalls
 .venv\Scripts\python eval.py --no-aliases               # no model-suggested spellings

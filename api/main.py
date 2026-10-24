@@ -172,6 +172,7 @@ def config():
         "dataset": os.getenv("DATA_DIR", "data") if backend_name() == "local" else "Zetaris",
         "agents": AGENTS,
         "sources": get_catalog(),
+        "demo_mode": os.getenv("DEMO_MODE", "").lower() == "true",
     }
 
 
@@ -287,6 +288,20 @@ def power_test():
     from llm.providers import meterless_status
     meterless_status(refresh=True)
     return {"status": power_status(), "results": test_connection()}
+
+
+@app.post("/api/demo/reset", dependencies=[Security(_check_api_key)])
+def demo_reset():
+    # Only on a deployment started with DEMO_MODE=true, so a shared public link stays safe to
+    # try without everyone seeing the last visitor's ticks, readings and confirmed spellings
+    if os.getenv("DEMO_MODE", "").lower() != "true":
+        raise HTTPException(status_code=404, detail="Not a demo deployment")
+    with _lock:
+        _runs.clear()
+    store().clear_demo_data()
+    import agents.screen as screen
+    screen.invalidate()
+    return {"reset": True}
 
 
 def _case_run(run_id: str) -> dict | None:
