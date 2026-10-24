@@ -290,6 +290,10 @@ lotline/
 
 LangGraph and LangChain Core (MIT), FastAPI (MIT), Uvicorn (BSD-3-Clause), DuckDB (MIT), Pydantic (MIT), OpenAI Python client (Apache-2.0), python-dotenv (BSD-3-Clause), requests (Apache-2.0). The World Model follows the Meterless reference architecture (Apache-2.0). Recall facts come from public FDA notices, linked in `data/recalls.csv`.
 
+## Pre-existing components
+
+- **Before 22 Oct:** the recall dataset and answer key, and an early prototype of the agent pipeline, rules and web app, with tests and evaluation.
+- **Built 22 to 27 Oct:** Zetaris integration, Meterless provider, fallbacks, package readings and recall cases, the rebuilt interface, and the Stock, Shipments and Agencies pages.
 
 ## Limitations
 

@@ -68,7 +68,7 @@
     "live_2026_10_22_after_fix": "FDA recalls 59/60, fictional 28/28, 0 unsafe misses (Nemotron 3.5 Lightning via NVIDIA API)"
   },
   "data": "data/: RC- recalls are fictional; R- recalls are public FDA notices with invented stock, shipments and agencies (.example emails)",
-  "pre_existing_components": "See doc/pre-existing-declaration.md",
+  "pre_existing_components": "Before 22 Oct: the recall dataset and answer key, and an early prototype of the agent pipeline, rules and web app, with tests and evaluation. See README, Pre-existing components",
   "development": "Written with AI pair-programming assistants (Cursor and Claude Code) for exploratory edits and refactors. Every change was reviewed, tested and merged by the two team members; no auto-added attribution, and the model may suggest but never confirms or clears a recalled item",
   "interface": "Plain-language web app for a food bank coordinator: recalls grouped by what needs action, one status block per recall, four steps (pull from shelves, check packages, tell agencies, finish), reasons and evidence on every item, Stock, Shipments and Partner agencies pages with filters, printable pull list and close-out record; agent track and technical log behind a Settings switch"
 }
