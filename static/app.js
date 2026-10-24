@@ -349,12 +349,24 @@ function renderNotice() {
       buttons.push(again);
     } else if (kind === "pull") {
       const pullUnits = p.impact?.units_to_pull || 0;
-      answer = ["Pull ", em(`${pull} ${plural(pull, "item", "items")}`), " from the shelves now."];
-      detail = [
-        `That's ${fmtNum(pullUnits)} ${plural(pullUnits, "unit", "units")} in total.`,
-        check ? ` ${check} more ${plural(check, "needs", "need")} someone to read the package before we decide.` : "",
-        agencies ? ` ${agencyText} received this product; a message for each one is ready below.` : " None of it was sent out to agencies.",
-      ].join("");
+      const pulledNow = p.pull_list.filter((v) => state.pulled.has(v.item_id)).length;
+      const empty = p.pull_list.filter((v) => !(v.quantity > 0)).length;
+      const told = Object.values(info?.case.notices || {}).filter((c) => c.sent_at).length;
+      if (pulledNow >= pull) {
+        answer = [em(pull === 1 ? "The item is" : `All ${pull} items are`), " off the shelves."];
+        detail = check ? `Next: ${check} ${plural(check, "package needs", "packages need")} someone to read ${plural(check, "it", "them")} before we decide.`
+          : agencies && told < agencies ? `Next: tell ${agencies - told} of the ${agencyText} that received this product.`
+          : "Next: close the recall and print the close-out record.";
+      } else {
+        answer = ["Pull ", em(`${pull} ${plural(pull, "item", "items")}`), " from the shelves now."];
+        detail = [
+          `That's ${fmtNum(pullUnits)} ${plural(pullUnits, "unit", "units")} in total.`,
+          empty ? ` ${empty === pull ? (pull === 1 ? "It has" : "They have") : `${empty} of them ${plural(empty, "has", "have")}`} nothing left on the shelf; check the shelf is empty.` : "",
+          pulledNow ? ` ${pulledNow} of ${pull} done.` : "",
+          check ? ` ${check} more ${plural(check, "needs", "need")} someone to read the package before we decide.` : "",
+          agencies ? ` ${agencyText} received this product; a message for each one is ready below.` : " None of it was sent out to agencies.",
+        ].join("");
+      }
       buttons.push(again);
     } else if (kind === "check") {
       answer = ["Nothing to pull yet. ", em(`${check} ${plural(check, "item needs", "items need")}`), " a closer look."];
@@ -381,7 +393,7 @@ function renderNotice() {
     el("div", { class: "st-action" }, ...buttons,
       isRunning(r.recall_id) ? el("p", { class: "st-progress", id: "check-progress", text: "Starting..." }) : null),
     el("div", { class: "st-meta" },
-      el("span", { text: `Announced ${fmtDate(r.announced_date)} by ${company}` }),
+      el("span", { text: `Recall issued ${fmtDate(r.announced_date)} by ${company}` }),
       el("span", { text: r.status === "active" ? "Still active" : "Closed by the FDA" }),
       el("button", { type: "button", class: "text-link st-stock", onclick: () => { history.replaceState(null, "", `${location.pathname}${location.search}#/stock`); openView("stock", r.brand); } }, `See all ${r.brand} stock`),
       r.notice_url ? el("a", { href: r.notice_url, target: "_blank", rel: "noopener noreferrer", text: "Read the FDA notice" }) : null,
@@ -913,17 +925,20 @@ function renderPullTable() {
     $("pull-cards").replaceChildren(...items.map((v) => {
       const done = state.pulled.has(v.item_id);
       const by = state.caseInfo?.case.pulled[v.item_id]?.by;
+      const none = !(v.quantity > 0);
       return el("article", { class: `pull-card${done ? " done" : ""}`, "aria-label": `${v.product}, shelf ${v.location}` },
         el("div", { class: "pc-shelf" }, el("span", { class: "pc-lbl", text: "Shelf" }), el("span", { class: "pc-loc", text: v.location || "?" })),
         el("div", { class: "pc-main" },
-          el("div", { class: "pc-qty", text: `Take ${fmtNum(v.quantity || 0)} ${v.unit || ""} off the shelf` }),
+          el("div", { class: "pc-qty", text: none ? "Nothing left on this shelf" : `Take ${fmtNum(v.quantity)} ${v.unit || ""} off the shelf` }),
+          none ? el("div", { class: "pc-note", text: "All of it was sent to agencies (step 3). Check the shelf is empty, then tick." }) : null,
           el("div", { class: "pc-name", text: v.product }),
           el("div", { class: "pc-lot" }, "Lot", lotChip(v.lot_code)),
           reasonBadges(v),
           el("button", { type: "button", class: "text-link", onclick: () => openDrawer(v) }, "Show the evidence")),
         el("label", { class: "pc-check" },
           el("input", { type: "checkbox", checked: done, onchange: (e) => togglePulled(v.item_id, e.target.checked) }),
-          el("span", { text: done ? `Taken off the shelf${by ? ` by ${by}` : ""}` : "I've taken these off the shelf" })));
+          el("span", { text: none ? (done ? `Shelf checked${by ? ` by ${by}` : ""}` : "I've checked the shelf")
+            : done ? `Taken off the shelf${by ? ` by ${by}` : ""}` : "I've taken these off the shelf" })));
     }));
   }
   renderStepper();
@@ -993,6 +1008,7 @@ function renderResults({ scroll = true } = {}) {
   renderAgencies();
 
   $("clear-count").textContent = `(${p.near_misses.length})`;
+  $("clear-details").open = p.pull_list.length === 0 && p.human_checks.length === 0;
   table("clear-table",
     [{ label: "Shelf" }, { label: "Product" }, { label: "Lot" }, { label: "Why it's not part of the recall" }, { label: "" }],
     p.near_misses.map((v) => el("tr", { class: "clickable", onclick: rowOpen(v) },
