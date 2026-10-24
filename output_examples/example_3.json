@@ -1,0 +1,1180 @@
+{
+  "run_id": "run_a432ffa2",
+  "status": "success",
+  "output": {
+    "run_id": "run_a432ffa2",
+    "recall_id": "RC-2024-001",
+    "recall": {
+      "recall_id": "RC-2024-001",
+      "recall_number": "FSIS-RC-2024-001",
+      "source": "FSIS",
+      "company": "Hollow Creek Farms",
+      "brand": "Hollow Creek Farms",
+      "product": "Sliced Deli Ham 12oz",
+      "reason": "Possible Listeria contamination",
+      "announced_date": "2024-10-15",
+      "status": "active",
+      "notice_url": null,
+      "lines": [
+        {
+          "recall_id": "RC-2024-001",
+          "line_id": "1",
+          "brand": "Hollow Creek Farms",
+          "product": "Sliced Deli Ham 12oz",
+          "size": null,
+          "upc": "049800021340",
+          "lot_codes": "2410 - 2415",
+          "best_by": null,
+          "other_names": null
+        }
+      ]
+    },
+    "recall_summary": "Hollow Creek Farms Sliced Deli Ham 12oz: Possible Listeria contamination",
+    "verdict_summary": "Pull 5 items (56 units still in the warehouse) now. 4 items need a person to read the physical label. 5 shipments already went to 4 partner agencies; notices are drafted.",
+    "briefing_source": "template",
+    "pull_list": [
+      {
+        "brand": "Hollow Creek Farms",
+        "brand_match": {
+          "method": "exact",
+          "score": 1.0,
+          "recorded_as": "Hollow Creek Farms"
+        },
+        "product": "Sliced Deli Ham 12oz",
+        "lot_code": "2412",
+        "upc": "049800021340",
+        "best_by": "",
+        "quantity": 24.0,
+        "quantity_received": 34.0,
+        "shipped": 10.0,
+        "unit": "case",
+        "location": "Cooler A Row 3",
+        "source_type": "purchase",
+        "received_date": "2024-10-10",
+        "source_ref": "inventory.csv line 152",
+        "item_id": "INV-001",
+        "verdict": "CONFIRMED_MATCH",
+        "confidence": 0.98,
+        "rationale": "UPC matches Sliced Deli Ham 12oz and lot 2412 is in 2410 - 2415",
+        "action": "pull_and_notify",
+        "rule_checks": [
+          {
+            "rule": "upc_match",
+            "passed": true,
+            "note": "UPC 049800021340 is on the notice"
+          },
+          {
+            "rule": "brand",
+            "passed": true,
+            "note": "Brand matches the notice"
+          },
+          {
+            "rule": "lot",
+            "passed": true,
+            "note": "lot 2412 is in 2410 - 2415"
+          },
+          {
+            "rule": "source_recheck",
+            "passed": true,
+            "note": "Re-read from the source before approval: unchanged"
+          }
+        ],
+        "line_id": "1",
+        "line_label": "Sliced Deli Ham 12oz",
+        "line_brand": "Hollow Creek Farms",
+        "name_coverage": 1.0,
+        "source": "rules"
+      },
+      {
+        "brand": "Hollow Creek Farms",
+        "brand_match": {
+          "method": "exact",
+          "score": 1.0,
+          "recorded_as": "Hollow Creek Farms"
+        },
+        "product": "Sliced Deli Ham 12oz",
+        "lot_code": "2413",
+        "upc": "049800021340",
+        "best_by": "",
+        "quantity": 12.0,
+        "quantity_received": 12.0,
+        "shipped": 0.0,
+        "unit": "case",
+        "location": "Cooler A Row 3",
+        "source_type": "purchase",
+        "received_date": "2024-10-10",
+        "source_ref": "inventory.csv line 153",
+        "item_id": "INV-002",
+        "verdict": "CONFIRMED_MATCH",
+        "confidence": 0.98,
+        "rationale": "UPC matches Sliced Deli Ham 12oz and lot 2413 is in 2410 - 2415",
+        "action": "pull_and_notify",
+        "rule_checks": [
+          {
+            "rule": "upc_match",
+            "passed": true,
+            "note": "UPC 049800021340 is on the notice"
+          },
+          {
+            "rule": "brand",
+            "passed": true,
+            "note": "Brand matches the notice"
+          },
+          {
+            "rule": "lot",
+            "passed": true,
+            "note": "lot 2413 is in 2410 - 2415"
+          },
+          {
+            "rule": "source_recheck",
+            "passed": true,
+            "note": "Re-read from the source before approval: unchanged"
+          }
+        ],
+        "line_id": "1",
+        "line_label": "Sliced Deli Ham 12oz",
+        "line_brand": "Hollow Creek Farms",
+        "name_coverage": 1.0,
+        "source": "rules"
+      },
+      {
+        "brand": "Hollow Creek Farms",
+        "brand_match": {
+          "method": "exact",
+          "score": 1.0,
+          "recorded_as": "Hollow Creek Farms"
+        },
+        "product": "Sliced Deli Ham 12oz",
+        "lot_code": "2411",
+        "upc": "049800021340",
+        "best_by": "",
+        "quantity": 6.0,
+        "quantity_received": 8.0,
+        "shipped": 2.0,
+        "unit": "case",
+        "location": "Freezer B Shelf 2",
+        "source_type": "purchase",
+        "received_date": "2024-10-08",
+        "source_ref": "inventory.csv line 154",
+        "item_id": "INV-003",
+        "verdict": "CONFIRMED_MATCH",
+        "confidence": 0.98,
+        "rationale": "UPC matches Sliced Deli Ham 12oz and lot 2411 is in 2410 - 2415",
+        "action": "pull_and_notify",
+        "rule_checks": [
+          {
+            "rule": "upc_match",
+            "passed": true,
+            "note": "UPC 049800021340 is on the notice"
+          },
+          {
+            "rule": "brand",
+            "passed": true,
+            "note": "Brand matches the notice"
+          },
+          {
+            "rule": "lot",
+            "passed": true,
+            "note": "lot 2411 is in 2410 - 2415"
+          },
+          {
+            "rule": "source_recheck",
+            "passed": true,
+            "note": "Re-read from the source before approval: unchanged"
+          }
+        ],
+        "line_id": "1",
+        "line_label": "Sliced Deli Ham 12oz",
+        "line_brand": "Hollow Creek Farms",
+        "name_coverage": 1.0,
+        "source": "rules"
+      },
+      {
+        "brand": "Hollow Creek Farms",
+        "brand_match": {
+          "method": "exact",
+          "score": 1.0,
+          "recorded_as": "Hollow Creek Farms"
+        },
+        "product": "Ham 12oz",
+        "lot_code": "2410",
+        "upc": "049800021340",
+        "best_by": "",
+        "quantity": 8.0,
+        "quantity_received": 11.0,
+        "shipped": 3.0,
+        "unit": "case",
+        "location": "Cooler A Row 7",
+        "source_type": "purchase",
+        "received_date": "2024-10-07",
+        "source_ref": "inventory.csv line 173",
+        "item_id": "INV-022",
+        "verdict": "CONFIRMED_MATCH",
+        "confidence": 0.98,
+        "rationale": "UPC matches Sliced Deli Ham 12oz and lot 2410 is in 2410 - 2415",
+        "action": "pull_and_notify",
+        "rule_checks": [
+          {
+            "rule": "upc_match",
+            "passed": true,
+            "note": "UPC 049800021340 is on the notice"
+          },
+          {
+            "rule": "brand",
+            "passed": true,
+            "note": "Brand matches the notice"
+          },
+          {
+            "rule": "lot",
+            "passed": true,
+            "note": "lot 2410 is in 2410 - 2415"
+          },
+          {
+            "rule": "source_recheck",
+            "passed": true,
+            "note": "Re-read from the source before approval: unchanged"
+          }
+        ],
+        "line_id": "1",
+        "line_label": "Sliced Deli Ham 12oz",
+        "line_brand": "Hollow Creek Farms",
+        "name_coverage": 0.4,
+        "source": "rules"
+      },
+      {
+        "brand": "Hollow Creek Farms",
+        "brand_match": {
+          "method": "exact",
+          "score": 1.0,
+          "recorded_as": "Hollow Creek Farms"
+        },
+        "product": "Sliced Deli Ham 12oz",
+        "lot_code": "2415",
+        "upc": "049800021340",
+        "best_by": "",
+        "quantity": 6.0,
+        "quantity_received": 8.0,
+        "shipped": 2.0,
+        "unit": "case",
+        "location": "Cooler A Row 8",
+        "source_type": "purchase",
+        "received_date": "2024-10-12",
+        "source_ref": "inventory.csv line 174",
+        "item_id": "INV-023",
+        "verdict": "CONFIRMED_MATCH",
+        "confidence": 0.98,
+        "rationale": "UPC matches Sliced Deli Ham 12oz and lot 2415 is in 2410 - 2415",
+        "action": "pull_and_notify",
+        "rule_checks": [
+          {
+            "rule": "upc_match",
+            "passed": true,
+            "note": "UPC 049800021340 is on the notice"
+          },
+          {
+            "rule": "brand",
+            "passed": true,
+            "note": "Brand matches the notice"
+          },
+          {
+            "rule": "lot",
+            "passed": true,
+            "note": "lot 2415 is in 2410 - 2415"
+          },
+          {
+            "rule": "source_recheck",
+            "passed": true,
+            "note": "Re-read from the source before approval: unchanged"
+          }
+        ],
+        "line_id": "1",
+        "line_label": "Sliced Deli Ham 12oz",
+        "line_brand": "Hollow Creek Farms",
+        "name_coverage": 1.0,
+        "source": "rules"
+      }
+    ],
+    "human_checks": [
+      {
+        "brand": "Hollow Creek Farms",
+        "brand_match": {
+          "method": "exact",
+          "score": 1.0,
+          "recorded_as": "Hollow Creek Farms"
+        },
+        "product": "Ham Slices",
+        "lot_code": "2413",
+        "upc": null,
+        "best_by": "",
+        "quantity": 3.0,
+        "quantity_received": 3.0,
+        "shipped": 0.0,
+        "unit": "case",
+        "location": "Cooler A Row 4",
+        "source_type": "donation",
+        "received_date": "2024-10-09",
+        "source_ref": "inventory.csv line 155",
+        "item_id": "INV-004",
+        "verdict": "PROBABLE_MATCH",
+        "confidence": 0.72,
+        "rationale": "Probably Sliced Deli Ham 12oz (lot 2413 is in 2410 - 2415), but the name only partly matches; confirm the UPC on the package",
+        "action": "human_verify",
+        "rule_checks": [
+          {
+            "rule": "upc_match",
+            "passed": null,
+            "note": "No UPC recorded on this item"
+          },
+          {
+            "rule": "brand",
+            "passed": true,
+            "note": "Brand matches the notice"
+          },
+          {
+            "rule": "product",
+            "passed": true,
+            "note": "Name covers 60% of 'Sliced Deli Ham 12oz'"
+          },
+          {
+            "rule": "lot",
+            "passed": true,
+            "note": "lot 2413 is in 2410 - 2415"
+          }
+        ],
+        "line_id": "1",
+        "line_label": "Sliced Deli Ham 12oz",
+        "line_brand": "Hollow Creek Farms",
+        "name_coverage": 0.6,
+        "source": "rules"
+      },
+      {
+        "brand": "Hollow Creek Farms",
+        "brand_match": {
+          "method": "exact",
+          "score": 1.0,
+          "recorded_as": "Hollow Creek Farms"
+        },
+        "product": "Deli Ham 12oz - Sliced",
+        "lot_code": "241X",
+        "upc": null,
+        "best_by": "",
+        "quantity": 2.0,
+        "quantity_received": 2.0,
+        "shipped": 0.0,
+        "unit": "case",
+        "location": "Cooler A Row 3",
+        "source_type": "donation",
+        "received_date": "2024-10-11",
+        "source_ref": "inventory.csv line 160",
+        "item_id": "INV-009",
+        "verdict": "HUMAN_CHECK",
+        "confidence": 0.55,
+        "rationale": "Lot '241X' is partly unreadable and could be 2410 - 2415; check the physical case",
+        "action": "human_verify",
+        "rule_checks": [
+          {
+            "rule": "upc_match",
+            "passed": null,
+            "note": "No UPC recorded on this item"
+          },
+          {
+            "rule": "brand",
+            "passed": true,
+            "note": "Brand matches the notice"
+          },
+          {
+            "rule": "product",
+            "passed": true,
+            "note": "Name covers 100% of 'Sliced Deli Ham 12oz'"
+          },
+          {
+            "rule": "lot",
+            "passed": null,
+            "note": "lot '241X' is partly unreadable and could be 2410 - 2415"
+          }
+        ],
+        "line_id": "1",
+        "line_label": "Sliced Deli Ham 12oz",
+        "line_brand": "Hollow Creek Farms",
+        "name_coverage": 1.0,
+        "source": "rules"
+      },
+      {
+        "brand": "HC Farms",
+        "brand_match": {
+          "method": "fuzzy",
+          "score": 0.95,
+          "recorded_as": "HC Farms"
+        },
+        "product": "Deli Ham Sliced",
+        "lot_code": "2414",
+        "upc": null,
+        "best_by": "",
+        "quantity": 5.0,
+        "quantity_received": 5.0,
+        "shipped": 0.0,
+        "unit": "case",
+        "location": "Cooler A Row 3",
+        "source_type": "donation",
+        "received_date": "2024-10-11",
+        "source_ref": "inventory.csv line 167",
+        "item_id": "INV-016",
+        "verdict": "PROBABLE_MATCH",
+        "confidence": 0.72,
+        "rationale": "Probably Sliced Deli Ham 12oz (lot 2414 is in 2410 - 2415), but the brand only resembles the notice's; confirm the UPC on the package",
+        "action": "human_verify",
+        "rule_checks": [
+          {
+            "rule": "upc_match",
+            "passed": null,
+            "note": "No UPC recorded on this item"
+          },
+          {
+            "rule": "brand",
+            "passed": null,
+            "note": "'HC Farms' resembles Hollow Creek Farms (95% spelling match); not approved"
+          },
+          {
+            "rule": "product",
+            "passed": true,
+            "note": "Name covers 100% of 'Sliced Deli Ham 12oz'"
+          },
+          {
+            "rule": "lot",
+            "passed": true,
+            "note": "lot 2414 is in 2410 - 2415"
+          }
+        ],
+        "line_id": "1",
+        "line_label": "Sliced Deli Ham 12oz",
+        "line_brand": "Hollow Creek Farms",
+        "name_coverage": 1.0,
+        "source": "rules"
+      },
+      {
+        "brand": "Hollow Creek Farms",
+        "brand_match": {
+          "method": "exact",
+          "score": 1.0,
+          "recorded_as": "Hollow Creek Farms"
+        },
+        "product": "Deli Ham",
+        "lot_code": "241?",
+        "upc": "049800021340",
+        "best_by": "",
+        "quantity": 1.0,
+        "quantity_received": 1.0,
+        "shipped": 0.0,
+        "unit": "case",
+        "location": "Cooler A Row 9",
+        "source_type": "donation",
+        "received_date": "2024-10-12",
+        "source_ref": "inventory.csv line 179",
+        "item_id": "INV-028",
+        "verdict": "HUMAN_CHECK",
+        "confidence": 0.55,
+        "rationale": "Lot '241?' is partly unreadable and could be 2410 - 2415; check the physical case",
+        "action": "human_verify",
+        "rule_checks": [
+          {
+            "rule": "upc_match",
+            "passed": true,
+            "note": "UPC 049800021340 is on the notice"
+          },
+          {
+            "rule": "brand",
+            "passed": true,
+            "note": "Brand matches the notice"
+          },
+          {
+            "rule": "lot",
+            "passed": null,
+            "note": "lot '241?' is partly unreadable and could be 2410 - 2415"
+          }
+        ],
+        "line_id": "1",
+        "line_label": "Sliced Deli Ham 12oz",
+        "line_brand": "Hollow Creek Farms",
+        "name_coverage": 0.8,
+        "source": "rules"
+      }
+    ],
+    "near_misses": [
+      {
+        "brand": "Hollow Creek Farms",
+        "brand_match": {
+          "method": "exact",
+          "score": 1.0,
+          "recorded_as": "Hollow Creek Farms"
+        },
+        "product": "Sliced Deli Ham 12oz",
+        "lot_code": "2408",
+        "upc": "049800021340",
+        "best_by": "",
+        "quantity": 4.0,
+        "quantity_received": 4.0,
+        "shipped": 0.0,
+        "unit": "case",
+        "location": "Cooler A Row 5",
+        "source_type": "purchase",
+        "received_date": "2024-10-03",
+        "source_ref": "inventory.csv line 162",
+        "item_id": "INV-011",
+        "verdict": "NEAR_MISS",
+        "confidence": 0.92,
+        "rationale": "Lot 2408 is not a recalled code, just outside the recall; leave in stock but watch for an expansion",
+        "action": "monitor",
+        "rule_checks": [
+          {
+            "rule": "upc_match",
+            "passed": true,
+            "note": "UPC 049800021340 is on the notice"
+          },
+          {
+            "rule": "brand",
+            "passed": true,
+            "note": "Brand matches the notice"
+          },
+          {
+            "rule": "lot",
+            "passed": false,
+            "note": "lot 2408 is not a recalled code"
+          }
+        ],
+        "line_id": "1",
+        "line_label": "Sliced Deli Ham 12oz",
+        "line_brand": "Hollow Creek Farms",
+        "name_coverage": 1.0,
+        "source": "rules"
+      },
+      {
+        "brand": "Hollow Creek Farms",
+        "brand_match": {
+          "method": "exact",
+          "score": 1.0,
+          "recorded_as": "Hollow Creek Farms"
+        },
+        "product": "Sliced Deli Ham 12oz",
+        "lot_code": "2416",
+        "upc": "049800021340",
+        "best_by": "",
+        "quantity": 10.0,
+        "quantity_received": 10.0,
+        "shipped": 0.0,
+        "unit": "case",
+        "location": "Cooler A Row 6",
+        "source_type": "purchase",
+        "received_date": "2024-10-12",
+        "source_ref": "inventory.csv line 168",
+        "item_id": "INV-017",
+        "verdict": "NEAR_MISS",
+        "confidence": 0.92,
+        "rationale": "Lot 2416 is not a recalled code, just outside the recall; leave in stock but watch for an expansion",
+        "action": "monitor",
+        "rule_checks": [
+          {
+            "rule": "upc_match",
+            "passed": true,
+            "note": "UPC 049800021340 is on the notice"
+          },
+          {
+            "rule": "brand",
+            "passed": true,
+            "note": "Brand matches the notice"
+          },
+          {
+            "rule": "lot",
+            "passed": false,
+            "note": "lot 2416 is not a recalled code"
+          }
+        ],
+        "line_id": "1",
+        "line_label": "Sliced Deli Ham 12oz",
+        "line_brand": "Hollow Creek Farms",
+        "name_coverage": 1.0,
+        "source": "rules"
+      },
+      {
+        "brand": "Honey Maid",
+        "brand_match": {
+          "method": "different",
+          "score": 0.0,
+          "recorded_as": "Honey Maid"
+        },
+        "product": "Honey Graham Crackers 14.4 oz",
+        "lot_code": "B8957",
+        "upc": "040115276112",
+        "best_by": "2027-06-20",
+        "quantity": 53.0,
+        "quantity_received": 53.0,
+        "shipped": 0.0,
+        "unit": "box",
+        "location": "A5",
+        "source_type": "Inland Harvest Rescue",
+        "received_date": "2026-08-30",
+        "source_ref": "inventory.csv line 79",
+        "item_id": "INV-0078",
+        "verdict": "NO_MATCH",
+        "confidence": 0.96,
+        "rationale": "Different UPC from Sliced Deli Ham 12oz on the notice, so a different product",
+        "action": "clear",
+        "rule_checks": [
+          {
+            "rule": "upc_match",
+            "passed": false,
+            "note": "UPC 040115276112 is not on the notice (049800021340)"
+          }
+        ],
+        "line_id": "1",
+        "line_label": "Sliced Deli Ham 12oz",
+        "line_brand": "Hollow Creek Farms",
+        "name_coverage": null,
+        "source": "rules"
+      },
+      {
+        "brand": "Honey Maid",
+        "brand_match": {
+          "method": "different",
+          "score": 0.0,
+          "recorded_as": "Honey Maid"
+        },
+        "product": "Honey Graham Crackers 14.4 oz",
+        "lot_code": "P6209",
+        "upc": "061884791880",
+        "best_by": "2027-11-11",
+        "quantity": 76.0,
+        "quantity_received": 76.0,
+        "shipped": 0.0,
+        "unit": "box",
+        "location": "A5",
+        "source_type": "Community food drive",
+        "received_date": "2026-09-21",
+        "source_ref": "inventory.csv line 139",
+        "item_id": "INV-0138",
+        "verdict": "NO_MATCH",
+        "confidence": 0.96,
+        "rationale": "Different UPC from Sliced Deli Ham 12oz on the notice, so a different product",
+        "action": "clear",
+        "rule_checks": [
+          {
+            "rule": "upc_match",
+            "passed": false,
+            "note": "UPC 061884791880 is not on the notice (049800021340)"
+          }
+        ],
+        "line_id": "1",
+        "line_label": "Sliced Deli Ham 12oz",
+        "line_brand": "Hollow Creek Farms",
+        "name_coverage": null,
+        "source": "rules"
+      }
+    ],
+    "distributed_items": [
+      {
+        "ship_id": "DIST-012",
+        "item_id": "INV-022",
+        "agency_id": "AGN-005",
+        "quantity": 3.0,
+        "unit": "case",
+        "ship_date": "2024-10-08",
+        "agency_name": "Harbor Community Services",
+        "contact_name": "Angela Diaz",
+        "contact_email": "a.diaz@harbor.example",
+        "contact_phone": "555-0105",
+        "source_ref": "distributions.csv line 113",
+        "dist_id": "DIST-012",
+        "distributed_date": "2024-10-08",
+        "product": "Ham 12oz",
+        "lot_code": "2410",
+        "item_verdict": "CONFIRMED_MATCH"
+      },
+      {
+        "ship_id": "DIST-003",
+        "item_id": "INV-003",
+        "agency_id": "AGN-003",
+        "quantity": 2.0,
+        "unit": "case",
+        "ship_date": "2024-10-09",
+        "agency_name": "Riverside Meals Program",
+        "contact_name": "Sandra Kim",
+        "contact_email": "s.kim@riverside.example",
+        "contact_phone": "555-0103",
+        "source_ref": "distributions.csv line 104",
+        "dist_id": "DIST-003",
+        "distributed_date": "2024-10-09",
+        "product": "Sliced Deli Ham 12oz",
+        "lot_code": "2411",
+        "item_verdict": "CONFIRMED_MATCH"
+      },
+      {
+        "ship_id": "DIST-001",
+        "item_id": "INV-001",
+        "agency_id": "AGN-001",
+        "quantity": 6.0,
+        "unit": "case",
+        "ship_date": "2024-10-12",
+        "agency_name": "Eastside Community Pantry",
+        "contact_name": "Maria Torres",
+        "contact_email": "m.torres@eastside.example",
+        "contact_phone": "555-0101",
+        "source_ref": "distributions.csv line 102",
+        "dist_id": "DIST-001",
+        "distributed_date": "2024-10-12",
+        "product": "Sliced Deli Ham 12oz",
+        "lot_code": "2412",
+        "item_verdict": "CONFIRMED_MATCH"
+      },
+      {
+        "ship_id": "DIST-002",
+        "item_id": "INV-001",
+        "agency_id": "AGN-002",
+        "quantity": 4.0,
+        "unit": "case",
+        "ship_date": "2024-10-12",
+        "agency_name": "Northgate Food Shelf",
+        "contact_name": "James Wu",
+        "contact_email": "j.wu@northgate.example",
+        "contact_phone": "555-0102",
+        "source_ref": "distributions.csv line 103",
+        "dist_id": "DIST-002",
+        "distributed_date": "2024-10-12",
+        "product": "Sliced Deli Ham 12oz",
+        "lot_code": "2412",
+        "item_verdict": "CONFIRMED_MATCH"
+      },
+      {
+        "ship_id": "DIST-013",
+        "item_id": "INV-023",
+        "agency_id": "AGN-003",
+        "quantity": 2.0,
+        "unit": "case",
+        "ship_date": "2024-10-13",
+        "agency_name": "Riverside Meals Program",
+        "contact_name": "Sandra Kim",
+        "contact_email": "s.kim@riverside.example",
+        "contact_phone": "555-0103",
+        "source_ref": "distributions.csv line 114",
+        "dist_id": "DIST-013",
+        "distributed_date": "2024-10-13",
+        "product": "Sliced Deli Ham 12oz",
+        "lot_code": "2415",
+        "item_verdict": "CONFIRMED_MATCH"
+      }
+    ],
+    "agency_notices": [
+      {
+        "agency_id": "AGN-005",
+        "agency_name": "Harbor Community Services",
+        "contact_email": "a.diaz@harbor.example",
+        "contact_name": "Angela Diaz",
+        "items": [
+          {
+            "ship_id": "DIST-012",
+            "item_id": "INV-022",
+            "agency_id": "AGN-005",
+            "quantity": 3.0,
+            "unit": "case",
+            "ship_date": "2024-10-08",
+            "agency_name": "Harbor Community Services",
+            "contact_name": "Angela Diaz",
+            "contact_email": "a.diaz@harbor.example",
+            "contact_phone": "555-0105",
+            "source_ref": "distributions.csv line 113",
+            "dist_id": "DIST-012",
+            "distributed_date": "2024-10-08",
+            "product": "Ham 12oz",
+            "lot_code": "2410",
+            "item_verdict": "CONFIRMED_MATCH"
+          }
+        ],
+        "draft_message": "Subject: Food recall action needed: Hollow Creek Farms Sliced Deli Ham 12oz\n\nDear Angela Diaz,\n\nHollow Creek Farms has recalled Hollow Creek Farms Sliced Deli Ham 12oz (Possible Listeria contamination). Recalled: Sliced Deli Ham 12oz None: UPC 049800021340, codes 2410 - 2415. Our records show some of it reached you.\n\nPlease remove from distribution and set aside now:\n  - Ham 12oz, lot 2410: 3 case sent 2024-10-08 (our ref DIST-012)\n\nDo not discard anything yet. Reply to this email once the product is set aside, and tell us how many units you still have and how many already went to clients.\n\nFood Safety Team"
+      },
+      {
+        "agency_id": "AGN-003",
+        "agency_name": "Riverside Meals Program",
+        "contact_email": "s.kim@riverside.example",
+        "contact_name": "Sandra Kim",
+        "items": [
+          {
+            "ship_id": "DIST-003",
+            "item_id": "INV-003",
+            "agency_id": "AGN-003",
+            "quantity": 2.0,
+            "unit": "case",
+            "ship_date": "2024-10-09",
+            "agency_name": "Riverside Meals Program",
+            "contact_name": "Sandra Kim",
+            "contact_email": "s.kim@riverside.example",
+            "contact_phone": "555-0103",
+            "source_ref": "distributions.csv line 104",
+            "dist_id": "DIST-003",
+            "distributed_date": "2024-10-09",
+            "product": "Sliced Deli Ham 12oz",
+            "lot_code": "2411",
+            "item_verdict": "CONFIRMED_MATCH"
+          },
+          {
+            "ship_id": "DIST-013",
+            "item_id": "INV-023",
+            "agency_id": "AGN-003",
+            "quantity": 2.0,
+            "unit": "case",
+            "ship_date": "2024-10-13",
+            "agency_name": "Riverside Meals Program",
+            "contact_name": "Sandra Kim",
+            "contact_email": "s.kim@riverside.example",
+            "contact_phone": "555-0103",
+            "source_ref": "distributions.csv line 114",
+            "dist_id": "DIST-013",
+            "distributed_date": "2024-10-13",
+            "product": "Sliced Deli Ham 12oz",
+            "lot_code": "2415",
+            "item_verdict": "CONFIRMED_MATCH"
+          }
+        ],
+        "draft_message": "Subject: Food recall action needed: Hollow Creek Farms Sliced Deli Ham 12oz\n\nDear Sandra Kim,\n\nHollow Creek Farms has recalled Hollow Creek Farms Sliced Deli Ham 12oz (Possible Listeria contamination). Recalled: Sliced Deli Ham 12oz None: UPC 049800021340, codes 2410 - 2415. Our records show some of it reached you.\n\nPlease remove from distribution and set aside now:\n  - Sliced Deli Ham 12oz, lot 2411: 2 case sent 2024-10-09 (our ref DIST-003)\n  - Sliced Deli Ham 12oz, lot 2415: 2 case sent 2024-10-13 (our ref DIST-013)\n\nDo not discard anything yet. Reply to this email once the product is set aside, and tell us how many units you still have and how many already went to clients.\n\nFood Safety Team"
+      },
+      {
+        "agency_id": "AGN-001",
+        "agency_name": "Eastside Community Pantry",
+        "contact_email": "m.torres@eastside.example",
+        "contact_name": "Maria Torres",
+        "items": [
+          {
+            "ship_id": "DIST-001",
+            "item_id": "INV-001",
+            "agency_id": "AGN-001",
+            "quantity": 6.0,
+            "unit": "case",
+            "ship_date": "2024-10-12",
+            "agency_name": "Eastside Community Pantry",
+            "contact_name": "Maria Torres",
+            "contact_email": "m.torres@eastside.example",
+            "contact_phone": "555-0101",
+            "source_ref": "distributions.csv line 102",
+            "dist_id": "DIST-001",
+            "distributed_date": "2024-10-12",
+            "product": "Sliced Deli Ham 12oz",
+            "lot_code": "2412",
+            "item_verdict": "CONFIRMED_MATCH"
+          }
+        ],
+        "draft_message": "Subject: Food recall action needed: Hollow Creek Farms Sliced Deli Ham 12oz\n\nDear Maria Torres,\n\nHollow Creek Farms has recalled Hollow Creek Farms Sliced Deli Ham 12oz (Possible Listeria contamination). Recalled: Sliced Deli Ham 12oz None: UPC 049800021340, codes 2410 - 2415. Our records show some of it reached you.\n\nPlease remove from distribution and set aside now:\n  - Sliced Deli Ham 12oz, lot 2412: 6 case sent 2024-10-12 (our ref DIST-001)\n\nDo not discard anything yet. Reply to this email once the product is set aside, and tell us how many units you still have and how many already went to clients.\n\nFood Safety Team"
+      },
+      {
+        "agency_id": "AGN-002",
+        "agency_name": "Northgate Food Shelf",
+        "contact_email": "j.wu@northgate.example",
+        "contact_name": "James Wu",
+        "items": [
+          {
+            "ship_id": "DIST-002",
+            "item_id": "INV-001",
+            "agency_id": "AGN-002",
+            "quantity": 4.0,
+            "unit": "case",
+            "ship_date": "2024-10-12",
+            "agency_name": "Northgate Food Shelf",
+            "contact_name": "James Wu",
+            "contact_email": "j.wu@northgate.example",
+            "contact_phone": "555-0102",
+            "source_ref": "distributions.csv line 103",
+            "dist_id": "DIST-002",
+            "distributed_date": "2024-10-12",
+            "product": "Sliced Deli Ham 12oz",
+            "lot_code": "2412",
+            "item_verdict": "CONFIRMED_MATCH"
+          }
+        ],
+        "draft_message": "Subject: Food recall action needed: Hollow Creek Farms Sliced Deli Ham 12oz\n\nDear James Wu,\n\nHollow Creek Farms has recalled Hollow Creek Farms Sliced Deli Ham 12oz (Possible Listeria contamination). Recalled: Sliced Deli Ham 12oz None: UPC 049800021340, codes 2410 - 2415. Our records show some of it reached you.\n\nPlease remove from distribution and set aside now:\n  - Sliced Deli Ham 12oz, lot 2412: 4 case sent 2024-10-12 (our ref DIST-002)\n\nDo not discard anything yet. Reply to this email once the product is set aside, and tell us how many units you still have and how many already went to clients.\n\nFood Safety Team"
+      }
+    ],
+    "total_units_to_pull": 56.0,
+    "impact": {
+      "brand_units_found": 81.0,
+      "units_to_pull": 56.0,
+      "units_to_check": 11.0,
+      "units_kept_in_use": 14.0,
+      "agencies_total": 16,
+      "agencies_to_notify": 4
+    },
+    "confidence_overall": 0.83,
+    "sources": [
+      {
+        "source_id": "src_agencies",
+        "table_name": "agencies",
+        "role": "contacts",
+        "rows": 16,
+        "columns": [
+          "agency_id",
+          "agency_name",
+          "agency_type",
+          "city",
+          "contact_name",
+          "contact_phone",
+          "contact_email",
+          "active"
+        ],
+        "relevance_score": 0.8,
+        "reason": "Who to contact at each partner agency"
+      },
+      {
+        "source_id": "src_distributions",
+        "table_name": "distributions",
+        "role": "shipments",
+        "rows": 115,
+        "columns": [
+          "distribution_id",
+          "date",
+          "item_id",
+          "agency_id",
+          "quantity",
+          "unit",
+          "notes"
+        ],
+        "relevance_score": 0.9,
+        "reason": "Product sent out to partner agencies"
+      },
+      {
+        "source_id": "src_inventory",
+        "table_name": "inventory",
+        "role": "stock",
+        "rows": 180,
+        "columns": [
+          "item_id",
+          "received_date",
+          "donor_or_supplier",
+          "product_name_as_entered",
+          "brand_as_entered",
+          "upc",
+          "lot_code",
+          "best_by",
+          "quantity_received",
+          "unit",
+          "warehouse_location",
+          "notes"
+        ],
+        "relevance_score": 0.95,
+        "reason": "Stock received, with lot codes and shelf locations"
+      },
+      {
+        "source_id": "src_recall_products",
+        "table_name": "recall_products",
+        "role": "notice_lines",
+        "rows": 33,
+        "columns": [
+          "recall_id",
+          "line_id",
+          "brand",
+          "product",
+          "size",
+          "upc",
+          "lot_codes",
+          "best_by",
+          "other_names"
+        ],
+        "relevance_score": 0.6,
+        "reason": "Recalled product lines: UPCs, lot codes, best-by dates"
+      },
+      {
+        "source_id": "src_recalls",
+        "table_name": "recalls",
+        "role": "notices",
+        "rows": 15,
+        "columns": [
+          "recall_id",
+          "recall_number",
+          "source",
+          "company",
+          "brand",
+          "product",
+          "reason",
+          "announced_date",
+          "status",
+          "notice_url"
+        ],
+        "relevance_score": 0.4,
+        "reason": "Recall notices"
+      }
+    ],
+    "match_criteria": {
+      "recall_id": "RC-2024-001",
+      "lines": [
+        {
+          "line_id": "1",
+          "brand": "Hollow Creek Farms",
+          "product": "Sliced Deli Ham 12oz",
+          "size": "",
+          "label": "Sliced Deli Ham 12oz",
+          "upcs": [
+            "049800021340"
+          ],
+          "upc_keys": [
+            "49800021340"
+          ],
+          "lots": {
+            "kind": "list",
+            "specs": [
+              {
+                "kind": "range",
+                "start": "2410",
+                "end": "2415",
+                "text": "2410 - 2415"
+              }
+            ],
+            "source": "2410 - 2415"
+          },
+          "dates": {
+            "kind": "none",
+            "specs": [],
+            "source": ""
+          },
+          "terms": {
+            "words": [
+              "sliced",
+              "deli",
+              "ham"
+            ],
+            "head": "ham"
+          },
+          "other_names": []
+        }
+      ],
+      "brands": [
+        "Hollow Creek Farms"
+      ],
+      "aliases": {
+        "Hollow Creek Farms": [
+          "Hollow Creek",
+          "HCF"
+        ]
+      },
+      "learned": {
+        "Hollow Creek Farms": []
+      },
+      "brand_aliases": [
+        "Hollow Creek Farms",
+        "Hollow Creek",
+        "HCF"
+      ],
+      "learned_aliases": []
+    },
+    "source_map": {
+      "stock": {
+        "table": "inventory",
+        "mapping": {
+          "item_id": "item_id",
+          "brand": "brand_as_entered",
+          "product": "product_name_as_entered",
+          "upc": "upc",
+          "lot_code": "lot_code",
+          "best_by": "best_by",
+          "quantity_received": "quantity_received",
+          "unit": "unit",
+          "location": "warehouse_location",
+          "received_date": "received_date",
+          "source": "donor_or_supplier",
+          "notes": "notes"
+        }
+      },
+      "shipments": {
+        "table": "distributions",
+        "mapping": {
+          "ship_id": "distribution_id",
+          "item_id": "item_id",
+          "agency_id": "agency_id",
+          "quantity": "quantity",
+          "unit": "unit",
+          "ship_date": "date"
+        }
+      },
+      "notice_lines": {
+        "table": "recall_products",
+        "mapping": {
+          "recall_id": "recall_id",
+          "line_id": "line_id",
+          "brand": "brand",
+          "product": "product",
+          "size": "size",
+          "upc": "upc",
+          "lot_codes": "lot_codes",
+          "best_by": "best_by",
+          "other_names": "other_names"
+        }
+      },
+      "contacts": {
+        "table": "agencies",
+        "mapping": {
+          "agency_id": "agency_id",
+          "name": "agency_name",
+          "contact_name": "contact_name",
+          "contact_email": "contact_email",
+          "contact_phone": "contact_phone",
+          "active": "active"
+        }
+      },
+      "notices": {
+        "table": "recalls",
+        "mapping": {
+          "recall_id": "recall_id",
+          "recall_number": "recall_number",
+          "source": "source",
+          "company": "company",
+          "brand": "brand",
+          "product": "product",
+          "reason": "reason",
+          "announced_date": "announced_date",
+          "status": "status",
+          "notice_url": "notice_url"
+        }
+      }
+    },
+    "mapping_method": "column names",
+    "data_gaps": [],
+    "searched_brands": [
+      "HC Farms",
+      "Hollow Creek Farms"
+    ],
+    "revision_rounds": 0,
+    "mode": "sample",
+    "model": "rules (sample mode)",
+    "world_model": {
+      "candidate": 13,
+      "critique": 13,
+      "recall": 1,
+      "shipment": 5,
+      "source": 5,
+      "relation": 36
+    },
+    "generated_at": "2026-10-22T12:57:29.693731+00:00"
+  },
+  "agents": [
+    {
+      "name": "Triage",
+      "role": "Turns each recalled product line into checkable criteria: UPCs, lot codes, best-by dates"
+    },
+    {
+      "name": "SourceScout",
+      "role": "Explores the data layer and maps each table and column to what it means"
+    },
+    {
+      "name": "Matcher",
+      "role": "Finds stock by brand spelling, UPC and product name, and works out what is still on hand"
+    },
+    {
+      "name": "Critic",
+      "role": "Judges every hit against each product line; Nemotron can escalate, never clear"
+    },
+    {
+      "name": "Tracer",
+      "role": "Follows flagged stock into shipments to partner agencies"
+    },
+    {
+      "name": "Reporter",
+      "role": "Builds the pull list, hand checks, and agency notices"
+    }
+  ],
+  "trace_id": "run_a432ffa2",
+  "log_file": "logs/trace-run_a432ffa2.jsonl",
+  "execution_time_seconds": 1.22
+}

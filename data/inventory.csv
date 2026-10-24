@@ -1,0 +1,181 @@
+item_id,received_date,donor_or_supplier,product_name_as_entered,brand_as_entered,upc,lot_code,best_by,quantity_received,unit,warehouse_location,notes
+INV-0001,2026-08-03,Inland Harvest Rescue,Kroger Homestyle Caesar Croutons 5 oz,Kroger,005997283795,,2027-03-09,40,bag,A7,
+INV-0002,2026-08-03,TEFAP delivery,Spaghetti 16 oz,Barilla,028400198158,K8713,2027-04-11,263,box,A3,case count approximate
+INV-0003,2026-08-03,Regional Food Network,Goya Black Beans 15.5 oz,Goya,072940557616,G4172,2029-02-01,240,can,C1,
+INV-0004,2026-08-03,St. Mark's church drive,canned chicken breast 12.5 oz,,,P5484,2028-08-25,96,can,C6,
+INV-0005,2026-08-03,St. Mark's church drive,ragu pasta sauce 24 oz,Ragu,052781206171,K9393,2028-06-03,65,jar,C5,
+INV-0006,2026-08-03,Inland Harvest Rescue,Chicken Ramen Noodles 3 oz,Maruchan,,K3466,2027-07-21,520,pack,B2,
+INV-0007,2026-08-03,Grocery rescue - Store #118,Genova tuna olive oil 4pk,Genova,4800073265,,2028-01-24,24,pack,C4,can bottoms not checked
+INV-0008,2026-08-03,Inland Harvest Rescue,kroger cheese + garlic croutons 5oz,Kroger,,,2027-03-06,30,bag,A7,mixed food drive box
+INV-0009,2026-08-04,Grocery rescue - Store #118,Chicken Ramen Noodles 3 oz,Maruchan,,K2952,2027-12-02,467,pack,B2,dented cans - inspected OK
+INV-0010,2026-08-04,Store #221 donation,Black Beans 15oz,Goya,,L8440,2028-11-11,204,can,C1,
+INV-0011,2026-08-04,Store #221 donation,Instant Oatmeal Packets 10 ct,Quaker,038546905985,L7037,2027-04-19,49,box,A5,dented cans - inspected OK
+INV-0012,2026-08-05,Inland Harvest Rescue,Diced Tomatoes 14.5 oz,Hunt's,009324484527,,2028-04-24,261,can,C4,
+INV-0013,2026-08-05,Grocery rescue - Store #118,Creamy Peanut Butter 16 oz,Great Value,021571164946,K8772,2028-08-04,113,jar,B1,
+INV-0014,2026-08-05,St. Mark's church drive,goya dry pinto beans 4 lb,,,L5703,2027-07-12,101,bag,A2,
+INV-0015,2026-08-05,Store #221 donation,Cut Green Beans 14.5 oz,Del Monte,,B9969,2028-11-17,249,can,C3,case count approximate
+INV-0016,2026-08-05,Store #221 donation,Chicken Ramen Noodles 3 oz,Maruchan,057652373556,P4487,2027-03-15,580,pack,B2,
+INV-0017,2026-08-05,Grocery rescue - Store #118,Elbow Macaroni 16 oz,Great Value,075332571924,K9754,2027-01-18,168,box,A3,case count approximate
+INV-0018,2026-08-06,Community food drive,Diced Tomatoes 14.5 oz,Hunt's,053867130069,L8227,2028-11-20,145,can,C4,case count approximate
+INV-0019,2026-08-06,Regional Food Network,Tomato Soup 10.75oz,Camp,,P1387,2028-05-23,289,can,C2,mixed food drive box
+INV-0020,2026-08-06,TEFAP delivery,long grain white rice 5 lb,,,B3627,2027-11-28,87,bag,A1,
+INV-0021,2026-08-07,Inland Harvest Rescue,Stove Top Stuffing Mix Chicken 6 oz,Kraft,029841622943,ST2215,2027-08-30,100,box,A7,
+INV-0022,2026-08-07,TEFAP delivery,brown rice 2 lb,Mahatma,,K3386,2027-12-17,35,bag,A1,donated pallet - no UPC scanned
+INV-0023,2026-08-08,Inland Harvest Rescue,Squirrel Brand Travelers Mix 16 oz,Squirrel Brand,07223899166,,2027-05-28,80,bag,A6,
+INV-0024,2026-08-08,Regional Food Network,Vegetable Soup 18.5 oz,,,P8841,2028-09-01,99,can,C2,dented cans - inspected OK
+INV-0025,2026-08-08,Inland Harvest Rescue,Tomato Soup 10.75 oz,Campbell's,,K1609,2028-02-19,141,can,C2,
+INV-0026,2026-08-08,Store #221 donation,Frozen Sweet Corn 16 oz,Great Value,026835081113,L8493,2027-10-12,121,bag,F3,
+INV-0027,2026-08-08,TEFAP delivery,Chicken Noodle Soup 10.75 oz,Campbell's,042482960175,,2028-07-27,364,can,C2,
+INV-0028,2026-08-08,Grocery rescue - Store #118,Corn Flakes 18 oz,,,K2536,2027-05-16,106,box,A5,
+INV-0029,2026-08-09,St. Mark's church drive,instint mashed potatoes 13.3 oz,Idahoan,,,2027-09-17,79,pouch,B3,mixed food drive box
+INV-0030,2026-08-09,Community food drive,Black Beans 15 oz,Goya,045028316634,B4950,2028-04-22,226,can,C1,
+INV-0031,2026-08-09,Regional Food Network,Kidney Beans 16 oz,Goya,062105218544,L5768,2028-06-06,146,can,C1,mixed food drive box
+INV-0032,2026-08-09,St. Mark's church drive,Canned Peas 15 oz,Le Sueur,048836152029,K5229,2028-07-26,106,can,C3,case count approximate
+INV-0033,2026-08-11,Store #221 donation,tomato soup 10.75 oz,Camp,,P4140,2028-05-24,356,can,C2,
+INV-0034,2026-08-12,TEFAP delivery,general mills cheerios 12 oz,General Mills,,K6630,2027-04-12,85,box,A5,
+INV-0035,2026-08-12,Store #221 donation,cut green beans 14.5 oz,Del Monte,,P8630,2028-11-02,264,can,C3,donated pallet - no UPC scanned
+INV-0036,2026-08-13,Inland Harvest Rescue,GreenWise Organic IQF Frozen Blueberries 10 oz,GreenWise,,60388,2028-01-20,72,bag,F1,
+INV-0037,2026-08-13,Regional Food Network,All Purpose Flour 5 lb,Gold Medal,062958639848,,2027-09-13,64,bag,A2,
+INV-0038,2026-08-14,Grocery rescue - Store #118,brown rice 2 lb,Mahatma,,P7165,2027-11-04,77,bag,A1,
+INV-0039,2026-08-14,Community food drive,Elbow Macaroni 16 oz,Great Value,056073927317,P8910,2027-09-01,207,box,A3,
+INV-0040,2026-08-14,Grocery rescue - Store #118,Genova Premium Albacore Tuna in Water 5 oz,Genova,068045717840,S84N D2L,2028-01-21,72,can,C4,
+INV-0041,2026-08-15,Inland Harvest Rescue,Vegetable Soup 18.5 oz,Progresso,090853801299,L3059,2028-09-12,137,can,C2,
+INV-0042,2026-08-15,Community food drive,welch's grape jelly 18 oz,Welch's,,L9107,2028-05-09,68,jar,B1,
+INV-0043,2026-08-15,Store #221 donation,Vegetable Oil 48 oz,Wesson,,L6031,2027-12-02,71,bottle,B3,
+INV-0044,2026-08-15,Store #221 donation,sweet corn 15 oz,Del Monte,058602145841,L1300,2028-09-07,278,can,C3,
+INV-0045,2026-08-16,Store #221 donation,grape jelly 18 oz,Welch's,,L2106,2028-03-01,118,jar,B1,
+INV-0046,2026-08-17,Regional Food Network,Falcon Trading Black Beans Organic 25 lb sack,Falcon Trading,086700930403,FT-2511,2027-06-30,30,sack,B2,
+INV-0047,2026-08-17,St. Mark's church drive,del monte cut green beans 14.5 oz,Del,,B9335,2028-02-03,136,can,C3,
+INV-0048,2026-08-18,Inland Harvest Rescue,Kidney Beans 16 oz,Goya,059871988900,L7854,2028-04-04,97,can,C1,mixed food drive box
+INV-0049,2026-08-18,Store #221 donation,Sweet Corn 15 oz,Del Monte,005780370411,L5573,2028-04-01,173,can,C3,
+INV-0050,2026-08-18,Inland Harvest Rescue,Cheerios 12 oz,General Mills,,P7568,2027-01-08,65,box,A5,
+INV-0051,2026-08-18,Inland Harvest Rescue,Dry Pinto Beans 4#,Goya,,P5474,2027-06-16,47,bag,A2,dented cans - inspected OK
+INV-0052,2026-08-19,Regional Food Network,chili bean blend orgnic 15lb box,SRF,,,,20,box,B2,"bulk box, label rubbed off"
+INV-0053,2026-08-20,Inland Harvest Rescue,GreenWise Organic Frozen Mango Chunks 10 oz,GreenWise,069871689769,60401,2028-02-09,48,bag,F1,
+INV-0054,2026-08-20,Regional Food Network,Falcon Trading Pinto Beans Organic 25 lb sack,Falcon Trading,056815188440,FT-2511,2027-06-30,25,sack,B3,
+INV-0055,2026-08-20,Inland Harvest Rescue,skinnydiped choc coconut almond bites 10 ct,Skinny Dipped,,B-35360,2026-12-26,36,bag,A4,
+INV-0056,2026-08-20,Grocery rescue - Store #118,genova yellowfin tuna evoo + sea salt 5oz can,Genova,,S88N-D1M,2028-01-17,48,can,C4,
+INV-0057,2026-08-21,Inland Harvest Rescue,greenwise org frozen blueberrys 10z,Green Wise,,60-401,2028-02-09,40,bag,F1,
+INV-0058,2026-08-22,Regional Food Network,Pinto Beans 15 oz,Bush's,,P8526,2028-06-23,153,can,C1,
+INV-0059,2026-08-22,Grocery rescue - Store #118,Tomato Sauce 15 oz,Hunt's,056427105125,,2028-10-28,232,can,C4,case count approximate
+INV-0060,2026-08-22,St. Mark's church drive,Evaporated Milk 12 oz,Carnation,067452198037,K7608,2028-04-28,128,can,C6,
+INV-0061,2026-08-22,Regional Food Network,swanson canned chicken breast 12.5 oz,Swan,,P5319,2028-03-18,120,can,C6,case count approximate
+INV-0062,2026-08-24,Store #221 donation,Canned Fruit Cocktail 15 oz,Del Monte,061994569942,B9643,2028-07-09,88,can,C2,
+INV-0063,2026-08-25,Regional Food Network,Long Grain White Rice 5 lb,Mahatma,064397258444,B1031,2027-04-20,192,bag,A1,
+INV-0064,2026-08-25,TEFAP delivery,Chicken Noodle Soup 10.75oz,Campbell's,,K5175,2028-11-03,356,can,C2,
+INV-0065,2026-08-26,Inland Harvest Rescue,Squirrel Brand Travelers Mix 16 oz,Squirrel Brand,07223899166,,2027-09-15,48,bag,A6,
+INV-0066,2026-08-26,Store #221 donation,hunt's tomato sauce 15 oz,Hunt,,B9457,2028-01-06,180,can,C4,dented cans - inspected OK
+INV-0067,2026-08-26,Store #221 donation,wholesome pantry apple sause organic unsweet 23oz,,,,2027-06-16,36,jar,C3,donated pallet - no UPC scanned
+INV-0068,2026-08-27,Store #221 donation,Wholesome Pantry Organic Cinnamon Apple Sauce 23 oz,Wholesome Pantry,076634400295,,2027-06-16,48,jar,C3,
+INV-0069,2026-08-27,St. Mark's church drive,domino granulated sugar 4 lb,,,B5920,2027-03-28,47,bag,A2,
+INV-0070,2026-08-28,St. Mark's church drive,Kidney Beans 16 oz,Goya,033115921236,B8010,2028-01-18,117,can,C1,
+INV-0071,2026-08-28,Grocery rescue - Store #118,StarKist Chunk Light Tuna in Water 5 oz,StarKist,072671475135,SK7714,2028-06-02,200,can,C4,
+INV-0072,2026-08-28,Inland Harvest Rescue,Fisher Tex Mex Trail Mix 30 oz,Fisher,070690275941,,,20,tub,A6,date sticker missing
+INV-0073,2026-08-28,Store #221 donation,long grain white rice 5 lb,Mahatma,,,2027-01-10,96,bag,A1,
+INV-0074,2026-08-28,Grocery rescue - Store #118,Genova Yellowfin Tuna in Olive Oil 5 oz 4-pack,Genova,4800073265,S84N D9K,2028-02-11,40,pack,C4,
+INV-0075,2026-08-29,Store #221 donation,canned peas 15 oz,,068828347288,K6959,2028-11-13,216,can,C3,
+INV-0076,2026-08-29,Regional Food Network,Vegetable Soup 18.5 oz,Progresso,040137615616,,2028-01-12,83,can,C2,
+INV-0077,2026-08-29,Store #221 donation,Del Monte Diced Peaches 15 oz,Del Monte,078753477875,DM5520,2028-05-10,180,can,C2,
+INV-0078,2026-08-30,Inland Harvest Rescue,Honey Graham Crackers 14.4 oz,Honey Maid,040115276112,B8957,2027-06-20,53,box,A5,mixed food drive box
+INV-0079,2026-08-31,Community food drive,frozen brocoli florets 12 oz,Birds Eye,,,2027-01-04,70,bag,F3,dented cans - inspected OK
+INV-0080,2026-08-31,Inland Harvest Rescue,Dry Pinto Beans 4 lb,Goya,,,2027-05-14,31,bag,A2,mixed food drive box
+INV-0081,2026-08-31,Regional Food Network,Spaghetti 16 oz,Barilla,014881813789,B3798,2027-03-07,221,box,A3,
+INV-0082,2026-08-31,Grocery rescue - Store #118,creamy penut butter 16 oz,Great Value,,,2028-06-18,72,jar,B1,case count approximate
+INV-0083,2026-08-31,Community food drive,Pasta Sauce 24 oz,Ragu,,L7136,2028-02-12,137,jar,C5,
+INV-0084,2026-08-31,Community food drive,Vegetable Oil 48oz,Wess,,K7052,2027-02-18,64,bottle,B3,
+INV-0085,2026-09-01,Store #221 donation,mezzetta greek peperoncini medium 32oz,Mezzetta,,,,18,jar,C6,lid code worn off
+INV-0086,2026-09-01,Inland Harvest Rescue,SkinnyDipped Dark Chocolate Coconut Almond Bites 10ct 3.17oz,SkinnyDipped,850034219783,B45102,2027-03-14,48,bag,A4,
+INV-0087,2026-09-01,Store #221 donation,Mezzetta Golden Greek Peperoncini Mild 16 oz,Mezzetta,083695793181,720106,2028-09-30,40,jar,C6,
+INV-0088,2026-09-02,Grocery rescue - Store #118,grape jelly 18 oz,,034967704411,K8608,2028-06-23,48,jar,B1,
+INV-0089,2026-09-02,Inland Harvest Rescue,SkinnyDipped Dark Chocolate Coconut Almond Bites 10ct 3.17oz,SkinnyDipped,850034219783,B15357,2026-12-23,72,bag,A4,
+INV-0090,2026-09-02,Grocery rescue - Store #118,granulated sugar 4 lb,Domi,,P8912,2027-06-01,22,bag,A2,case count approximate
+INV-0091,2026-09-02,Store #221 donation,Wholesome Pantry Organic Unsweetened Applesauce 23oz,Wholesome Pantry,04119005677,,,24,jar,C3,best-by on lid is smudged
+INV-0092,2026-09-03,Store #221 donation,Mezzetta Golden Greek Peperoncini Medium Heat 32 oz,Mezzetta,,720098,2028-08-15,36,jar,C6,
+INV-0093,2026-09-03,Community food drive,Corn Flakes 18 oz,Kellogg's,,,2027-11-19,79,box,A5,dented cans - inspected OK
+INV-0094,2026-09-03,Inland Harvest Rescue,Instant Mashed Potatoes 13.3 oz,Idahoan,071862107619,L8353,2027-08-12,42,pouch,B3,
+INV-0095,2026-09-04,Regional Food Network,All Purpose Flour 5 lb,Gold Medal,,L7549,2027-12-06,20,bag,A2,
+INV-0096,2026-09-04,Regional Food Network,quaker instant oatmeal packets 10 ct,Quaker,042476134148,,2027-07-03,101,box,A5,
+INV-0097,2026-09-04,St. Mark's church drive,corn flakes 18 oz,Kellogg's,,B1595,2027-04-23,147,box,A5,
+INV-0098,2026-09-05,St. Mark's church drive,Evaporated Milk 12 oz,Carnation,014497660852,K2556,2028-11-25,103,can,C6,
+INV-0099,2026-09-05,Store #221 donation,Wholesome Pantry Organic Unsweetened Apple Sauce 23 oz,Wholesome Pantry,04119005677,,2027-06-16,96,jar,C3,
+INV-0100,2026-09-05,Regional Food Network,Frozen Broccoli Florets 12 oz,Birds Eye,089821046022,B8713,2027-11-22,83,bag,F3,
+INV-0101,2026-09-05,Inland Harvest Rescue,SkinnyDipped Dark Chocolate Coconut Almond Bites 10ct,SkinnyDipped,850034219783,,2026-12-22,24,bag,A4,lot sticker missing
+INV-0102,2026-09-06,Store #221 donation,Wholesome Pantry Organic Unsweetened Apple Sauce 23 oz,Wholesome Pantry,04119005677,,2027-08-04,60,jar,C3,
+INV-0103,2026-09-06,Store #221 donation,Mezzetta Golden Greek Peperoncini Medium Heat 32 oz,Mezzetta,,720106,2028-09-30,48,jar,C6,SKU 10106328
+INV-0104,2026-09-07,Inland Harvest Rescue,Kroger Homestyle Cheese Garlic Croutons 5oz,Kroger,011110813534,,,24,bag,A7,"bags stripped from case, date not logged"
+INV-0105,2026-09-07,Inland Harvest Rescue,Nabisco Premium Saltine Crackers 16 oz,Nabisco,093319084526,NB4410,2027-07-22,130,box,A5,
+INV-0106,2026-09-08,Store #221 donation,Black Ripe Pitted Olives 6 oz,Early California,060320807376,EC1190,2028-10-01,120,can,C6,
+INV-0107,2026-09-08,Inland Harvest Rescue,greenwise frozen blueberries 10oz,GreenWise,,,2028-02-09,30,bag,F1,"outer carton gone, bags loose"
+INV-0108,2026-09-09,Store #221 donation,Pinto Beans 15 oz,Bush's,025898319485,B5828,2028-10-09,271,can,C1,dented cans - inspected OK
+INV-0109,2026-09-09,Inland Harvest Rescue,Pinto Beans 15 oz,Bush's,009048801563,K5216,2028-01-07,155,can,C1,mixed food drive box
+INV-0110,2026-09-10,St. Mark's church drive,Instant Oatmeal Packets 10 ct,Quaker,012808458501,L4978,2027-08-02,68,box,A5,
+INV-0111,2026-09-10,St. Mark's church drive,Tomato Sauce 15 oz,Hunt's,037010875267,,2028-11-05,150,can,C4,
+INV-0112,2026-09-10,Inland Harvest Rescue,bettergoods Authentic Italian Tomato Basil Gnocchi 22 oz,bettergoods,086628360160,L26-198,2027-02-18,36,bag,F2,
+INV-0113,2026-09-10,Inland Harvest Rescue,bettergoods Authentic Italian Lemon Alfredo Fettuccine 22 oz,bettergoods,194346442706,L26-241,2027-03-30,60,bag,F2,
+INV-0114,2026-09-10,Inland Harvest Rescue,bettergoods Lemon Alfredo Sauce 15 oz,bettergoods,010550087543,L26-310,2027-09-14,30,jar,C5,
+INV-0115,2026-09-11,Store #221 donation,mezzeta greek peperonchini med heat 32z,Mezzeta,,72-0106,2028-09-30,24,jar,C6,
+INV-0116,2026-09-11,Regional Food Network,Falcon Trading Black Beans Conventional 25 lb sack,Falcon Trading,041707536454,FT-2507,2027-05-15,25,sack,B2,
+INV-0117,2026-09-11,Grocery rescue - Store #118,Nature's Own Hawaiian Bread 20 oz,Nature's Own,072250916622,0188 262 21:15,2026-10-10,120,loaf,D1,
+INV-0118,2026-09-11,Inland Harvest Rescue,squirel town and country mix 16oz,Squirrel,,,2027-05-25,36,bag,A6,donated pallet - no UPC scanned
+INV-0119,2026-09-12,St. Mark's church drive,Creamy Peanut Butter 16 oz,Great Value,034999248006,B8506,2028-10-04,112,jar,B1,
+INV-0120,2026-09-13,Grocery rescue - Store #118,Sara Lee Classic White Bread 20 oz,Sara Lee,098797309116,SL0916,2026-10-06,90,loaf,D1,
+INV-0121,2026-09-13,Grocery rescue - Store #118,natures own hawaian bread 20oz,Natures Own,,0188265 09:45,2026-10-12,48,loaf,D1,"rescued bread, tag half torn"
+INV-0122,2026-09-15,Regional Food Network,black beans 25 lb sack (bulk),,,,2027-04-01,15,sack,B3,no label on sack
+INV-0123,2026-09-15,Inland Harvest Rescue,GreenWise Organic IQF Frozen Blueberries 10 oz,GreenWise,,60401,2028-02-09,96,bag,F1,
+INV-0124,2026-09-16,Grocery rescue - Store #118,Frozen Sweet Corn 16 oz,Great Value,075407207543,P4256,2027-06-09,105,bag,F3,
+INV-0125,2026-09-16,Community food drive,macaroni and cheese 7.25 oz,,,,2027-04-20,272,box,A3,
+INV-0126,2026-09-16,Inland Harvest Rescue,Kroger Homestyle Cheese Garlic Croutons 5 oz,Kroger,011110813534,,2027-03-09,72,bag,A7,
+INV-0127,2026-09-17,Inland Harvest Rescue,Nature Valley Oats n Honey Granola Bars 12 ct,Nature Valley,017784864889,NV3381,2027-04-18,110,box,A5,
+INV-0128,2026-09-17,St. Mark's church drive,Canned Fruit Cocktail 15 oz,Del Monte,022290044229,K3096,2028-08-06,127,can,C2,donated pallet - no UPC scanned
+INV-0129,2026-09-17,Grocery rescue - Store #118,nature's own hawaiian sweet bread,Nature's Own,072250916622,,2026-10-13,36,loaf,D1,tag with code missing from bag
+INV-0130,2026-09-17,Inland Harvest Rescue,Cheerios 12 oz,General Mills,,L2113,2027-05-25,95,box,A5,case count approximate
+INV-0131,2026-09-19,Inland Harvest Rescue,Kroger Homestyle Cheese Garlic Croutons 5 oz,Kroger,011110813534,,2027-05-12,48,bag,A7,
+INV-0132,2026-09-20,Store #221 donation,Macaroni and Cheese 7.25 oz,Kraft,063884985566,L7902,2027-09-14,199,box,A3,
+INV-0133,2026-09-20,Inland Harvest Rescue,SkinnyDipped Dark Chocolate Peanut Butter Cups 3.17 oz,SkinnyDipped,020819672731,B15357,2026-12-23,40,bag,A4,
+INV-0134,2026-09-20,Inland Harvest Rescue,Barilla Penne 16 oz,Barilla,075177992298,BA8830,2028-03-12,140,box,A3,
+INV-0135,2026-09-20,St. Mark's church drive,Spaghetti 16oz,Barilla,,B3051,2027-03-18,87,box,A3,
+INV-0136,2026-09-20,Inland Harvest Rescue,Squirrel Brand Honey Roasted Peanuts 16 oz,Squirrel Brand,062701079815,,2027-05-28,60,bag,A6,
+INV-0137,2026-09-20,Grocery rescue - Store #118,Nature's Own Hawaiian Bread 20 oz,Nature's Own,072250916622,0188 268 11:30,2026-10-24,60,loaf,D1,
+INV-0138,2026-09-21,Community food drive,Honey Graham Crackers 14.4 oz,Honey Maid,061884791880,P6209,2027-11-11,76,box,A5,mixed food drive box
+INV-0139,2026-09-21,Inland Harvest Rescue,Brown Rice 2 lb,Mahatma,016425247760,B6337,2027-09-16,86,bag,A1,
+INV-0140,2026-09-21,Community food drive,Diced Tomatoes 14.5 oz,Hunt's,,L6831,2028-02-09,130,can,C4,
+INV-0141,2026-09-21,St. Mark's church drive,Chicken Noodle Soup 10.75 oz,Campbell's,018955799061,B8580,2028-07-22,181,can,C2,
+INV-0142,2026-09-21,Inland Harvest Rescue,frozen alfredo fettuccine bettergoods,bettergoods,,,,18,bag,F2,label torn
+INV-0143,2026-09-21,Inland Harvest Rescue,Frozen Mixed Vegetables 12 oz,Birds Eye,084697880930,BE2209,2027-11-30,150,bag,F2,
+INV-0144,2026-09-22,Grocery rescue - Store #118,Nature's Own Honey Wheat Bread 20 oz,Nature's Own,015881399860,0188 262 21:15,2026-10-10,80,loaf,D1,
+INV-0145,2026-09-22,Regional Food Network,Sweet Corn 15 oz,Del Monte,059776055387,,2028-09-21,234,can,C3,
+INV-0146,2026-09-23,Regional Food Network,great value elbow macaroni 16 oz,Great Value,,L5535,2027-09-16,186,box,A3,
+INV-0147,2026-09-23,Regional Food Network,Pasta Sauce 24 oz,Ragu,064668631662,B9906,2028-12-20,185,jar,C5,
+INV-0148,2026-09-23,Grocery rescue - Store #118,Genova Yellowfin Tuna in Olive Oil 5 oz 4-pack,Genova,4800073265,S84N D2L,2028-01-21,60,pack,C4,
+INV-0149,2026-09-24,Inland Harvest Rescue,betergoods lemon alfredo fetuccine frozen 22oz,bettergoods,,,2027-03-30,24,bag,F2,donated pallet - no UPC scanned
+INV-0150,2026-09-24,Grocery rescue - Store #118,goya black beans 15 oz,Goya,,K7329,2028-12-12,164,can,C1,
+INV-001,2024-10-10,purchase,Sliced Deli Ham 12oz,Hollow Creek Farms,049800021340,2412,,34,case,Cooler A Row 3,
+INV-002,2024-10-10,purchase,Sliced Deli Ham 12oz,Hollow Creek Farms,049800021340,2413,,12,case,Cooler A Row 3,
+INV-003,2024-10-08,purchase,Sliced Deli Ham 12oz,Hollow Creek Farms,049800021340,2411,,8,case,Freezer B Shelf 2,
+INV-004,2024-10-09,donation,Ham Slices,Hollow Creek Farms,,2413,,3,case,Cooler A Row 4,No UPC on box - brand confirmed by label
+INV-005,2024-09-30,purchase,Baby Spinach 5lb,Bright Acre Growers,,LOT-BA-0924,,24,bag,Cold Room 1 Shelf A,
+INV-006,2024-10-02,purchase,Shredded Mozzarella 2lb,Northwind Dairy Cooperative,076840551234,NDC-241002,,8,pack,Cooler B Shelf 1,
+INV-007,2024-09-22,donation,Whole Wheat Bread 24oz,Riverbend Bakery,018000119483,RB-2410,,42,loaf,Dry Storage C Row 2,
+INV-008,2024-10-05,purchase,Canned Tomatoes 28oz,Sunfield Pantry,041498105532,SP-240815,,80,can,Dry Storage A Row 1,
+INV-009,2024-10-11,donation,Deli Ham 12oz - Sliced,Hollow Creek Farms,,241X,,2,case,Cooler A Row 3,Lot code partially obscured - last digit illegible
+INV-010,2024-09-25,donation,Whole Wheat Bread 24oz,Riverbend Bakery,018000119483,RB-2412,,10,loaf,Dry Storage C Row 2,
+INV-011,2024-10-03,purchase,Sliced Deli Ham 12oz,Hollow Creek Farms,049800021340,2408,,4,case,Cooler A Row 5,Lot 2408 outside recall range
+INV-012,2024-10-01,donation,Spinach 5lb Bag,Bright Acre Growers,,LOT-BA-0924,,13,bag,Cold Room 1 Shelf B,Same lot as INV-005 different entry
+INV-013,2024-10-04,purchase,Mozzarella Shredded,Northwind Dairy Cooperative,076840551234,NDC-241003,,20,pack,Cooler B Shelf 2,
+INV-014,2024-10-06,purchase,Whole Peeled Tomatoes 28oz,Sunfield Pantry,041498105532,SP-240810,,40,can,Dry Storage A Row 2,
+INV-015,2024-09-18,donation,WW Bread,Riverbend Bakery,018000119483,RB-2409,,13,loaf,Dry Storage C Row 1,Abbreviated brand entry
+INV-016,2024-10-11,donation,Deli Ham Sliced,HC Farms,,2414,,5,case,Cooler A Row 3,Brand alias entry - no UPC
+INV-017,2024-10-12,purchase,Sliced Deli Ham 12oz,Hollow Creek Farms,049800021340,2416,,10,case,Cooler A Row 6,Lot 2416 just outside recall range
+INV-018,2024-10-01,purchase,Shredded Mozzarella 2lb,Northwind Dairy Cooperative,076840551234,NDC-241001,,9,pack,Cooler B Shelf 3,First lot in recall range
+INV-019,2024-10-08,purchase,Canned Tomatoes 28oz,Sunfield Pantry,041498105532,SP-240831,,24,can,Dry Storage A Row 3,Last lot in recall range
+INV-020,2024-10-05,purchase,Baby Spinach,Bright Acre Growers,,LOT-BA-1024,,12,bag,Cold Room 1 Shelf C,October lot - outside recall range
+INV-021,2024-09-24,purchase,Whole Wheat Bread 24oz,Riverbend Bakery,018000119483,RB-2411,,28,loaf,Dry Storage C Row 3,Last lot in recall range
+INV-022,2024-10-07,purchase,Ham 12oz,Hollow Creek Farms,049800021340,2410,,11,case,Cooler A Row 7,First lot in recall range
+INV-023,2024-10-12,purchase,Sliced Deli Ham 12oz,Hollow Creek Farms,049800021340,2415,,8,case,Cooler A Row 8,Last lot in recall range
+INV-024,2024-10-07,purchase,Crushed Tomatoes 28oz,Sunfield Pantry,041498105532,SP-240820,,28,can,Dry Storage A Row 4,
+INV-025,2024-10-05,donation,Mozzarella 2lb,Northwind Dairy Cooperative,,NDC-241004,,10,pack,Cooler B Shelf 4,No UPC on donation
+INV-026,2024-09-15,purchase,Whole Wheat Bread 24oz,Riverbend Bakery,018000119483,RB-2408,,15,loaf,Dry Storage D Row 1,Outside recall range
+INV-027,2024-10-02,donation,Baby Spinach 5lb,Bright Acre Growers,,LOT-BA-0924,,7,bag,Cold Room 2 Shelf A,Third lot entry same lot number
+INV-028,2024-10-12,donation,Deli Ham,Hollow Creek Farms,049800021340,241?,,1,case,Cooler A Row 9,Question mark in lot code - handwriting unclear
+INV-029,2024-09-28,donation,Canned Tomatoes 28oz,Sunfield Pantry,,SP-240799,,6,can,Dry Storage B Row 1,Lot before recall range
+INV-030,2024-10-06,purchase,Shredded Mozzarella,Northwind Dairy Cooperative,076840551234,NDC-241005,,3,pack,Cooler C Shelf 1,Last lot in recall range

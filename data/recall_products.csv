@@ -1,0 +1,40 @@
+recall_id,line_id,brand,product,size,upc,lot_codes,best_by,other_names
+R-001,1,Nature's Own,Hawaiian Bread,20 oz,072250916622,0188 262 20:06 - 0188 262 22:05; 0188 265 09:20 - 0188 265 10:30; 0188 267 04:50 - 0188 267 06:00; 0188 270 04:15 - 0188 270 06:05; 0188 272 17:15 - 0188 272 19:25,2026-10-08 - 2026-10-18,Flowers Foods
+R-001,2,Nature's Own,2-pack Hawaiian Bread,40 oz,072250006835,,,Flowers Foods
+R-002,1,Falcon Trading Company,Black Beans Organic (FTC item 003040),25 lb sack,086700930403,ALL,,Sunridge Farms; SRF
+R-002,2,Falcon Trading Company,Chili Bean Blend Organic (SRF item 003056),15 lb box,086700030561,ALL,,Sunridge Farms; SRF
+R-002,3,Falcon Trading Company,Soup Mix Organic (SRF item 013000),25 lb box,086700130001,ALL,,Sunridge Farms; SRF
+R-003,1,GreenWise,Organic IQF Frozen Blueberries,10 oz,,60401,2028-02-09,Frutas y Hortalizas del Sur
+R-004,1,SkinnyDipped,Dark Chocolate Coconut Almond Bites 10ct,3.17 oz,10850034219780; 850034219783; 850034219776,B15356; B15357; B15360; B15363; B25356; B25357; B25361; B25363; B35354; B35356; B35357; B35360; B35361,2026-12-20; 2026-12-22; 2026-12-23; 2026-12-26; 2026-12-27; 2026-12-29,Bazzini
+R-004,2,SkinnyDipped,Dark Chocolate Coconut Almond Bites 6ct,3.17 oz,20850034219787; 850034219783; 850034219776,B25361; B35360; B35361,2026-12-26; 2026-12-27,Bazzini
+R-004,3,SkinnyDipped,Dark Chocolate Coconut Almond Bites 50ct,.53 oz,10850034219773; 850034219776,B15357,2026-12-23,Bazzini
+R-004,4,SkinnyDipped,Dark Chocolate Coconut Almond Bites 24ct,.53 oz,850034219998; 850034219776,B35360,2026-12-26,Bazzini
+R-004,5,SkinnyDipped,Dark Chocolate Coconut Almond Bites 20ct (Easter),.53 oz,10865797000063; 850034219776,B15356; B25356; B35354; B35356,2026-12-20; 2026-12-22,Bazzini
+R-004,6,SkinnyDipped,Dark Chocolate Coconut Almond Bites 4ct,3.17 oz,850034219783; 850034219776,B15356; B15360; B15361; B15363; B25356; B25357; B25363; B35356; B35357,2026-12-22; 2026-12-23; 2026-12-26; 2026-12-27; 2026-12-29,Bazzini
+R-004,7,SkinnyDipped,Dark Chocolate Coconut Almond Bites (32ct shipper with Peanut Butter Cups),32ct,00850034219936; 850034219783; 850034219776,B15356; B15360; B16041; B16042; B25263; B25344; B25350; B35357; B35360; B35361,2026-12-22; 2026-12-23; 2026-12-26; 2026-12-27; 2026-12-29,Bazzini
+R-005,1,Wholesome Pantry,Organic Unsweetened Apple Sauce,23 oz,04119005677,,2027-06-16,Wakefern
+R-006,1,Genova,Yellowfin Tuna in Olive Oil 4 Pack,5.0 oz,4800073265,S84N D2L,2028-01-21,Tri-Union Seafoods
+R-006,2,Genova,Yellowfin Tuna in Olive Oil 4 Pack,5.0 oz,4800073265,S84N D3L,2028-01-24,Tri-Union Seafoods
+R-006,3,Genova,Yellowfin Tuna in Extra Virgin Olive Oil with Sea Salt,5.0 oz,4800013275,S88N D1M,2028-01-17,Tri-Union Seafoods
+R-007,1,Fisher,Tex Mex Trail Mix,30 oz,070690275941,,2027-08-06,John B. Sanfilippo
+R-007,2,Southern Style Nuts,Gourmet Hunter Mix,23 oz,085839073319,,2027-01-28; 2027-02-05; 2027-02-12; 2027-02-17; 2027-03-03; 2027-03-14,John B. Sanfilippo
+R-007,3,Southern Style Nuts,Gourmet Hunter Mix,36 oz,085839071483,,2027-02-12; 2027-02-26; 2027-03-13; 2027-04-02,John B. Sanfilippo
+R-007,4,Southern Style Nuts,Hunter Mix,30 oz,085839916302,,2027-01-29; 2027-02-03; 2027-02-10; 2027-02-19; 2027-02-24; 2027-03-02; 2027-03-10; 2027-03-16,John B. Sanfilippo
+R-007,5,Squirrel Brand,Travelers Mix,16 oz,07223899166,,2027-04-30; 2027-05-28; 2027-06-24,John B. Sanfilippo
+R-007,6,Squirrel Brand,Town & Country Mix,16 oz,07223805251,,2027-05-01; 2027-05-25; 2027-05-28,John B. Sanfilippo
+R-007,7,Squirrel Brand,Town & Country Mix,7.5 oz,07223805450,,2027-02-10,John B. Sanfilippo
+R-007,8,Good & Gather,Mexican Street Corn Trail Mix,8 oz,085239270240,6082GY5D,2027-03-23,John B. Sanfilippo; Target
+R-008,1,Kroger,Homestyle Cheese Garlic Croutons,5 oz,011110813534,,2027-02-17; 2027-02-18; 2027-02-27; 2027-02-28; 2027-03-06; 2027-03-09; 2027-03-21; 2027-04-01; 2027-04-07,Sugar Foods
+R-009,1,bettergoods,Authentic Italian Lemon Alfredo Fettuccine,22 oz,194346442706,ALL,,Gias Foods
+R-010,1,Mezzetta,"Golden Greek Peperoncini, Medium Heat",32 oz,,720106,,G. L. Mezzetta
+RC-2024-001,1,Hollow Creek Farms,Sliced Deli Ham 12oz,,049800021340,2410 - 2415,,
+RC-2024-002,1,Bright Acre Growers,Baby Spinach 5lb,,,LOT-BA-0924,,
+RC-2024-003,1,Northwind Dairy Cooperative,Shredded Mozzarella 2lb,,076840551234,NDC-241001 - NDC-241005,,
+RC-2024-004,1,Riverbend Bakery,Whole Wheat Bread 24oz,,018000119483,RB-2409 - RB-2411,,
+RC-2024-005,1,Sunfield Pantry,Canned Tomatoes 28oz,,041498105532,SP-240801 - SP-240831,,
+R-011,1,Gelatelli,Coffee & Vanilla Gelato with Coffee Sauce & Cookie Pieces,16 fl oz,4 0564897 22458,085261,2028-03-26,Lidl
+R-012,1,Family Farmstead,Raw Mild Cheddar Cheese,8 oz,,7/22/27,2027-07-22,Family Farmstead Dairy
+R-013,1,Stewart's Shops,Heavenly Medley Ice Cream,half gallon (1.89L),0 82086 44371 1,,2027-02-10,Stewart's Shop Corp
+R-013,2,Stewart's Shops,Vanilla-Chocolate-Strawberry Ice Cream,half gallon (1.89L),0 82086 44377 3,,2027-02-11,Stewart's Shop Corp
+R-014,1,WinCo Foods,Salsa Bean Dip Tray Express,54 oz,2-67173-#####,,2026-08-14 - 2026-09-25,
+R-014,2,WinCo Foods,"Salsa Bean Dip Tray, 16 Inch Catering Tray",104 oz,2-67240-#####,,2026-08-14 - 2026-09-25,

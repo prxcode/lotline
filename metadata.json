@@ -1,0 +1,74 @@
+{
+  "name": "Lotline",
+  "tagline": "Multi-agent recall tracing for food banks",
+  "track": "Solving Fragmented Intelligence",
+  "team": {
+    "name": "Illusionists",
+    "members": [
+      {
+        "name": "Priyanshu Singh",
+        "role": "leader"
+      },
+      {
+        "name": "Vaibhavi Singh"
+      }
+    ]
+  },
+  "repository": "https://github.com/prxcode/lotline",
+  "demo_video": "[TODO: YouTube or Vimeo URL]",
+  "slides": "[TODO: slide deck URL]",
+  "entry_points": {
+    "web_app": "python run.py",
+    "api": "POST /run {\"recall_id\": \"R-001\", \"mode\": \"sample\"}",
+    "cli": "python run.py --input input_examples/example_1.json",
+    "evaluation": "python eval.py",
+    "setup_check": "python smoke_test.py",
+    "tests": "python -m pytest -q tests (43 tests)",
+    "docker": "docker build -t lotline . && docker run -p 8000:8000 lotline"
+  },
+  "runs_without_keys": true,
+  "agents": [
+    "Triage",
+    "SourceScout",
+    "Matcher",
+    "Critic",
+    "Tracer",
+    "Reporter"
+  ],
+  "framework": "LangGraph",
+  "sponsor_technology": {
+    "zetaris": {
+      "where": "Three PostgreSQL databases (warehouse, distribution, recalls) registered in Zetaris as JDBC data sources; every query goes through Zetaris's REST API (zetaris/client.py, zetaris/setup.sql, zetaris/load_postgres.py). SourceScout explores the catalog; the Critic re-reads records before a pull",
+      "status": "Verified against a live Zetaris Platform instance on 23 Oct 2026: three JDBC data sources registered, catalog explored by SourceScout, every query through the REST endpoint, the same answers as the local copy (about 5 s per search, about a minute per full check). Each run probes Zetaris and falls back to the local copy if it is unreachable, reporting the gap"
+    },
+    "nvidia": {
+      "models": [
+        "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "nvidia/nemotron-3.5-super-vl-120b-a12b (fallback)"
+      ],
+      "route": "NVIDIA's API with a free developer key from build.nvidia.com; the Meterless Runtime route is implemented but was not run in this build; rules alone if no model answers",
+      "where": "agents/scout.py (tool-calling loop over the catalog: list_tables, describe_table, sample_rows; mapping validated before use), agents/triage.py (brand spellings), agents/critic.py (reviews every verdict, may escalate, never confirm or clear), agents/reporter.py (briefing, every number checked against the data)",
+      "client": "llm/client.py"
+    },
+    "meterless": {
+      "engine": "World Model",
+      "where": "world_model/: store, ingest pipeline (stable IDs, merge, revision count, provenance per write), relationships between recall, candidates, critiques, shipments and agencies, context builder used by Reporter, and learned brand spellings that persist across runs; append-only event log per run (logs/world-<run_id>.jsonl) and control-plane endpoints /api/runs/{id}/world, /world/events, /world/node/{id}; tested in tests/test_world_model.py",
+      "runtime": "Meterless Runtime (Nightshift) is wired as the first model provider in llm/providers.py and tested against a stand-in in tests/test_providers.py; the Windows installer was quarantined by Defender during the build window, so submission runs route through NVIDIA's hosted API"
+    }
+  },
+  "evaluation": {
+    "datasets": {
+      "data/": "One folder: 10 real FDA recalls (R-001 to R-010) with invented stock and an independent answer key; 4 real FDA recalls (R-011 to R-014) the food bank does not hold; 5 fictional recalls (RC-) as a regression set"
+    },
+    "fda_heldout_blind_R006_R010": "27/30 items, 0 unsafe misses, agencies 13/13, units still in warehouse 13/13",
+    "fda_all_sample": "59/60 items, 0 unsafe misses, agencies 29/29, on hand 29/29",
+    "starter_sample": "28/28 items, 13/13 shipments, 0 unsafe misses (also with no model-suggested spellings)",
+    "remaining_difference": "INV-0115: brand typed 'Mezzeta', no UPC; sent to a person on purpose",
+    "all_together_sample": "87/88 items, 15/15 shipments, 53/53 agencies, 29/29 on hand, 0 unsafe misses",
+    "live_2026_10_22_after_fix": "FDA recalls 59/60, fictional 28/28, 0 unsafe misses (Nemotron 3.5 Lightning via NVIDIA API)"
+  },
+  "data": "data/: RC- recalls are fictional; R- recalls are public FDA notices with invented stock, shipments and agencies (.example emails)",
+  "pre_existing_components": "See doc/pre-existing-declaration.md",
+  "development": "Written with AI pair-programming assistants (Cursor and Claude Code) for exploratory edits and refactors. Every change was reviewed, tested and merged by the two team members; no auto-added attribution, and the model may suggest but never confirms or clears a recalled item",
+  "interface": "Plain-language web app for a food bank coordinator: recalls grouped by what needs action, one status block per recall, four steps (pull from shelves, check packages, tell agencies, finish), reasons and evidence on every item, Stock, Shipments and Partner agencies pages with filters, printable pull list and close-out record; agent track and technical log behind a Settings switch"
+}

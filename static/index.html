@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lotline — Food recalls</title>
+  <meta name="description" content="When a food recall is announced, Lotline tells a food bank whether the product is on its shelves and what to do about it.">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://rsms.me/">
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="/static/app.css?v=48">
+</head>
+<body>
+  <div class="app">
+    <nav class="navrail" aria-label="Primary">
+      <div class="nav-brand" title="Lotline">
+        <img class="nav-logo" src="/assets/lotline-mark-512.png" alt="" width="44" height="44">
+        <span class="wm">Lotline</span>
+      </div>
+      <div class="nav-item">
+        <a class="nav-link" href="#/inbox" aria-current="true" data-view="inbox">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v14H4zM4 5l8 8 8-8"/></svg>
+          <span>Recalls</span>
+        </a>
+        <span class="nav-count" id="nav-inbox-count" hidden></span>
+      </div>
+      <a class="nav-link" href="#/stock" data-view="stock">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-5 9 5v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1zM8 20v-6h8v6M8 14h8"/></svg>
+        <span>Stock</span>
+      </a>
+      <a class="nav-link" href="#/shipments" data-view="shipments">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7M7.5 19a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM17.5 19a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+        <span>Shipments</span>
+      </a>
+      <a class="nav-link" href="#/agencies" data-view="agencies">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0M16 4.5a3.5 3.5 0 0 1 0 7M18 14.5a6.5 6.5 0 0 1 3.5 5.5"/></svg>
+        <span>Agencies</span>
+      </a>
+      <a class="nav-link" href="#/audit" data-view="audit">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+        <span>History</span>
+      </a>
+      <a class="nav-link" href="#/spellings" data-view="spellings">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7V5h16v2M9 19h6M12 5v14"/></svg>
+        <span>Spellings</span>
+      </a>
+      <div class="nav-spacer"></div>
+      <a class="nav-link" href="#/settings" data-view="settings">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg>
+        <span>Settings</span>
+      </a>
+    </nav>
+
+    <div class="workspace">
+      <header class="statusbar">
+        <div class="sb-left">
+          <span class="sb-crumb" id="crumb-here">Recalls</span>
+        </div>
+        <form class="sb-search" id="search-form" role="search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+          <input type="search" id="search-input" placeholder="Search stock, barcodes, lot codes or recalls" aria-label="Search stock, barcodes, lot codes or recalls" maxlength="80">
+        </form>
+        <div class="sb-right">
+          <span class="sb-plain" id="data-chip"><span id="data-chip-text">Stock records</span></span>
+          <button type="button" class="sb-toggle" id="ai-toggle" role="switch" aria-checked="false" title="AI suggestions: the AI can propose brand spellings and flag items for a person. The rules still decide."><span class="sw" aria-hidden="true"></span><span>AI suggestions</span></button>
+          <span class="sb-admin admin-only">Technical view on</span>
+          <button type="button" class="sb-account" id="user-btn" aria-label="Your profile">
+            <span class="avatar" id="user-avatar" aria-hidden="true">?</span>
+            <span class="acct-text"><span id="user-name">Set up your profile</span><span class="acct-role" id="user-role"></span></span>
+          </button>
+        </div>
+      </header>
+
+      <div class="main-wrap">
+        <aside class="rail" aria-label="Recalls" id="rail">
+          <div class="rail-head">
+            <h2>Recalls</h2>
+            <span class="count" id="recall-count"></span>
+            <button type="button" class="rail-collapse" id="rail-collapse" title="Hide the recall list"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg><span>Hide</span></button>
+          </div>
+          <div class="recall-groups" id="recall-list"></div>
+        </aside>
+        <div class="rail-resizer" id="rail-resizer" role="separator" aria-orientation="vertical" aria-label="Resize the recall list" tabindex="0"></div>
+
+        <main class="main" id="main">
+          <button type="button" class="rail-open" id="rail-open" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg><span>Show the recall list</span></button>
+          <p class="fallback-note" id="fallback-note" role="status" hidden></p>
+
+          <section class="notice" id="notice" aria-live="polite"></section>
+
+          <section class="pipeline admin-only" id="pipeline" aria-label="How Lotline checked">
+            <div class="section-head">
+              <h3>How Lotline checked</h3>
+              <span class="pipeline-status" id="pipeline-status"></span>
+              <button type="button" class="text-link" id="pipeline-toggle" aria-expanded="true" aria-controls="steps">Hide the steps</button>
+            </div>
+            <ol class="steps" id="steps"></ol>
+            <p class="loop-note" id="loop-note" hidden></p>
+          </section>
+
+          <section class="error" id="error" role="alert" hidden></section>
+
+          <div id="results" hidden>
+            <nav class="stepper" id="stepper" aria-label="Steps for this recall"></nav>
+
+            <section class="step-panel" id="step-pull" data-step="pull" aria-labelledby="pull-title">
+              <div class="panel-head">
+                <h2 id="pull-title">Take these off the shelf</h2>
+                <p class="panel-sub">Set each one aside where it can't be given out, then tick it. <span id="pulled-note"></span></p>
+              </div>
+              <div class="pull-cards" id="pull-cards"></div>
+              <div class="panel-foot">
+                <button type="button" class="ghost big-btn" id="print-btn">Print this list</button>
+                <button type="button" class="ghost big-btn" id="csv-btn">Download as a spreadsheet</button>
+                <button type="button" class="primary big-btn next-btn" data-next>Next step</button>
+              </div>
+            </section>
+
+            <section class="step-panel" id="step-check" data-step="check" aria-labelledby="check-title">
+              <div class="panel-head">
+                <h2 id="check-title">Check these packages</h2>
+                <p class="panel-sub">We can't tell yet whether these are part of the recall. Nothing here has been pulled or cleared.</p>
+              </div>
+              <div class="review-queue" id="review-queue"></div>
+              <div class="panel-foot"><button type="button" class="ghost big-btn" data-prev>Back</button><button type="button" class="primary big-btn next-btn" data-next>Next step</button></div>
+            </section>
+
+            <section class="step-panel" id="step-notify" data-step="notify" aria-labelledby="notify-title">
+              <div class="panel-head">
+                <h2 id="notify-title">Tell the agencies that received it</h2>
+                <p class="panel-sub">A message is ready for each one. Lotline doesn't send anything itself; tick each one once you've sent it.</p>
+              </div>
+              <div class="agencies" id="agencies"></div>
+              <div class="panel-foot"><button type="button" class="ghost big-btn" data-prev>Back</button><button type="button" class="primary big-btn next-btn" data-next>Next step</button></div>
+            </section>
+
+            <section class="step-panel" id="step-finish" data-step="finish" aria-labelledby="finish-title">
+              <div class="panel-head"><h2 id="finish-title">Finish the recall</h2></div>
+              <div class="finish" id="casebar"></div>
+
+              <div class="panel-foot"><button type="button" class="ghost big-btn" data-prev>Back</button></div>
+
+              <section class="block" id="clear-block">
+                <details>
+                  <summary><h3>Checked and not part of this recall <span class="muted" id="clear-count"></span></h3></summary>
+                  <div class="table-wrap"><table class="items" id="clear-table"></table></div>
+                </details>
+              </section>
+
+              <section class="block audit-evidence">
+                <details>
+                  <summary><h3>Audit evidence</h3></summary>
+                  <div class="audit-run" id="audit-run"></div>
+                  <div class="actions">
+                    <button type="button" class="ghost" id="json-btn">Download the full results (JSON)</button>
+                    <button type="button" class="ghost" id="trace-btn">Download the step log</button>
+                  </div>
+                  <div class="admin-only tech-box">
+                    <h4>Written summary <span class="tech-tag">technical</span> <span class="briefing-source" id="briefing-source"></span></h4>
+                    <p class="briefing-text" id="briefing"></p>
+                    <p class="data-gaps" id="data-gaps" role="status" hidden></p>
+                    <div class="impact" id="impact" hidden></div>
+                    <dl class="stats" id="stats"></dl>
+                    <h4>Technical log <span class="tech-tag">technical</span></h4>
+                    <div class="audit-meta" id="audit-meta"></div>
+                    <ol class="timeline" id="timeline"></ol>
+                  </div>
+                </details>
+              </section>
+            </section>
+          </div>
+        </main>
+      </div>
+    </div>
+  </div>
+
+  <dialog class="drawer" id="drawer" aria-labelledby="drawer-title">
+    <div class="drawer-head">
+      <div>
+        <p class="drawer-kicker" id="drawer-kicker">Why is this on the list?</p>
+        <h2 id="drawer-title">Item</h2>
+      </div>
+      <button type="button" class="icon-btn" id="drawer-close" aria-label="Close">&times;</button>
+    </div>
+    <div class="drawer-body" id="drawer-body"></div>
+  </dialog>
+
+  <dialog class="drawer settings" id="settings" aria-labelledby="settings-title">
+    <div class="drawer-head">
+      <div>
+        <p class="drawer-kicker">Settings</p>
+        <h2 id="settings-title">Settings</h2>
+      </div>
+      <button type="button" class="icon-btn" id="settings-close" aria-label="Close settings">&times;</button>
+    </div>
+    <div class="drawer-body">
+      <section class="set-group admin-group">
+        <h4>For administrators</h4>
+        <label class="check-row"><input type="checkbox" id="admin-toggle"> Show technical details on recall pages</label>
+        <p class="set-help">Adds the step-by-step agent log, the written summary and the raw downloads. Staff don't need these to work a recall.</p>
+        <h5>AI suggestions</h5>
+        <p class="set-help">With suggestions on, an AI model can propose brand spellings and flag items for a person. The rules still make every decision. Both settings read the same records.</p>
+        <div class="mode" role="radiogroup" aria-label="AI suggestions">
+          <button type="button" role="radio" data-mode="sample" aria-checked="true">Off · rules only</button>
+          <button type="button" role="radio" data-mode="live" aria-checked="false">On</button>
+        </div>
+        <h5>Connections</h5>
+        <div id="sys-rows"></div>
+        <button type="button" class="ghost" id="test-btn">Test the AI connection</button>
+      </section>
+    </div>
+  </dialog>
+
+  <dialog class="drawer account" id="account" aria-labelledby="account-title">
+    <div class="drawer-head">
+      <div>
+        <p class="drawer-kicker">Account</p>
+        <h2 id="account-title">Your profile</h2>
+      </div>
+      <button type="button" class="icon-btn" id="account-close" aria-label="Close profile">&times;</button>
+    </div>
+    <div class="drawer-body">
+      <div class="acct-card">
+        <span class="avatar avatar-lg" id="account-avatar" aria-hidden="true">?</span>
+        <div>
+          <p class="acct-name" id="account-name">Set up your profile</p>
+          <p class="acct-sub" id="account-sub">Harbor City Food Bank</p>
+        </div>
+      </div>
+      <section class="set-group">
+        <label class="field-label" for="coord-input">Name</label>
+        <input type="text" id="coord-input" class="text-input" placeholder="Your name" autocomplete="name" maxlength="60">
+        <label class="field-label" for="role-input">Role</label>
+        <input type="text" id="role-input" class="text-input" placeholder="Food Safety Coordinator" maxlength="60">
+        <label class="field-label">Food bank</label>
+        <p class="acct-static">Harbor City Food Bank</p>
+      </section>
+      <p class="acct-note">Profiles are saved on this computer.</p>
+    </div>
+  </dialog>
+
+  <dialog class="confirm" id="confirm-dialog" aria-labelledby="confirm-title">
+    <form method="dialog">
+      <h3 id="confirm-title"></h3>
+      <div id="confirm-body"></div>
+      <menu>
+        <button value="cancel" class="ghost" formnovalidate>Cancel</button>
+        <button value="ok" class="primary" id="confirm-ok">Confirm</button>
+      </menu>
+    </form>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+  <section class="print-sheet" id="print-sheet" aria-hidden="true"></section>
+
+  <dialog id="key-dialog">
+    <form method="dialog" id="key-form">
+      <h3>Password needed</h3>
+      <p>This Lotline server is protected. Enter its access key to continue.</p>
+      <input type="password" id="key-input" autocomplete="off" required>
+      <menu><button value="ok" class="primary">Continue</button></menu>
+    </form>
+  </dialog>
+
+  <script type="module" src="/static/app.js?v=48"></script>
+</body>
+</html>

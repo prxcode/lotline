@@ -1,0 +1,35 @@
+.env
+*.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+secrets.toml
+proxy-token
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+node_modules/
+logs/
+*.db
+*.sqlite
+*.sqlite3
+.DS_Store
+Thumbs.db
+*.egg-info/
+.ruff_cache/
+.pytest_cache/
+.claude/
+
+# Internal only: planning, team notes, pitch prep, organizer material. Not part of the submission.
+internal/
+
+# will be updated later
+screenshots/
+
+# Context for AI coding assistants
+CLAUDE.md
+AGENTS.md

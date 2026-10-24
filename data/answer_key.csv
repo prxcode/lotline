@@ -1,0 +1,104 @@
+recall_id,item_id,verdict,why,agencies_that_received_it,quantity_still_in_warehouse,what_a_human_must_check
+R-001,INV-0117,AFFECTED,"UPC 072250916622 matches, product code 0188 262 21:15 is inside the recalled range 0188 262 20:06 to 22:05, and best-by 2026-10-10 is within Oct 8-18.",AG-04 (57); AG-08 (38),25,"Pull the remaining 25 loaf from D1 and quarantine it; contact AG-04, AG-08 to stop use and retrieve the 95 loaf delivered."
+R-001,INV-0121,AFFECTED,"Name is misspelled and there is no UPC, but code 0188 265 09:45 (spacing aside) is inside the recalled range 09:20 to 10:30 and best-by is within Oct 8-18.",AG-02 (47),1,Pull the remaining 1 loaf from D1 and quarantine it; contact AG-02 to stop use and retrieve the 47 loaf delivered.
+R-001,INV-0137,NOT_AFFECTED,"Same product and UPC, but code 0188 268 11:30 is not in any recalled range and best-by 2026-10-24 is after the recalled Oct 8-18 dates.",,,
+R-001,INV-0129,NEEDS_CHECK,"UPC matches and best-by is inside the recalled dates, but the product code was not recorded so it cannot be matched to the recalled code ranges.",AG-02 (11); AG-04 (14),11,"Read the product code on the bag tag and compare it to the five recalled ranges. If it matches the recall, pull the remaining 11 loaf from D1 and contact AG-02, AG-04 about the 25 loaf delivered."
+R-001,INV-0144,NOT_AFFECTED,"Same brand and same product code as the exact match, but it is Honey Wheat bread with a different UPC; the recall covers only Hawaiian Bread.",,,
+R-001,INV-0120,NOT_AFFECTED,Different brand and product.,,,
+R-002,INV-0046,AFFECTED,UPC 086700930403 matches Black Beans Organic (item 003040) and the recall covers all lot numbers.,AG-01 (1); AG-04 (2); AG-08 (15),12,"Pull the remaining 12 sack from B2 and quarantine it; contact AG-01, AG-04, AG-08 to stop use and retrieve the 18 sack delivered."
+R-002,INV-0052,NEEDS_CHECK,"Name looks like Chili Bean Blend Organic (item 003056), which is recalled in all lots, but there is no UPC to confirm it is the organic item.",AG-02 (20),0,"Check the box label or UPC to confirm it is the organic Chili Bean Blend (SRF item 003056). If it matches the recall, contact AG-02 about the 20 box delivered (none left in the warehouse)."
+R-002,INV-0116,NOT_AFFECTED,Same brand and bean but non-organic with a different UPC; the recall lists only the three organic items (no lot can differ because all lots are recalled).,,,
+R-002,INV-0122,NEEDS_CHECK,"Could be the recalled organic black beans (all lots recalled), but no brand, UPC or organic label was recorded.",AG-02 (9),6,"Find the sack label: brand, organic seal and UPC 086700930403. If it matches the recall, pull the remaining 6 sack from B3 and contact AG-02 about the 9 sack delivered."
+R-002,INV-0054,NOT_AFFECTED,"Same brand and same lot number as the exact match, but it is pinto beans, which is not a recalled product.",,,
+R-002,INV-0003,NOT_AFFECTED,Different brand and a canned product.,,,
+R-003,INV-0123,AFFECTED,Lot 60401 and best-by 2028-02-09 match the recall for this exact product.,AG-01 (43); AG-04 (15); AG-08 (4),34,"Pull the remaining 34 bag from F1 and quarantine it; contact AG-01, AG-04, AG-08 to stop use and retrieve the 62 bag delivered."
+R-003,INV-0057,AFFECTED,"Typos and the lot is written as 60-401, but lot 60401 and best-by 2028-02-09 match the recall.",AG-01 (28); AG-02 (9),3,"Pull the remaining 3 bag from F1 and quarantine it; contact AG-01, AG-02 to stop use and retrieve the 37 bag delivered."
+R-003,INV-0036,NOT_AFFECTED,"Same product, but lot 60388 and best-by 2028-01-20 are not the recalled lot 60401 / 2028-02-09.",,,
+R-003,INV-0107,NEEDS_CHECK,"Best-by matches the recalled date, but the lot code was not recorded, so it may or may not be lot 60401.",AG-08 (15),15,"Check the lot code printed on the bag. If it matches the recall, pull the remaining 15 bag from F1 and contact AG-08 about the 15 bag delivered."
+R-003,INV-0053,NOT_AFFECTED,"Same brand, lot number and best-by as the recall, but it is mango, not blueberries.",,,
+R-003,INV-0143,NOT_AFFECTED,Different brand and product.,,,
+R-004,INV-0089,AFFECTED,"Bag UPC 850034219783 matches, lot B15357 is recalled for the 10ct pack, and best-by 2026-12-23 is a recalled date.",AG-02 (13); AG-04 (33),26,"Pull the remaining 26 bag from A4 and quarantine it; contact AG-02, AG-04 to stop use and retrieve the 46 bag delivered."
+R-004,INV-0055,AFFECTED,"Name is shortened and there is no UPC, but lot B35360 (written B-35360) is recalled for the 10ct pack and best-by 2026-12-26 is a recalled date.",AG-02 (33); AG-07 (3),0,"Nothing left in the warehouse; contact AG-02, AG-07 right away to stop use and retrieve the 36 bag delivered."
+R-004,INV-0086,NOT_AFFECTED,"Same product and UPC, but lot B45102 and best-by 2027-03-14 are not on the recall.",,,
+R-004,INV-0101,NEEDS_CHECK,"UPC matches and 2026-12-22 is a recalled date, but the lot code was not recorded.",AG-01 (5); AG-06 (14),5,"Read the lot code on the outer bag and compare it to the 10ct lot list. If it matches the recall, pull the remaining 5 bag from A4 and contact AG-01, AG-06 about the 19 bag delivered."
+R-004,INV-0133,NOT_AFFECTED,"Same brand and lot number as the exact match, but a different product and UPC; the notice says no other SkinnyDipped products are affected.",,,
+R-004,INV-0127,NOT_AFFECTED,Different brand and product.,,,
+R-005,INV-0099,AFFECTED,UPC 04119005677 and best-by 2027-06-16 match the recall.,AG-04 (70); AG-07 (1),25,"Pull the remaining 25 jar from C3 and quarantine it; contact AG-04, AG-07 to stop use and retrieve the 71 jar delivered."
+R-005,INV-0067,NEEDS_CHECK,"Name, size and best-by look like the recalled jar, but no UPC was recorded and the recall is defined by UPC plus best-by date.",AG-04 (30); AG-08 (4),2,"Scan or read the UPC on the jar and confirm it is 04119005677. If it matches the recall, pull the remaining 2 jar from C3 and contact AG-04, AG-08 about the 34 jar delivered."
+R-005,INV-0102,NOT_AFFECTED,"Same product and UPC, but best-by 2027-08-04 is not the recalled date 2027-06-16 (all recalled jars carry that date).",,,
+R-005,INV-0091,NEEDS_CHECK,"UPC matches, but the best-by date was not recorded so it cannot be compared with 2027-06-16.",AG-01 (2); AG-02 (20),2,"Read the best-by date printed on the lid. If it matches the recall, pull the remaining 2 jar from C3 and contact AG-01, AG-02 about the 22 jar delivered."
+R-005,INV-0068,NOT_AFFECTED,"Same brand and same best-by date, but cinnamon flavor with a different UPC; the recall covers only the unsweetened jar.",,,
+R-005,INV-0077,NOT_AFFECTED,Different brand and product.,,,
+R-006,INV-0148,AFFECTED,UPC 4800073265 and can code S84N D2L with best-by 2028-01-21 are on the recall.,AG-06 (42); AG-07 (2),16,"Pull the remaining 16 pack from C4 and quarantine it; contact AG-06, AG-07 to stop use and retrieve the 44 pack delivered."
+R-006,INV-0056,AFFECTED,"No UPC and the can code is written with a hyphen, but S88N D1M and best-by 2028-01-17 match the recalled extra virgin olive oil with sea salt can.",AG-04 (48),0,Nothing left in the warehouse; contact AG-04 right away to stop use and retrieve the 48 can delivered.
+R-006,INV-0074,NOT_AFFECTED,"Same product and UPC, but can code S84N D9K and best-by 2028-02-11 are not in the January 2026 notice.",,,
+R-006,INV-0007,NEEDS_CHECK,"UPC matches and 2028-01-24 is a recalled date, but the can code was not recorded.",AG-03 (9); AG-04 (8),7,"Read the can code on the bottom of the cans and compare it to S84N D2L / S84N D3L. If it matches the recall, pull the remaining 7 pack from C4 and contact AG-03, AG-04 about the 17 pack delivered."
+R-006,INV-0040,NOT_AFFECTED,"Same brand and same can code as the exact match, but albacore in water with a different UPC; not a recalled product.",,,
+R-006,INV-0071,NOT_AFFECTED,Different brand and product.,,,
+R-007,INV-0023,AFFECTED,"UPC 07223899166 (Travelers Mix 16 oz) with best-by 2027-05-28, one of its three recalled dates.",AG-01 (2); AG-08 (62),16,"Pull the remaining 16 bag from A6 and quarantine it; contact AG-01, AG-08 to stop use and retrieve the 64 bag delivered."
+R-007,INV-0118,NEEDS_CHECK,"Name, size and best-by 2027-05-25 are consistent with the recalled Town & Country Mix (UPC 07223805251), but no UPC was recorded.",AG-01 (34),2,"Read the UPC on the bag and confirm it is 07223805251. If it matches the recall, pull the remaining 2 bag from A6 and contact AG-01 about the 34 bag delivered."
+R-007,INV-0065,NOT_AFFECTED,"Same product and UPC, but best-by 2027-09-15 is not one of the recalled dates (2027-04-30, 2027-05-28, 2027-06-24).",,,
+R-007,INV-0072,NEEDS_CHECK,"UPC matches the recalled Tex Mex Trail Mix, but the best-by date (recalled only for 2027-08-06) was not recorded.",AG-08 (12),8,"Read the best-by date on the tub. If it matches the recall, pull the remaining 8 tub from A6 and contact AG-08 about the 12 tub delivered."
+R-007,INV-0136,NOT_AFFECTED,"Same brand and best-by date as the exact match, but a different product and UPC that is not on the recall.",,,
+R-007,INV-0105,NOT_AFFECTED,Different brand and product.,,,
+R-008,INV-0126,AFFECTED,UPC 011110813534 and best-by 2027-03-09 are on the recall's list of nine dates.,AG-01 (19); AG-04 (30),23,"Pull the remaining 23 bag from A7 and quarantine it; contact AG-01, AG-04 to stop use and retrieve the 49 bag delivered."
+R-008,INV-0008,NEEDS_CHECK,"Looks like the recalled croutons and best-by 2027-03-06 is a recalled date, but no UPC was recorded.",AG-01 (27); AG-06 (3),0,"Read the UPC on the bag and confirm it is 011110813534. If it matches the recall, contact AG-01, AG-06 about the 30 bag delivered (none left in the warehouse)."
+R-008,INV-0131,NOT_AFFECTED,"Same product and UPC, but best-by 2027-05-12 is not one of the nine recalled dates (Feb 17 to Apr 7, 2027).",,,
+R-008,INV-0104,NEEDS_CHECK,"UPC matches, but the best-by date was not recorded.",AG-01 (23); AG-02 (1),0,"Read the best-by date on the bag and compare it to the nine recalled dates. If it matches the recall, contact AG-01, AG-02 about the 24 bag delivered (none left in the warehouse)."
+R-008,INV-0001,NOT_AFFECTED,"Same brand and best-by as the exact match, but Caesar flavor with a different UPC that is not listed in the recall.",,,
+R-008,INV-0021,NOT_AFFECTED,Different brand and product.,,,
+R-009,INV-0113,AFFECTED,UPC 194346442706 matches and all lot codes of this product are recalled.,AG-02 (24); AG-04 (10); AG-05 (2),24,"Pull the remaining 24 bag from F2 and quarantine it; contact AG-02, AG-04, AG-05 to stop use and retrieve the 36 bag delivered."
+R-009,INV-0149,NEEDS_CHECK,"Name looks like the recalled pasta (all lots recalled), but no UPC was recorded and the spelling is off.",AG-01 (24),0,"Read the UPC on the bag and confirm it is 194346442706. If it matches the recall, contact AG-01 about the 24 bag delivered (none left in the warehouse)."
+R-009,INV-0112,NOT_AFFECTED,"Same brand and package size, but gnocchi has a different UPC; the recall covers only the Lemon Alfredo Fettuccine (no lot can differ because all lots are recalled).",,,
+R-009,INV-0142,NEEDS_CHECK,"Brand and pasta type match, but the flavor and UPC are unknown, so it cannot be tied to the recalled Lemon Alfredo item.",AG-01 (9); AG-04 (6),3,"Read the full product name and UPC on the bag. If it matches the recall, pull the remaining 3 bag from F2 and contact AG-01, AG-04 about the 15 bag delivered."
+R-009,INV-0114,NOT_AFFECTED,"Same brand and lemon alfredo name, but a shelf-stable sauce jar, not the frozen fettuccine.",,,
+R-009,INV-0134,NOT_AFFECTED,Different brand and product.,,,
+R-010,INV-0103,AFFECTED,Lot 720106 on the 32 oz Medium Heat jar (SKU 10106328) matches the recall.,AG-04 (3); AG-08 (37),8,"Pull the remaining 8 jar from C6 and quarantine it; contact AG-04, AG-08 to stop use and retrieve the 40 jar delivered."
+R-010,INV-0115,AFFECTED,"Typos and the lot is written 72-0106, but this is the 32 oz Medium Heat jar from lot 720106.",AG-03 (18),6,Pull the remaining 6 jar from C6 and quarantine it; contact AG-03 to stop use and retrieve the 18 jar delivered.
+R-010,INV-0092,NOT_AFFECTED,"Same product and size, but lot 720098 is not the recalled lot 720106 (the recall covers only that one lot).",,,
+R-010,INV-0085,NEEDS_CHECK,"Right product and size, but the lot code was not recorded so it may or may not be lot 720106.",AG-02 (8); AG-08 (10),0,"Read the lot code printed on the lid or jar. If it matches the recall, contact AG-02, AG-08 about the 18 jar delivered (none left in the warehouse)."
+R-010,INV-0087,NOT_AFFECTED,"Same brand and the same lot number 720106, but a different size and heat level; the recall covers only the 32 oz Medium Heat jar.",,,
+R-010,INV-0106,NOT_AFFECTED,Different brand and product.,,,
+RC-2024-001,INV-001,AFFECTED,Lot 2412 in range 2410-2415; UPC match,AGN-001 (6); AGN-002 (4),,
+RC-2024-001,INV-002,AFFECTED,Lot 2413 in range 2410-2415; UPC match,,,
+RC-2024-001,INV-003,AFFECTED,Lot 2411 in range 2410-2415; UPC match,AGN-003 (2),,
+RC-2024-001,INV-004,NEEDS_CHECK,Lot 2413 matches but no UPC; brand confirmed by label only,,,
+RC-2024-001,INV-009,NEEDS_CHECK,Lot code 241X - partially obscured; could be in range 2410-2415,,,
+RC-2024-001,INV-011,NOT_AFFECTED,Lot 2408 is outside recall range 2410-2415,,,
+RC-2024-001,INV-016,NEEDS_CHECK,HC Farms alias + lot 2414 in range but no UPC on donation,,,
+RC-2024-001,INV-017,NOT_AFFECTED,Lot 2416 is just outside recall range upper bound 2415,,,
+RC-2024-001,INV-022,AFFECTED,Lot 2410 first lot in range; UPC match,AGN-005 (3),,
+RC-2024-001,INV-023,AFFECTED,Lot 2415 last lot in range; UPC match,AGN-003 (2),,
+RC-2024-001,INV-028,NEEDS_CHECK,Lot 241? question mark - physical verification needed,,,
+RC-2024-001,DIST-001,SHIPPED,6 cases lot 2412 at Eastside Community Pantry,,,
+RC-2024-001,DIST-002,SHIPPED,4 cases lot 2412 at Northgate Food Shelf,,,
+RC-2024-001,DIST-003,SHIPPED,2 cases lot 2411 at Riverside Meals Program,,,
+RC-2024-001,DIST-012,SHIPPED,3 cases lot 2410 at Harbor Community Services,,,
+RC-2024-001,DIST-013,SHIPPED,2 cases lot 2415 at Riverside Meals Program,,,
+RC-2024-002,INV-005,AFFECTED,Lot LOT-BA-0924 exact match,AGN-001 (6),,
+RC-2024-002,INV-012,AFFECTED,Same lot LOT-BA-0924 different entry,AGN-003 (4),,
+RC-2024-002,INV-027,AFFECTED,Third entry same lot LOT-BA-0924,AGN-005 (3),,
+RC-2024-002,DIST-004,SHIPPED,6 bags at Eastside Community Pantry,,,
+RC-2024-002,DIST-007,SHIPPED,4 bags at Riverside Meals Program,,,
+RC-2024-002,DIST-015,SHIPPED,3 bags at Harbor Community Services,,,
+RC-2024-003,INV-006,AFFECTED,Lot NDC-241002 in range NDC-241001 to NDC-241005,,,
+RC-2024-003,INV-013,AFFECTED,Lot NDC-241003 in range,AGN-005 (6),,
+RC-2024-003,INV-018,AFFECTED,Lot NDC-241001 first in range,AGN-001 (3),,
+RC-2024-003,INV-025,NEEDS_CHECK,Lot NDC-241004 in range but no UPC on donation,,,
+RC-2024-003,INV-030,AFFECTED,Lot NDC-241005 last in range,,,
+RC-2024-004,INV-007,AFFECTED,Lot RB-2410 in range RB-2409 to RB-2411,AGN-004 (12),,
+RC-2024-004,INV-015,AFFECTED,Abbreviated entry RB-2409 first in range,AGN-004 (5),,
+RC-2024-004,INV-021,AFFECTED,Lot RB-2411 last in range,AGN-002 (8),,
+RC-2024-004,INV-026,NOT_AFFECTED,Lot RB-2408 outside range,,,
+RC-2024-004,DIST-005,SHIPPED,12 loaves RB-2410 at Central Church Food Closet,,,
+RC-2024-004,DIST-009,SHIPPED,5 loaves RB-2409 at Central Church Food Closet,,,
+RC-2024-004,DIST-011,SHIPPED,8 loaves RB-2411 at Northgate Food Shelf,,,
+RC-2024-005,INV-008,AFFECTED,Lot SP-240815 in range SP-240801 to SP-240831,AGN-002 (20),,
+RC-2024-005,INV-014,AFFECTED,Lot SP-240810 in range,,,
+RC-2024-005,INV-019,AFFECTED,Lot SP-240831 last in range,,,
+RC-2024-005,INV-024,AFFECTED,Lot SP-240820 in range,AGN-004 (10),,
+RC-2024-005,INV-029,NOT_AFFECTED,Lot SP-240799 outside range lower bound,,,
+RC-2024-005,DIST-006,SHIPPED,20 cans SP-240815 at Northgate Food Shelf,,,
+RC-2024-005,DIST-014,SHIPPED,10 cans SP-240820 at Central Church Food Closet,,,
+RC-2024-003,DIST-008,SHIPPED,Added in the merge: shipment of affected stock missing from the original key,,,
+RC-2024-003,DIST-010,SHIPPED,Added in the merge: shipment of affected stock missing from the original key,,,

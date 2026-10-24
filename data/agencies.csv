@@ -1,0 +1,17 @@
+agency_id,agency_name,agency_type,city,contact_name,contact_phone,contact_email,active
+AG-01,Riverbend Community Pantry,food pantry,Riverside,Elena Park,555-0101,e.park@riverbend.example,true
+AG-02,Harbor Light Family Shelter,shelter,Riverside,Marcus Webb,555-0102,m.webb@harbor.example,true
+AG-03,Maple Grove Elementary Backpack Program,school program,Corona,Tanya Brooks,555-0103,t.brooks@maple.example,true
+AG-04,Golden Years Senior Center,senior center,Corona,Raymond Ortiz,555-0104,r.ortiz@golden.example,true
+AG-05,Cedar Street Food Closet,food pantry,Moreno Valley,Janet Liu,555-0105,j.liu@cedar.example,true
+AG-06,New Dawn Transitional Shelter,shelter,Perris,Omar Haddad,555-0106,o.haddad@new.example,true
+AG-07,Oakview After-School Meals,school program,Norco,Beth Calloway,555-0107,b.calloway@oakview.example,true
+AG-08,Eastvale Neighbors Pantry,food pantry,Eastvale,Samuel Reyes,555-0108,s.reyes@eastvale.example,true
+AGN-001,Eastside Community Pantry,partner pantry,45 Main St Eastside,Maria Torres,555-0101,m.torres@eastside.example,true
+AGN-002,Northgate Food Shelf,partner pantry,120 North Ave,James Wu,555-0102,j.wu@northgate.example,true
+AGN-003,Riverside Meals Program,meal program,88 River Rd,Sandra Kim,555-0103,s.kim@riverside.example,true
+AGN-004,Central Church Food Closet,faith based,200 Church St,Pastor Thomas,555-0104,p.thomas@central.example,true
+AGN-005,Harbor Community Services,social services,33 Harbor Blvd,Angela Diaz,555-0105,a.diaz@harbor.example,true
+AGN-006,Westfield Senior Meals,meal program,77 Westfield Ave,David Park,555-0106,d.park@westfield.example,true
+AGN-007,Lakeside Family Pantry,partner pantry,22 Lake Shore Dr,Rosa Gutierrez,555-0107,r.gutierrez@lakeside.example,true
+AGN-008,Valley Food Network,regional hub,500 Valley Rd,Priya Nair,555-0108,p.nair@valley.example,true

@@ -1,0 +1,62 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    env:
+      SAMPLE_MODE: "true"
+      DB_PATH: ":memory:"
+      DATA_DIR: data
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt pytest
+
+      - name: Unit tests (notice formats, rules, brand resolver, column mapping, briefing check)
+        run: python -m pytest -q tests
+
+      - name: Accuracy on every recall (10 real FDA notices, 5 fictional)
+        run: python eval.py --mode sample
+
+      - name: Accuracy when the model suggests no brand spellings
+        run: python eval.py --mode sample --no-aliases
+
+      - name: Data layer finds every table
+        run: python -c "from zetaris.client import default_source_map; assert len(default_source_map()) == 5"
+
+      - name: CLI smoke test
+        run: python run.py --recall RC-2024-001 --output /tmp/result.json
+
+      - name: API smoke test
+        run: |
+          python - <<'EOF'
+          from fastapi.testclient import TestClient
+          from api.main import app
+          c = TestClient(app)
+          assert c.get("/").status_code == 200
+          r = c.post("/run", json={"recall_id": "RC-2024-001", "mode": "sample"})
+          assert r.status_code == 200, r.text
+          pack = r.json()["output"]
+          assert len(pack["pull_list"]) == 5 and len(pack["agency_notices"]) == 4
+          assert "INV-016" in {v["item_id"] for v in pack["human_checks"]}
+          assert all(v["source_ref"].startswith("inventory.csv line") for v in pack["pull_list"])
+          a = c.post("/api/aliases", json={"brand": "Hollow Creek Farms", "alias": "HC Farms"})
+          assert a.status_code == 201
+          again = c.post("/run", json={"recall_id": "RC-2024-001", "mode": "sample"}).json()["output"]
+          # SPEC S4: once a person approves the spelling, the match is promoted
+          promoted = {v["item_id"]: v for v in again["pull_list"]}
+          assert promoted["INV-016"]["brand_match"]["method"] == "learned"
+          assert c.post("/run", json={"recall_id": "nope"}).status_code == 404
+          print("API ok")
+          EOF

@@ -1,0 +1,783 @@
+{
+  "run_id": "run_95faac80",
+  "status": "success",
+  "output": {
+    "run_id": "run_95faac80",
+    "recall_id": "R-010",
+    "recall": {
+      "recall_id": "R-010",
+      "recall_number": "FDA 2026-09-26 G. L. Mezzetta",
+      "source": "FDA",
+      "company": "G. L. Mezzetta Inc.",
+      "brand": "Mezzetta",
+      "product": "Golden Greek Peperoncini, Medium Heat 32 oz",
+      "reason": "Foreign objects (pest) in jar",
+      "announced_date": "2026-09-26",
+      "status": "active",
+      "notice_url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/g-l-mezzetta-inc-announces-recall-mezzetta-brand-golden-greek-peperoncini-medium-heat-due-presence",
+      "lines": [
+        {
+          "recall_id": "R-010",
+          "line_id": "1",
+          "brand": "Mezzetta",
+          "product": "Golden Greek Peperoncini, Medium Heat",
+          "size": "32 oz",
+          "upc": null,
+          "lot_codes": "720106",
+          "best_by": null,
+          "other_names": "G. L. Mezzetta"
+        }
+      ]
+    },
+    "recall_summary": "Mezzetta Golden Greek Peperoncini, Medium Heat 32 oz: Foreign objects (pest) in jar",
+    "verdict_summary": "Pull 1 item (8 units still in the warehouse) now. 2 items need a person to read the physical label. 5 shipments already went to 4 partner agencies; notices are drafted.",
+    "briefing_source": "template",
+    "pull_list": [
+      {
+        "brand": "Mezzetta",
+        "brand_match": {
+          "method": "exact",
+          "score": 1.0,
+          "recorded_as": "Mezzetta"
+        },
+        "product": "Mezzetta Golden Greek Peperoncini Medium Heat 32 oz",
+        "lot_code": "720106",
+        "upc": null,
+        "best_by": "2028-09-30",
+        "quantity": 8.0,
+        "quantity_received": 48.0,
+        "shipped": 40.0,
+        "unit": "jar",
+        "location": "C6",
+        "source_type": "Store #221 donation",
+        "received_date": "2026-09-06",
+        "source_ref": "inventory.csv line 104",
+        "item_id": "INV-0103",
+        "verdict": "CONFIRMED_MATCH",
+        "confidence": 0.92,
+        "rationale": "Brand and product match Golden Greek Peperoncini, Medium Heat 32 oz, and lot 720106 is in 720106",
+        "action": "pull_and_notify",
+        "rule_checks": [
+          {
+            "rule": "brand",
+            "passed": true,
+            "note": "Brand matches the notice"
+          },
+          {
+            "rule": "product",
+            "passed": true,
+            "note": "Name covers 100% of 'Golden Greek Peperoncini, Medium Heat'"
+          },
+          {
+            "rule": "lot",
+            "passed": true,
+            "note": "lot 720106 is in 720106"
+          },
+          {
+            "rule": "source_recheck",
+            "passed": true,
+            "note": "Re-read from the source before approval: unchanged"
+          }
+        ],
+        "line_id": "1",
+        "line_label": "Golden Greek Peperoncini, Medium Heat 32 oz",
+        "line_brand": "Mezzetta",
+        "name_coverage": 1.0,
+        "source": "rules"
+      }
+    ],
+    "human_checks": [
+      {
+        "brand": "Mezzetta",
+        "brand_match": {
+          "method": "exact",
+          "score": 1.0,
+          "recorded_as": "Mezzetta"
+        },
+        "product": "mezzetta greek peperoncini medium 32oz",
+        "lot_code": "",
+        "upc": null,
+        "best_by": "",
+        "quantity": 0.0,
+        "quantity_received": 18.0,
+        "shipped": 18.0,
+        "unit": "jar",
+        "location": "C6",
+        "source_type": "Store #221 donation",
+        "received_date": "2026-09-01",
+        "source_ref": "inventory.csv line 86",
+        "item_id": "INV-0085",
+        "verdict": "HUMAN_CHECK",
+        "confidence": 0.6,
+        "rationale": "Looks like the recalled product, but the lot was not recorded; read it on the package and compare with Golden Greek Peperoncini, Medium Heat 32 oz",
+        "action": "human_verify",
+        "rule_checks": [
+          {
+            "rule": "brand",
+            "passed": true,
+            "note": "Brand matches the notice"
+          },
+          {
+            "rule": "product",
+            "passed": true,
+            "note": "Name covers 62% of 'Golden Greek Peperoncini, Medium Heat'"
+          },
+          {
+            "rule": "lot",
+            "passed": null,
+            "note": "no lot code recorded"
+          }
+        ],
+        "line_id": "1",
+        "line_label": "Golden Greek Peperoncini, Medium Heat 32 oz",
+        "line_brand": "Mezzetta",
+        "name_coverage": 0.62,
+        "source": "rules"
+      },
+      {
+        "brand": "Mezzeta",
+        "brand_match": {
+          "method": "fuzzy",
+          "score": 0.84,
+          "recorded_as": "Mezzeta"
+        },
+        "product": "mezzeta greek peperonchini med heat 32z",
+        "lot_code": "72-0106",
+        "upc": null,
+        "best_by": "2028-09-30",
+        "quantity": 6.0,
+        "quantity_received": 24.0,
+        "shipped": 18.0,
+        "unit": "jar",
+        "location": "C6",
+        "source_type": "Store #221 donation",
+        "received_date": "2026-09-11",
+        "source_ref": "inventory.csv line 116",
+        "item_id": "INV-0115",
+        "verdict": "PROBABLE_MATCH",
+        "confidence": 0.72,
+        "rationale": "Probably Golden Greek Peperoncini, Medium Heat 32 oz (lot 72-0106 is in 720106), but the brand only resembles the notice's; confirm the UPC on the package",
+        "action": "human_verify",
+        "rule_checks": [
+          {
+            "rule": "brand",
+            "passed": null,
+            "note": "'Mezzeta' resembles Mezzetta (84% spelling match); not approved"
+          },
+          {
+            "rule": "product",
+            "passed": true,
+            "note": "Name covers 88% of 'Golden Greek Peperoncini, Medium Heat'"
+          },
+          {
+            "rule": "lot",
+            "passed": true,
+            "note": "lot 72-0106 is in 720106"
+          }
+        ],
+        "line_id": "1",
+        "line_label": "Golden Greek Peperoncini, Medium Heat 32 oz",
+        "line_brand": "Mezzetta",
+        "name_coverage": 0.88,
+        "source": "rules"
+      }
+    ],
+    "near_misses": [
+      {
+        "brand": "Mezzetta",
+        "brand_match": {
+          "method": "exact",
+          "score": 1.0,
+          "recorded_as": "Mezzetta"
+        },
+        "product": "Mezzetta Golden Greek Peperoncini Mild 16 oz",
+        "lot_code": "720106",
+        "upc": "083695793181",
+        "best_by": "2028-09-30",
+        "quantity": 9.0,
+        "quantity_received": 40.0,
+        "shipped": 31.0,
+        "unit": "jar",
+        "location": "C6",
+        "source_type": "Store #221 donation",
+        "received_date": "2026-09-01",
+        "source_ref": "inventory.csv line 88",
+        "item_id": "INV-0087",
+        "verdict": "NO_MATCH",
+        "confidence": 0.9,
+        "rationale": "Different pack size (16 oz); the notice recalls Golden Greek Peperoncini, Medium Heat 32 oz",
+        "action": "clear",
+        "rule_checks": [
+          {
+            "rule": "brand",
+            "passed": true,
+            "note": "Brand matches the notice"
+          },
+          {
+            "rule": "product",
+            "passed": true,
+            "note": "Name covers 62% of 'Golden Greek Peperoncini, Medium Heat'"
+          },
+          {
+            "rule": "size",
+            "passed": false,
+            "note": "Item is 16 oz; the notice line is 32 oz"
+          }
+        ],
+        "line_id": "1",
+        "line_label": "Golden Greek Peperoncini, Medium Heat 32 oz",
+        "line_brand": "Mezzetta",
+        "name_coverage": 0.62,
+        "source": "rules"
+      },
+      {
+        "brand": "Mezzetta",
+        "brand_match": {
+          "method": "exact",
+          "score": 1.0,
+          "recorded_as": "Mezzetta"
+        },
+        "product": "Mezzetta Golden Greek Peperoncini Medium Heat 32 oz",
+        "lot_code": "720098",
+        "upc": null,
+        "best_by": "2028-08-15",
+        "quantity": 17.0,
+        "quantity_received": 36.0,
+        "shipped": 19.0,
+        "unit": "jar",
+        "location": "C6",
+        "source_type": "Store #221 donation",
+        "received_date": "2026-09-03",
+        "source_ref": "inventory.csv line 93",
+        "item_id": "INV-0092",
+        "verdict": "NO_MATCH",
+        "confidence": 0.95,
+        "rationale": "Same product, but lot 720098 is not a recalled code",
+        "action": "clear",
+        "rule_checks": [
+          {
+            "rule": "brand",
+            "passed": true,
+            "note": "Brand matches the notice"
+          },
+          {
+            "rule": "product",
+            "passed": true,
+            "note": "Name covers 100% of 'Golden Greek Peperoncini, Medium Heat'"
+          },
+          {
+            "rule": "lot",
+            "passed": false,
+            "note": "lot 720098 is not a recalled code"
+          }
+        ],
+        "line_id": "1",
+        "line_label": "Golden Greek Peperoncini, Medium Heat 32 oz",
+        "line_brand": "Mezzetta",
+        "name_coverage": 1.0,
+        "source": "rules"
+      }
+    ],
+    "distributed_items": [
+      {
+        "ship_id": "D-0040",
+        "item_id": "INV-0085",
+        "agency_id": "AG-02",
+        "quantity": 8.0,
+        "unit": "jar",
+        "ship_date": "2026-09-14",
+        "agency_name": "Harbor Light Family Shelter",
+        "contact_name": "Marcus Webb",
+        "contact_email": "m.webb@harbor.example",
+        "contact_phone": "555-0102",
+        "source_ref": "distributions.csv line 41",
+        "dist_id": "D-0040",
+        "distributed_date": "2026-09-14",
+        "product": "mezzetta greek peperoncini medium 32oz",
+        "lot_code": "",
+        "item_verdict": "HUMAN_CHECK"
+      },
+      {
+        "ship_id": "D-0041",
+        "item_id": "INV-0103",
+        "agency_id": "AG-04",
+        "quantity": 3.0,
+        "unit": "jar",
+        "ship_date": "2026-09-14",
+        "agency_name": "Golden Years Senior Center",
+        "contact_name": "Raymond Ortiz",
+        "contact_email": "r.ortiz@golden.example",
+        "contact_phone": "555-0104",
+        "source_ref": "distributions.csv line 42",
+        "dist_id": "D-0041",
+        "distributed_date": "2026-09-14",
+        "product": "Mezzetta Golden Greek Peperoncini Medium Heat 32 oz",
+        "lot_code": "720106",
+        "item_verdict": "CONFIRMED_MATCH"
+      },
+      {
+        "ship_id": "D-0047",
+        "item_id": "INV-0103",
+        "agency_id": "AG-08",
+        "quantity": 37.0,
+        "unit": "jar",
+        "ship_date": "2026-09-17",
+        "agency_name": "Eastvale Neighbors Pantry",
+        "contact_name": "Samuel Reyes",
+        "contact_email": "s.reyes@eastvale.example",
+        "contact_phone": "555-0108",
+        "source_ref": "distributions.csv line 48",
+        "dist_id": "D-0047",
+        "distributed_date": "2026-09-17",
+        "product": "Mezzetta Golden Greek Peperoncini Medium Heat 32 oz",
+        "lot_code": "720106",
+        "item_verdict": "CONFIRMED_MATCH"
+      },
+      {
+        "ship_id": "D-0058",
+        "item_id": "INV-0115",
+        "agency_id": "AG-03",
+        "quantity": 18.0,
+        "unit": "jar",
+        "ship_date": "2026-09-22",
+        "agency_name": "Maple Grove Elementary Backpack Program",
+        "contact_name": "Tanya Brooks",
+        "contact_email": "t.brooks@maple.example",
+        "contact_phone": "555-0103",
+        "source_ref": "distributions.csv line 59",
+        "dist_id": "D-0058",
+        "distributed_date": "2026-09-22",
+        "product": "mezzeta greek peperonchini med heat 32z",
+        "lot_code": "72-0106",
+        "item_verdict": "PROBABLE_MATCH"
+      },
+      {
+        "ship_id": "D-0067",
+        "item_id": "INV-0085",
+        "agency_id": "AG-08",
+        "quantity": 10.0,
+        "unit": "jar",
+        "ship_date": "2026-09-25",
+        "agency_name": "Eastvale Neighbors Pantry",
+        "contact_name": "Samuel Reyes",
+        "contact_email": "s.reyes@eastvale.example",
+        "contact_phone": "555-0108",
+        "source_ref": "distributions.csv line 68",
+        "dist_id": "D-0067",
+        "distributed_date": "2026-09-25",
+        "product": "mezzetta greek peperoncini medium 32oz",
+        "lot_code": "",
+        "item_verdict": "HUMAN_CHECK"
+      }
+    ],
+    "agency_notices": [
+      {
+        "agency_id": "AG-02",
+        "agency_name": "Harbor Light Family Shelter",
+        "contact_email": "m.webb@harbor.example",
+        "contact_name": "Marcus Webb",
+        "items": [
+          {
+            "ship_id": "D-0040",
+            "item_id": "INV-0085",
+            "agency_id": "AG-02",
+            "quantity": 8.0,
+            "unit": "jar",
+            "ship_date": "2026-09-14",
+            "agency_name": "Harbor Light Family Shelter",
+            "contact_name": "Marcus Webb",
+            "contact_email": "m.webb@harbor.example",
+            "contact_phone": "555-0102",
+            "source_ref": "distributions.csv line 41",
+            "dist_id": "D-0040",
+            "distributed_date": "2026-09-14",
+            "product": "mezzetta greek peperoncini medium 32oz",
+            "lot_code": "",
+            "item_verdict": "HUMAN_CHECK"
+          }
+        ],
+        "draft_message": "Subject: Food recall action needed: Mezzetta Golden Greek Peperoncini, Medium Heat 32 oz\n\nDear Marcus Webb,\n\nG. L. Mezzetta Inc. has recalled Mezzetta Golden Greek Peperoncini, Medium Heat 32 oz (Foreign objects (pest) in jar). Recalled: Golden Greek Peperoncini, Medium Heat 32 oz: codes 720106. Our records show some of it reached you.\n\nPlease hold these until we confirm the lot code (we will call you today):\n  - mezzetta greek peperoncini medium 32oz, lot not recorded: 8 jar sent 2026-09-14 (our ref D-0040)\n\nDo not discard anything yet. Reply to this email once the product is set aside, and tell us how many units you still have and how many already went to clients.\n\nFood Safety Team"
+      },
+      {
+        "agency_id": "AG-04",
+        "agency_name": "Golden Years Senior Center",
+        "contact_email": "r.ortiz@golden.example",
+        "contact_name": "Raymond Ortiz",
+        "items": [
+          {
+            "ship_id": "D-0041",
+            "item_id": "INV-0103",
+            "agency_id": "AG-04",
+            "quantity": 3.0,
+            "unit": "jar",
+            "ship_date": "2026-09-14",
+            "agency_name": "Golden Years Senior Center",
+            "contact_name": "Raymond Ortiz",
+            "contact_email": "r.ortiz@golden.example",
+            "contact_phone": "555-0104",
+            "source_ref": "distributions.csv line 42",
+            "dist_id": "D-0041",
+            "distributed_date": "2026-09-14",
+            "product": "Mezzetta Golden Greek Peperoncini Medium Heat 32 oz",
+            "lot_code": "720106",
+            "item_verdict": "CONFIRMED_MATCH"
+          }
+        ],
+        "draft_message": "Subject: Food recall action needed: Mezzetta Golden Greek Peperoncini, Medium Heat 32 oz\n\nDear Raymond Ortiz,\n\nG. L. Mezzetta Inc. has recalled Mezzetta Golden Greek Peperoncini, Medium Heat 32 oz (Foreign objects (pest) in jar). Recalled: Golden Greek Peperoncini, Medium Heat 32 oz: codes 720106. Our records show some of it reached you.\n\nPlease remove from distribution and set aside now:\n  - Mezzetta Golden Greek Peperoncini Medium Heat 32 oz, lot 720106: 3 jar sent 2026-09-14 (our ref D-0041)\n\nDo not discard anything yet. Reply to this email once the product is set aside, and tell us how many units you still have and how many already went to clients.\n\nFood Safety Team"
+      },
+      {
+        "agency_id": "AG-08",
+        "agency_name": "Eastvale Neighbors Pantry",
+        "contact_email": "s.reyes@eastvale.example",
+        "contact_name": "Samuel Reyes",
+        "items": [
+          {
+            "ship_id": "D-0047",
+            "item_id": "INV-0103",
+            "agency_id": "AG-08",
+            "quantity": 37.0,
+            "unit": "jar",
+            "ship_date": "2026-09-17",
+            "agency_name": "Eastvale Neighbors Pantry",
+            "contact_name": "Samuel Reyes",
+            "contact_email": "s.reyes@eastvale.example",
+            "contact_phone": "555-0108",
+            "source_ref": "distributions.csv line 48",
+            "dist_id": "D-0047",
+            "distributed_date": "2026-09-17",
+            "product": "Mezzetta Golden Greek Peperoncini Medium Heat 32 oz",
+            "lot_code": "720106",
+            "item_verdict": "CONFIRMED_MATCH"
+          },
+          {
+            "ship_id": "D-0067",
+            "item_id": "INV-0085",
+            "agency_id": "AG-08",
+            "quantity": 10.0,
+            "unit": "jar",
+            "ship_date": "2026-09-25",
+            "agency_name": "Eastvale Neighbors Pantry",
+            "contact_name": "Samuel Reyes",
+            "contact_email": "s.reyes@eastvale.example",
+            "contact_phone": "555-0108",
+            "source_ref": "distributions.csv line 68",
+            "dist_id": "D-0067",
+            "distributed_date": "2026-09-25",
+            "product": "mezzetta greek peperoncini medium 32oz",
+            "lot_code": "",
+            "item_verdict": "HUMAN_CHECK"
+          }
+        ],
+        "draft_message": "Subject: Food recall action needed: Mezzetta Golden Greek Peperoncini, Medium Heat 32 oz\n\nDear Samuel Reyes,\n\nG. L. Mezzetta Inc. has recalled Mezzetta Golden Greek Peperoncini, Medium Heat 32 oz (Foreign objects (pest) in jar). Recalled: Golden Greek Peperoncini, Medium Heat 32 oz: codes 720106. Our records show some of it reached you.\n\nPlease remove from distribution and set aside now:\n  - Mezzetta Golden Greek Peperoncini Medium Heat 32 oz, lot 720106: 37 jar sent 2026-09-17 (our ref D-0047)\n\nPlease hold these until we confirm the lot code (we will call you today):\n  - mezzetta greek peperoncini medium 32oz, lot not recorded: 10 jar sent 2026-09-25 (our ref D-0067)\n\nDo not discard anything yet. Reply to this email once the product is set aside, and tell us how many units you still have and how many already went to clients.\n\nFood Safety Team"
+      },
+      {
+        "agency_id": "AG-03",
+        "agency_name": "Maple Grove Elementary Backpack Program",
+        "contact_email": "t.brooks@maple.example",
+        "contact_name": "Tanya Brooks",
+        "items": [
+          {
+            "ship_id": "D-0058",
+            "item_id": "INV-0115",
+            "agency_id": "AG-03",
+            "quantity": 18.0,
+            "unit": "jar",
+            "ship_date": "2026-09-22",
+            "agency_name": "Maple Grove Elementary Backpack Program",
+            "contact_name": "Tanya Brooks",
+            "contact_email": "t.brooks@maple.example",
+            "contact_phone": "555-0103",
+            "source_ref": "distributions.csv line 59",
+            "dist_id": "D-0058",
+            "distributed_date": "2026-09-22",
+            "product": "mezzeta greek peperonchini med heat 32z",
+            "lot_code": "72-0106",
+            "item_verdict": "PROBABLE_MATCH"
+          }
+        ],
+        "draft_message": "Subject: Food recall action needed: Mezzetta Golden Greek Peperoncini, Medium Heat 32 oz\n\nDear Tanya Brooks,\n\nG. L. Mezzetta Inc. has recalled Mezzetta Golden Greek Peperoncini, Medium Heat 32 oz (Foreign objects (pest) in jar). Recalled: Golden Greek Peperoncini, Medium Heat 32 oz: codes 720106. Our records show some of it reached you.\n\nPlease hold these until we confirm the lot code (we will call you today):\n  - mezzeta greek peperonchini med heat 32z, lot 72-0106: 18 jar sent 2026-09-22 (our ref D-0058)\n\nDo not discard anything yet. Reply to this email once the product is set aside, and tell us how many units you still have and how many already went to clients.\n\nFood Safety Team"
+      }
+    ],
+    "total_units_to_pull": 8.0,
+    "impact": {
+      "brand_units_found": 40.0,
+      "units_to_pull": 8.0,
+      "units_to_check": 6.0,
+      "units_kept_in_use": 26.0,
+      "agencies_total": 16,
+      "agencies_to_notify": 4
+    },
+    "confidence_overall": 0.75,
+    "sources": [
+      {
+        "source_id": "src_agencies",
+        "table_name": "agencies",
+        "role": "contacts",
+        "rows": 16,
+        "columns": [
+          "agency_id",
+          "agency_name",
+          "agency_type",
+          "city",
+          "contact_name",
+          "contact_phone",
+          "contact_email",
+          "active"
+        ],
+        "relevance_score": 0.8,
+        "reason": "Who to contact at each partner agency"
+      },
+      {
+        "source_id": "src_distributions",
+        "table_name": "distributions",
+        "role": "shipments",
+        "rows": 115,
+        "columns": [
+          "distribution_id",
+          "date",
+          "item_id",
+          "agency_id",
+          "quantity",
+          "unit",
+          "notes"
+        ],
+        "relevance_score": 0.9,
+        "reason": "Product sent out to partner agencies"
+      },
+      {
+        "source_id": "src_inventory",
+        "table_name": "inventory",
+        "role": "stock",
+        "rows": 180,
+        "columns": [
+          "item_id",
+          "received_date",
+          "donor_or_supplier",
+          "product_name_as_entered",
+          "brand_as_entered",
+          "upc",
+          "lot_code",
+          "best_by",
+          "quantity_received",
+          "unit",
+          "warehouse_location",
+          "notes"
+        ],
+        "relevance_score": 0.95,
+        "reason": "Stock received, with lot codes and shelf locations"
+      },
+      {
+        "source_id": "src_recall_products",
+        "table_name": "recall_products",
+        "role": "notice_lines",
+        "rows": 33,
+        "columns": [
+          "recall_id",
+          "line_id",
+          "brand",
+          "product",
+          "size",
+          "upc",
+          "lot_codes",
+          "best_by",
+          "other_names"
+        ],
+        "relevance_score": 0.6,
+        "reason": "Recalled product lines: UPCs, lot codes, best-by dates"
+      },
+      {
+        "source_id": "src_recalls",
+        "table_name": "recalls",
+        "role": "notices",
+        "rows": 15,
+        "columns": [
+          "recall_id",
+          "recall_number",
+          "source",
+          "company",
+          "brand",
+          "product",
+          "reason",
+          "announced_date",
+          "status",
+          "notice_url"
+        ],
+        "relevance_score": 0.4,
+        "reason": "Recall notices"
+      }
+    ],
+    "match_criteria": {
+      "recall_id": "R-010",
+      "lines": [
+        {
+          "line_id": "1",
+          "brand": "Mezzetta",
+          "product": "Golden Greek Peperoncini, Medium Heat",
+          "size": "32 oz",
+          "label": "Golden Greek Peperoncini, Medium Heat 32 oz",
+          "upcs": [],
+          "upc_keys": [],
+          "lots": {
+            "kind": "list",
+            "specs": [
+              {
+                "kind": "exact",
+                "value": "720106",
+                "text": "720106"
+              }
+            ],
+            "source": "720106"
+          },
+          "dates": {
+            "kind": "none",
+            "specs": [],
+            "source": ""
+          },
+          "terms": {
+            "words": [
+              "golden",
+              "greek",
+              "peperoncini",
+              "medium",
+              "heat"
+            ],
+            "head": "peperoncini"
+          },
+          "other_names": [
+            "G. L. Mezzetta"
+          ]
+        }
+      ],
+      "brands": [
+        "Mezzetta"
+      ],
+      "aliases": {
+        "Mezzetta": []
+      },
+      "learned": {
+        "Mezzetta": []
+      },
+      "brand_aliases": [
+        "Mezzetta"
+      ],
+      "learned_aliases": []
+    },
+    "source_map": {
+      "stock": {
+        "table": "inventory",
+        "mapping": {
+          "item_id": "item_id",
+          "brand": "brand_as_entered",
+          "product": "product_name_as_entered",
+          "upc": "upc",
+          "lot_code": "lot_code",
+          "best_by": "best_by",
+          "quantity_received": "quantity_received",
+          "unit": "unit",
+          "location": "warehouse_location",
+          "received_date": "received_date",
+          "source": "donor_or_supplier",
+          "notes": "notes"
+        }
+      },
+      "shipments": {
+        "table": "distributions",
+        "mapping": {
+          "ship_id": "distribution_id",
+          "item_id": "item_id",
+          "agency_id": "agency_id",
+          "quantity": "quantity",
+          "unit": "unit",
+          "ship_date": "date"
+        }
+      },
+      "notice_lines": {
+        "table": "recall_products",
+        "mapping": {
+          "recall_id": "recall_id",
+          "line_id": "line_id",
+          "brand": "brand",
+          "product": "product",
+          "size": "size",
+          "upc": "upc",
+          "lot_codes": "lot_codes",
+          "best_by": "best_by",
+          "other_names": "other_names"
+        }
+      },
+      "contacts": {
+        "table": "agencies",
+        "mapping": {
+          "agency_id": "agency_id",
+          "name": "agency_name",
+          "contact_name": "contact_name",
+          "contact_email": "contact_email",
+          "contact_phone": "contact_phone",
+          "active": "active"
+        }
+      },
+      "notices": {
+        "table": "recalls",
+        "mapping": {
+          "recall_id": "recall_id",
+          "recall_number": "recall_number",
+          "source": "source",
+          "company": "company",
+          "brand": "brand",
+          "product": "product",
+          "reason": "reason",
+          "announced_date": "announced_date",
+          "status": "status",
+          "notice_url": "notice_url"
+        }
+      }
+    },
+    "mapping_method": "column names",
+    "data_gaps": [],
+    "searched_brands": [
+      "Mezzeta",
+      "Mezzetta"
+    ],
+    "revision_rounds": 0,
+    "mode": "sample",
+    "model": "rules (sample mode)",
+    "world_model": {
+      "candidate": 5,
+      "critique": 5,
+      "recall": 1,
+      "shipment": 5,
+      "source": 5,
+      "relation": 20
+    },
+    "generated_at": "2026-10-22T12:57:26.691034+00:00"
+  },
+  "agents": [
+    {
+      "name": "Triage",
+      "role": "Turns each recalled product line into checkable criteria: UPCs, lot codes, best-by dates"
+    },
+    {
+      "name": "SourceScout",
+      "role": "Explores the data layer and maps each table and column to what it means"
+    },
+    {
+      "name": "Matcher",
+      "role": "Finds stock by brand spelling, UPC and product name, and works out what is still on hand"
+    },
+    {
+      "name": "Critic",
+      "role": "Judges every hit against each product line; Nemotron can escalate, never clear"
+    },
+    {
+      "name": "Tracer",
+      "role": "Follows flagged stock into shipments to partner agencies"
+    },
+    {
+      "name": "Reporter",
+      "role": "Builds the pull list, hand checks, and agency notices"
+    }
+  ],
+  "trace_id": "run_95faac80",
+  "log_file": "logs/trace-run_95faac80.jsonl",
+  "execution_time_seconds": 1.18
+}

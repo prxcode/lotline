@@ -1,0 +1,1186 @@
+{
+  "run_id": "run_76def36b",
+  "status": "success",
+  "output": {
+    "run_id": "run_76def36b",
+    "recall_id": "R-001",
+    "recall": {
+      "recall_id": "R-001",
+      "recall_number": "FDA 2026-10-02 Flowers Foods",
+      "source": "FDA",
+      "company": "Flowers Foods, Inc.",
+      "brand": "Nature's Own",
+      "product": "Hawaiian Bread 20 oz and 2-pack 40 oz",
+      "reason": "Undeclared milk allergen",
+      "announced_date": "2026-10-02",
+      "status": "active",
+      "notice_url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/flowers-foods-issues-recall-natures-own-hawaiian-bread-due-undeclared-milk",
+      "lines": [
+        {
+          "recall_id": "R-001",
+          "line_id": "1",
+          "brand": "Nature's Own",
+          "product": "Hawaiian Bread",
+          "size": "20 oz",
+          "upc": "072250916622",
+          "lot_codes": "0188 262 20:06 - 0188 262 22:05; 0188 265 09:20 - 0188 265 10:30; 0188 267 04:50 - 0188 267 06:00; 0188 270 04:15 - 0188 270 06:05; 0188 272 17:15 - 0188 272 19:25",
+          "best_by": "2026-10-08 - 2026-10-18",
+          "other_names": "Flowers Foods"
+        },
+        {
+          "recall_id": "R-001",
+          "line_id": "2",
+          "brand": "Nature's Own",
+          "product": "2-pack Hawaiian Bread",
+          "size": "40 oz",
+          "upc": "072250006835",
+          "lot_codes": null,
+          "best_by": null,
+          "other_names": "Flowers Foods"
+        }
+      ]
+    },
+    "recall_summary": "Nature's Own Hawaiian Bread 20 oz and 2-pack 40 oz: Undeclared milk allergen",
+    "verdict_summary": "Pull 2 items (26 units still in the warehouse) now. 1 item needs a person to read the physical label. 5 shipments already went to 3 partner agencies; notices are drafted.",
+    "briefing_source": "template",
+    "pull_list": [
+      {
+        "brand": "Nature's Own",
+        "brand_match": {
+          "method": "exact",
+          "score": 1.0,
+          "recorded_as": "Nature's Own"
+        },
+        "product": "Nature's Own Hawaiian Bread 20 oz",
+        "lot_code": "0188 262 21:15",
+        "upc": "072250916622",
+        "best_by": "2026-10-10",
+        "quantity": 25.0,
+        "quantity_received": 120.0,
+        "shipped": 95.0,
+        "unit": "loaf",
+        "location": "D1",
+        "source_type": "Grocery rescue - Store #118",
+        "received_date": "2026-09-11",
+        "source_ref": "inventory.csv line 118",
+        "item_id": "INV-0117",
+        "verdict": "CONFIRMED_MATCH",
+        "confidence": 0.98,
+        "rationale": "UPC matches Hawaiian Bread 20 oz and lot 0188 262 21:15 is in 0188 262 20:06 - 0188 262 22:05; best-by 2026-10-10 is a recalled date (2026-10-08 - 2026-10-18)",
+        "action": "pull_and_notify",
+        "rule_checks": [
+          {
+            "rule": "upc_match",
+            "passed": true,
+            "note": "UPC 072250916622 is on the notice"
+          },
+          {
+            "rule": "brand",
+            "passed": true,
+            "note": "Brand matches the notice"
+          },
+          {
+            "rule": "lot",
+            "passed": true,
+            "note": "lot 0188 262 21:15 is in 0188 262 20:06 - 0188 262 22:05"
+          },
+          {
+            "rule": "best_by",
+            "passed": true,
+            "note": "best-by 2026-10-10 is a recalled date (2026-10-08 - 2026-10-18)"
+          },
+          {
+            "rule": "source_recheck",
+            "passed": true,
+            "note": "Re-read from the source before approval: unchanged"
+          }
+        ],
+        "line_id": "1",
+        "line_label": "Hawaiian Bread 20 oz",
+        "line_brand": "Nature's Own",
+        "name_coverage": 1.0,
+        "source": "rules"
+      },
+      {
+        "brand": "Natures Own",
+        "brand_match": {
+          "method": "exact",
+          "score": 1.0,
+          "recorded_as": "Natures Own"
+        },
+        "product": "natures own hawaian bread 20oz",
+        "lot_code": "0188265 09:45",
+        "upc": null,
+        "best_by": "2026-10-12",
+        "quantity": 1.0,
+        "quantity_received": 48.0,
+        "shipped": 47.0,
+        "unit": "loaf",
+        "location": "D1",
+        "source_type": "Grocery rescue - Store #118",
+        "received_date": "2026-09-13",
+        "source_ref": "inventory.csv line 122",
+        "item_id": "INV-0121",
+        "verdict": "CONFIRMED_MATCH",
+        "confidence": 0.88,
+        "rationale": "No UPC recorded, but brand, product name and the specific lot code match Hawaiian Bread 20 oz (lot 0188265 09:45 is in 0188 265 09:20 - 0188 265 10:30; best-by 2026-10-12 is a recalled date (2026-10-08 - 2026-10-18))",
+        "action": "pull_and_notify",
+        "rule_checks": [
+          {
+            "rule": "upc_match",
+            "passed": null,
+            "note": "No UPC recorded on this item"
+          },
+          {
+            "rule": "brand",
+            "passed": true,
+            "note": "Brand matches the notice"
+          },
+          {
+            "rule": "product",
+            "passed": true,
+            "note": "Name covers 100% of 'Hawaiian Bread'"
+          },
+          {
+            "rule": "lot",
+            "passed": true,
+            "note": "lot 0188265 09:45 is in 0188 265 09:20 - 0188 265 10:30"
+          },
+          {
+            "rule": "best_by",
+            "passed": true,
+            "note": "best-by 2026-10-12 is a recalled date (2026-10-08 - 2026-10-18)"
+          },
+          {
+            "rule": "source_recheck",
+            "passed": true,
+            "note": "Re-read from the source before approval: unchanged"
+          }
+        ],
+        "line_id": "1",
+        "line_label": "Hawaiian Bread 20 oz",
+        "line_brand": "Nature's Own",
+        "name_coverage": 1.0,
+        "source": "rules"
+      }
+    ],
+    "human_checks": [
+      {
+        "brand": "Nature's Own",
+        "brand_match": {
+          "method": "exact",
+          "score": 1.0,
+          "recorded_as": "Nature's Own"
+        },
+        "product": "nature's own hawaiian sweet bread",
+        "lot_code": "",
+        "upc": "072250916622",
+        "best_by": "2026-10-13",
+        "quantity": 11.0,
+        "quantity_received": 36.0,
+        "shipped": 25.0,
+        "unit": "loaf",
+        "location": "D1",
+        "source_type": "Grocery rescue - Store #118",
+        "received_date": "2026-09-17",
+        "source_ref": "inventory.csv line 130",
+        "item_id": "INV-0129",
+        "verdict": "HUMAN_CHECK",
+        "confidence": 0.6,
+        "rationale": "Best-by 2026-10-13 is a recalled date (2026-10-08 - 2026-10-18), but the lot was not recorded; read it on the package and compare with Hawaiian Bread 20 oz",
+        "action": "human_verify",
+        "rule_checks": [
+          {
+            "rule": "upc_match",
+            "passed": true,
+            "note": "UPC 072250916622 is on the notice"
+          },
+          {
+            "rule": "brand",
+            "passed": true,
+            "note": "Brand matches the notice"
+          },
+          {
+            "rule": "lot",
+            "passed": null,
+            "note": "no lot code recorded"
+          },
+          {
+            "rule": "best_by",
+            "passed": true,
+            "note": "best-by 2026-10-13 is a recalled date (2026-10-08 - 2026-10-18)"
+          }
+        ],
+        "line_id": "1",
+        "line_label": "Hawaiian Bread 20 oz",
+        "line_brand": "Nature's Own",
+        "name_coverage": 1.0,
+        "source": "rules"
+      }
+    ],
+    "near_misses": [
+      {
+        "brand": "Nature's Own",
+        "brand_match": {
+          "method": "exact",
+          "score": 1.0,
+          "recorded_as": "Nature's Own"
+        },
+        "product": "Nature's Own Hawaiian Bread 20 oz",
+        "lot_code": "0188 268 11:30",
+        "upc": "072250916622",
+        "best_by": "2026-10-24",
+        "quantity": 28.0,
+        "quantity_received": 60.0,
+        "shipped": 32.0,
+        "unit": "loaf",
+        "location": "D1",
+        "source_type": "Grocery rescue - Store #118",
+        "received_date": "2026-09-20",
+        "source_ref": "inventory.csv line 138",
+        "item_id": "INV-0137",
+        "verdict": "NO_MATCH",
+        "confidence": 0.95,
+        "rationale": "Same product, but lot 0188 268 11:30 is not a recalled code; best-by 2026-10-24 is not a recalled date",
+        "action": "clear",
+        "rule_checks": [
+          {
+            "rule": "upc_match",
+            "passed": true,
+            "note": "UPC 072250916622 is on the notice"
+          },
+          {
+            "rule": "brand",
+            "passed": true,
+            "note": "Brand matches the notice"
+          },
+          {
+            "rule": "lot",
+            "passed": false,
+            "note": "lot 0188 268 11:30 is not a recalled code"
+          },
+          {
+            "rule": "best_by",
+            "passed": false,
+            "note": "best-by 2026-10-24 is not a recalled date"
+          }
+        ],
+        "line_id": "1",
+        "line_label": "Hawaiian Bread 20 oz",
+        "line_brand": "Nature's Own",
+        "name_coverage": 1.0,
+        "source": "rules"
+      },
+      {
+        "brand": "Nature's Own",
+        "brand_match": {
+          "method": "exact",
+          "score": 1.0,
+          "recorded_as": "Nature's Own"
+        },
+        "product": "Nature's Own Honey Wheat Bread 20 oz",
+        "lot_code": "0188 262 21:15",
+        "upc": "015881399860",
+        "best_by": "2026-10-10",
+        "quantity": 25.0,
+        "quantity_received": 80.0,
+        "shipped": 55.0,
+        "unit": "loaf",
+        "location": "D1",
+        "source_type": "Grocery rescue - Store #118",
+        "received_date": "2026-09-22",
+        "source_ref": "inventory.csv line 145",
+        "item_id": "INV-0144",
+        "verdict": "NO_MATCH",
+        "confidence": 0.96,
+        "rationale": "Different UPC from Hawaiian Bread 20 oz on the notice, so a different product",
+        "action": "clear",
+        "rule_checks": [
+          {
+            "rule": "upc_match",
+            "passed": false,
+            "note": "UPC 015881399860 is not on the notice (072250916622)"
+          }
+        ],
+        "line_id": "1",
+        "line_label": "Hawaiian Bread 20 oz",
+        "line_brand": "Nature's Own",
+        "name_coverage": null,
+        "source": "rules"
+      },
+      {
+        "brand": "",
+        "brand_match": {
+          "method": "missing",
+          "score": 0.0,
+          "recorded_as": ""
+        },
+        "product": "canned chicken breast 12.5 oz",
+        "lot_code": "P5484",
+        "upc": null,
+        "best_by": "2028-08-25",
+        "quantity": 24.0,
+        "quantity_received": 96.0,
+        "shipped": 72.0,
+        "unit": "can",
+        "location": "C6",
+        "source_type": "St. Mark's church drive",
+        "received_date": "2026-08-03",
+        "source_ref": "inventory.csv line 5",
+        "item_id": "INV-0004",
+        "verdict": "NO_MATCH",
+        "confidence": 0.93,
+        "rationale": "Not the recalled product: the notice is for Hawaiian Bread 20 oz",
+        "action": "clear",
+        "rule_checks": [
+          {
+            "rule": "upc_match",
+            "passed": null,
+            "note": "No UPC recorded on this item"
+          },
+          {
+            "rule": "brand",
+            "passed": null,
+            "note": "No brand recorded"
+          },
+          {
+            "rule": "product",
+            "passed": false,
+            "note": "Name covers 0% of 'Hawaiian Bread'; it is not bread"
+          }
+        ],
+        "line_id": "1",
+        "line_label": "Hawaiian Bread 20 oz",
+        "line_brand": "Nature's Own",
+        "name_coverage": 0.0,
+        "source": "rules"
+      },
+      {
+        "brand": "Swan",
+        "brand_match": {
+          "method": "different",
+          "score": 0.0,
+          "recorded_as": "Swan"
+        },
+        "product": "swanson canned chicken breast 12.5 oz",
+        "lot_code": "P5319",
+        "upc": null,
+        "best_by": "2028-03-18",
+        "quantity": 120.0,
+        "quantity_received": 120.0,
+        "shipped": 0.0,
+        "unit": "can",
+        "location": "C6",
+        "source_type": "Regional Food Network",
+        "received_date": "2026-08-22",
+        "source_ref": "inventory.csv line 62",
+        "item_id": "INV-0061",
+        "verdict": "NO_MATCH",
+        "confidence": 0.95,
+        "rationale": "Different brand ('Swan'), not Nature's Own",
+        "action": "clear",
+        "rule_checks": [
+          {
+            "rule": "upc_match",
+            "passed": null,
+            "note": "No UPC recorded on this item"
+          },
+          {
+            "rule": "brand",
+            "passed": false,
+            "note": "Brand 'Swan' is not Nature's Own"
+          }
+        ],
+        "line_id": "1",
+        "line_label": "Hawaiian Bread 20 oz",
+        "line_brand": "Nature's Own",
+        "name_coverage": null,
+        "source": "rules"
+      },
+      {
+        "brand": "Riverbend Bakery",
+        "brand_match": {
+          "method": "different",
+          "score": 0.0,
+          "recorded_as": "Riverbend Bakery"
+        },
+        "product": "Whole Wheat Bread 24oz",
+        "lot_code": "RB-2410",
+        "upc": "018000119483",
+        "best_by": "",
+        "quantity": 30.0,
+        "quantity_received": 42.0,
+        "shipped": 12.0,
+        "unit": "loaf",
+        "location": "Dry Storage C Row 2",
+        "source_type": "donation",
+        "received_date": "2024-09-22",
+        "source_ref": "inventory.csv line 158",
+        "item_id": "INV-007",
+        "verdict": "NO_MATCH",
+        "confidence": 0.96,
+        "rationale": "Different UPC from Hawaiian Bread 20 oz on the notice, so a different product",
+        "action": "clear",
+        "rule_checks": [
+          {
+            "rule": "upc_match",
+            "passed": false,
+            "note": "UPC 018000119483 is not on the notice (072250916622)"
+          }
+        ],
+        "line_id": "1",
+        "line_label": "Hawaiian Bread 20 oz",
+        "line_brand": "Nature's Own",
+        "name_coverage": null,
+        "source": "rules"
+      },
+      {
+        "brand": "Riverbend Bakery",
+        "brand_match": {
+          "method": "different",
+          "score": 0.0,
+          "recorded_as": "Riverbend Bakery"
+        },
+        "product": "Whole Wheat Bread 24oz",
+        "lot_code": "RB-2412",
+        "upc": "018000119483",
+        "best_by": "",
+        "quantity": 10.0,
+        "quantity_received": 10.0,
+        "shipped": 0.0,
+        "unit": "loaf",
+        "location": "Dry Storage C Row 2",
+        "source_type": "donation",
+        "received_date": "2024-09-25",
+        "source_ref": "inventory.csv line 161",
+        "item_id": "INV-010",
+        "verdict": "NO_MATCH",
+        "confidence": 0.96,
+        "rationale": "Different UPC from Hawaiian Bread 20 oz on the notice, so a different product",
+        "action": "clear",
+        "rule_checks": [
+          {
+            "rule": "upc_match",
+            "passed": false,
+            "note": "UPC 018000119483 is not on the notice (072250916622)"
+          }
+        ],
+        "line_id": "1",
+        "line_label": "Hawaiian Bread 20 oz",
+        "line_brand": "Nature's Own",
+        "name_coverage": null,
+        "source": "rules"
+      },
+      {
+        "brand": "Sara Lee",
+        "brand_match": {
+          "method": "different",
+          "score": 0.0,
+          "recorded_as": "Sara Lee"
+        },
+        "product": "Sara Lee Classic White Bread 20 oz",
+        "lot_code": "SL0916",
+        "upc": "098797309116",
+        "best_by": "2026-10-06",
+        "quantity": 57.0,
+        "quantity_received": 90.0,
+        "shipped": 33.0,
+        "unit": "loaf",
+        "location": "D1",
+        "source_type": "Grocery rescue - Store #118",
+        "received_date": "2026-09-13",
+        "source_ref": "inventory.csv line 121",
+        "item_id": "INV-0120",
+        "verdict": "NO_MATCH",
+        "confidence": 0.96,
+        "rationale": "Different UPC from Hawaiian Bread 20 oz on the notice, so a different product",
+        "action": "clear",
+        "rule_checks": [
+          {
+            "rule": "upc_match",
+            "passed": false,
+            "note": "UPC 098797309116 is not on the notice (072250916622)"
+          }
+        ],
+        "line_id": "1",
+        "line_label": "Hawaiian Bread 20 oz",
+        "line_brand": "Nature's Own",
+        "name_coverage": null,
+        "source": "rules"
+      },
+      {
+        "brand": "Riverbend Bakery",
+        "brand_match": {
+          "method": "different",
+          "score": 0.0,
+          "recorded_as": "Riverbend Bakery"
+        },
+        "product": "WW Bread",
+        "lot_code": "RB-2409",
+        "upc": "018000119483",
+        "best_by": "",
+        "quantity": 8.0,
+        "quantity_received": 13.0,
+        "shipped": 5.0,
+        "unit": "loaf",
+        "location": "Dry Storage C Row 1",
+        "source_type": "donation",
+        "received_date": "2024-09-18",
+        "source_ref": "inventory.csv line 166",
+        "item_id": "INV-015",
+        "verdict": "NO_MATCH",
+        "confidence": 0.96,
+        "rationale": "Different UPC from Hawaiian Bread 20 oz on the notice, so a different product",
+        "action": "clear",
+        "rule_checks": [
+          {
+            "rule": "upc_match",
+            "passed": false,
+            "note": "UPC 018000119483 is not on the notice (072250916622)"
+          }
+        ],
+        "line_id": "1",
+        "line_label": "Hawaiian Bread 20 oz",
+        "line_brand": "Nature's Own",
+        "name_coverage": null,
+        "source": "rules"
+      },
+      {
+        "brand": "Riverbend Bakery",
+        "brand_match": {
+          "method": "different",
+          "score": 0.0,
+          "recorded_as": "Riverbend Bakery"
+        },
+        "product": "Whole Wheat Bread 24oz",
+        "lot_code": "RB-2411",
+        "upc": "018000119483",
+        "best_by": "",
+        "quantity": 20.0,
+        "quantity_received": 28.0,
+        "shipped": 8.0,
+        "unit": "loaf",
+        "location": "Dry Storage C Row 3",
+        "source_type": "purchase",
+        "received_date": "2024-09-24",
+        "source_ref": "inventory.csv line 172",
+        "item_id": "INV-021",
+        "verdict": "NO_MATCH",
+        "confidence": 0.96,
+        "rationale": "Different UPC from Hawaiian Bread 20 oz on the notice, so a different product",
+        "action": "clear",
+        "rule_checks": [
+          {
+            "rule": "upc_match",
+            "passed": false,
+            "note": "UPC 018000119483 is not on the notice (072250916622)"
+          }
+        ],
+        "line_id": "1",
+        "line_label": "Hawaiian Bread 20 oz",
+        "line_brand": "Nature's Own",
+        "name_coverage": null,
+        "source": "rules"
+      },
+      {
+        "brand": "Riverbend Bakery",
+        "brand_match": {
+          "method": "different",
+          "score": 0.0,
+          "recorded_as": "Riverbend Bakery"
+        },
+        "product": "Whole Wheat Bread 24oz",
+        "lot_code": "RB-2408",
+        "upc": "018000119483",
+        "best_by": "",
+        "quantity": 15.0,
+        "quantity_received": 15.0,
+        "shipped": 0.0,
+        "unit": "loaf",
+        "location": "Dry Storage D Row 1",
+        "source_type": "purchase",
+        "received_date": "2024-09-15",
+        "source_ref": "inventory.csv line 177",
+        "item_id": "INV-026",
+        "verdict": "NO_MATCH",
+        "confidence": 0.96,
+        "rationale": "Different UPC from Hawaiian Bread 20 oz on the notice, so a different product",
+        "action": "clear",
+        "rule_checks": [
+          {
+            "rule": "upc_match",
+            "passed": false,
+            "note": "UPC 018000119483 is not on the notice (072250916622)"
+          }
+        ],
+        "line_id": "1",
+        "line_label": "Hawaiian Bread 20 oz",
+        "line_brand": "Nature's Own",
+        "name_coverage": null,
+        "source": "rules"
+      }
+    ],
+    "distributed_items": [
+      {
+        "ship_id": "D-0065",
+        "item_id": "INV-0117",
+        "agency_id": "AG-08",
+        "quantity": 38.0,
+        "unit": "loaf",
+        "ship_date": "2026-09-24",
+        "agency_name": "Eastvale Neighbors Pantry",
+        "contact_name": "Samuel Reyes",
+        "contact_email": "s.reyes@eastvale.example",
+        "contact_phone": "555-0108",
+        "source_ref": "distributions.csv line 66",
+        "dist_id": "D-0065",
+        "distributed_date": "2026-09-24",
+        "product": "Nature's Own Hawaiian Bread 20 oz",
+        "lot_code": "0188 262 21:15",
+        "item_verdict": "CONFIRMED_MATCH"
+      },
+      {
+        "ship_id": "D-0077",
+        "item_id": "INV-0121",
+        "agency_id": "AG-02",
+        "quantity": 47.0,
+        "unit": "loaf",
+        "ship_date": "2026-09-28",
+        "agency_name": "Harbor Light Family Shelter",
+        "contact_name": "Marcus Webb",
+        "contact_email": "m.webb@harbor.example",
+        "contact_phone": "555-0102",
+        "source_ref": "distributions.csv line 78",
+        "dist_id": "D-0077",
+        "distributed_date": "2026-09-28",
+        "product": "natures own hawaian bread 20oz",
+        "lot_code": "0188265 09:45",
+        "item_verdict": "CONFIRMED_MATCH"
+      },
+      {
+        "ship_id": "D-0082",
+        "item_id": "INV-0129",
+        "agency_id": "AG-02",
+        "quantity": 11.0,
+        "unit": "loaf",
+        "ship_date": "2026-09-30",
+        "agency_name": "Harbor Light Family Shelter",
+        "contact_name": "Marcus Webb",
+        "contact_email": "m.webb@harbor.example",
+        "contact_phone": "555-0102",
+        "source_ref": "distributions.csv line 83",
+        "dist_id": "D-0082",
+        "distributed_date": "2026-09-30",
+        "product": "nature's own hawaiian sweet bread",
+        "lot_code": "",
+        "item_verdict": "HUMAN_CHECK"
+      },
+      {
+        "ship_id": "D-0085",
+        "item_id": "INV-0129",
+        "agency_id": "AG-04",
+        "quantity": 14.0,
+        "unit": "loaf",
+        "ship_date": "2026-10-01",
+        "agency_name": "Golden Years Senior Center",
+        "contact_name": "Raymond Ortiz",
+        "contact_email": "r.ortiz@golden.example",
+        "contact_phone": "555-0104",
+        "source_ref": "distributions.csv line 86",
+        "dist_id": "D-0085",
+        "distributed_date": "2026-10-01",
+        "product": "nature's own hawaiian sweet bread",
+        "lot_code": "",
+        "item_verdict": "HUMAN_CHECK"
+      },
+      {
+        "ship_id": "D-0084",
+        "item_id": "INV-0117",
+        "agency_id": "AG-04",
+        "quantity": 57.0,
+        "unit": "loaf",
+        "ship_date": "2026-10-01",
+        "agency_name": "Golden Years Senior Center",
+        "contact_name": "Raymond Ortiz",
+        "contact_email": "r.ortiz@golden.example",
+        "contact_phone": "555-0104",
+        "source_ref": "distributions.csv line 85",
+        "dist_id": "D-0084",
+        "distributed_date": "2026-10-01",
+        "product": "Nature's Own Hawaiian Bread 20 oz",
+        "lot_code": "0188 262 21:15",
+        "item_verdict": "CONFIRMED_MATCH"
+      }
+    ],
+    "agency_notices": [
+      {
+        "agency_id": "AG-08",
+        "agency_name": "Eastvale Neighbors Pantry",
+        "contact_email": "s.reyes@eastvale.example",
+        "contact_name": "Samuel Reyes",
+        "items": [
+          {
+            "ship_id": "D-0065",
+            "item_id": "INV-0117",
+            "agency_id": "AG-08",
+            "quantity": 38.0,
+            "unit": "loaf",
+            "ship_date": "2026-09-24",
+            "agency_name": "Eastvale Neighbors Pantry",
+            "contact_name": "Samuel Reyes",
+            "contact_email": "s.reyes@eastvale.example",
+            "contact_phone": "555-0108",
+            "source_ref": "distributions.csv line 66",
+            "dist_id": "D-0065",
+            "distributed_date": "2026-09-24",
+            "product": "Nature's Own Hawaiian Bread 20 oz",
+            "lot_code": "0188 262 21:15",
+            "item_verdict": "CONFIRMED_MATCH"
+          }
+        ],
+        "draft_message": "Subject: Food recall action needed: Nature's Own Hawaiian Bread 20 oz and 2-pack 40 oz\n\nDear Samuel Reyes,\n\nFlowers Foods, Inc. has recalled Nature's Own Hawaiian Bread 20 oz and 2-pack 40 oz (Undeclared milk allergen). Recalled: Hawaiian Bread 20 oz: UPC 072250916622, codes 0188 262 20:06 - 0188 262 22:05; 0188 265 09:20 - 0188 265 10:30; 0188 267 04:50 - 0188 267 06:00; 0188 270 04:15 - 0188 270 06:05; 0188 272 17:15 - 0188 272 19:25, best by 2026-10-08 - 2026-10-18; 2-pack Hawaiian Bread 40 oz: UPC 072250006835. Our records show some of it reached you.\n\nPlease remove from distribution and set aside now:\n  - Nature's Own Hawaiian Bread 20 oz, lot 0188 262 21:15: 38 loaf sent 2026-09-24 (our ref D-0065)\n\nDo not discard anything yet. Reply to this email once the product is set aside, and tell us how many units you still have and how many already went to clients.\n\nFood Safety Team"
+      },
+      {
+        "agency_id": "AG-02",
+        "agency_name": "Harbor Light Family Shelter",
+        "contact_email": "m.webb@harbor.example",
+        "contact_name": "Marcus Webb",
+        "items": [
+          {
+            "ship_id": "D-0077",
+            "item_id": "INV-0121",
+            "agency_id": "AG-02",
+            "quantity": 47.0,
+            "unit": "loaf",
+            "ship_date": "2026-09-28",
+            "agency_name": "Harbor Light Family Shelter",
+            "contact_name": "Marcus Webb",
+            "contact_email": "m.webb@harbor.example",
+            "contact_phone": "555-0102",
+            "source_ref": "distributions.csv line 78",
+            "dist_id": "D-0077",
+            "distributed_date": "2026-09-28",
+            "product": "natures own hawaian bread 20oz",
+            "lot_code": "0188265 09:45",
+            "item_verdict": "CONFIRMED_MATCH"
+          },
+          {
+            "ship_id": "D-0082",
+            "item_id": "INV-0129",
+            "agency_id": "AG-02",
+            "quantity": 11.0,
+            "unit": "loaf",
+            "ship_date": "2026-09-30",
+            "agency_name": "Harbor Light Family Shelter",
+            "contact_name": "Marcus Webb",
+            "contact_email": "m.webb@harbor.example",
+            "contact_phone": "555-0102",
+            "source_ref": "distributions.csv line 83",
+            "dist_id": "D-0082",
+            "distributed_date": "2026-09-30",
+            "product": "nature's own hawaiian sweet bread",
+            "lot_code": "",
+            "item_verdict": "HUMAN_CHECK"
+          }
+        ],
+        "draft_message": "Subject: Food recall action needed: Nature's Own Hawaiian Bread 20 oz and 2-pack 40 oz\n\nDear Marcus Webb,\n\nFlowers Foods, Inc. has recalled Nature's Own Hawaiian Bread 20 oz and 2-pack 40 oz (Undeclared milk allergen). Recalled: Hawaiian Bread 20 oz: UPC 072250916622, codes 0188 262 20:06 - 0188 262 22:05; 0188 265 09:20 - 0188 265 10:30; 0188 267 04:50 - 0188 267 06:00; 0188 270 04:15 - 0188 270 06:05; 0188 272 17:15 - 0188 272 19:25, best by 2026-10-08 - 2026-10-18; 2-pack Hawaiian Bread 40 oz: UPC 072250006835. Our records show some of it reached you.\n\nPlease remove from distribution and set aside now:\n  - natures own hawaian bread 20oz, lot 0188265 09:45: 47 loaf sent 2026-09-28 (our ref D-0077)\n\nPlease hold these until we confirm the lot code (we will call you today):\n  - nature's own hawaiian sweet bread, lot not recorded: 11 loaf sent 2026-09-30 (our ref D-0082)\n\nDo not discard anything yet. Reply to this email once the product is set aside, and tell us how many units you still have and how many already went to clients.\n\nFood Safety Team"
+      },
+      {
+        "agency_id": "AG-04",
+        "agency_name": "Golden Years Senior Center",
+        "contact_email": "r.ortiz@golden.example",
+        "contact_name": "Raymond Ortiz",
+        "items": [
+          {
+            "ship_id": "D-0085",
+            "item_id": "INV-0129",
+            "agency_id": "AG-04",
+            "quantity": 14.0,
+            "unit": "loaf",
+            "ship_date": "2026-10-01",
+            "agency_name": "Golden Years Senior Center",
+            "contact_name": "Raymond Ortiz",
+            "contact_email": "r.ortiz@golden.example",
+            "contact_phone": "555-0104",
+            "source_ref": "distributions.csv line 86",
+            "dist_id": "D-0085",
+            "distributed_date": "2026-10-01",
+            "product": "nature's own hawaiian sweet bread",
+            "lot_code": "",
+            "item_verdict": "HUMAN_CHECK"
+          },
+          {
+            "ship_id": "D-0084",
+            "item_id": "INV-0117",
+            "agency_id": "AG-04",
+            "quantity": 57.0,
+            "unit": "loaf",
+            "ship_date": "2026-10-01",
+            "agency_name": "Golden Years Senior Center",
+            "contact_name": "Raymond Ortiz",
+            "contact_email": "r.ortiz@golden.example",
+            "contact_phone": "555-0104",
+            "source_ref": "distributions.csv line 85",
+            "dist_id": "D-0084",
+            "distributed_date": "2026-10-01",
+            "product": "Nature's Own Hawaiian Bread 20 oz",
+            "lot_code": "0188 262 21:15",
+            "item_verdict": "CONFIRMED_MATCH"
+          }
+        ],
+        "draft_message": "Subject: Food recall action needed: Nature's Own Hawaiian Bread 20 oz and 2-pack 40 oz\n\nDear Raymond Ortiz,\n\nFlowers Foods, Inc. has recalled Nature's Own Hawaiian Bread 20 oz and 2-pack 40 oz (Undeclared milk allergen). Recalled: Hawaiian Bread 20 oz: UPC 072250916622, codes 0188 262 20:06 - 0188 262 22:05; 0188 265 09:20 - 0188 265 10:30; 0188 267 04:50 - 0188 267 06:00; 0188 270 04:15 - 0188 270 06:05; 0188 272 17:15 - 0188 272 19:25, best by 2026-10-08 - 2026-10-18; 2-pack Hawaiian Bread 40 oz: UPC 072250006835. Our records show some of it reached you.\n\nPlease remove from distribution and set aside now:\n  - Nature's Own Hawaiian Bread 20 oz, lot 0188 262 21:15: 57 loaf sent 2026-10-01 (our ref D-0084)\n\nPlease hold these until we confirm the lot code (we will call you today):\n  - nature's own hawaiian sweet bread, lot not recorded: 14 loaf sent 2026-10-01 (our ref D-0085)\n\nDo not discard anything yet. Reply to this email once the product is set aside, and tell us how many units you still have and how many already went to clients.\n\nFood Safety Team"
+      }
+    ],
+    "total_units_to_pull": 26.0,
+    "impact": {
+      "brand_units_found": 90.0,
+      "units_to_pull": 26.0,
+      "units_to_check": 11.0,
+      "units_kept_in_use": 53.0,
+      "agencies_total": 16,
+      "agencies_to_notify": 3
+    },
+    "confidence_overall": 0.82,
+    "sources": [
+      {
+        "source_id": "src_agencies",
+        "table_name": "agencies",
+        "role": "contacts",
+        "rows": 16,
+        "columns": [
+          "agency_id",
+          "agency_name",
+          "agency_type",
+          "city",
+          "contact_name",
+          "contact_phone",
+          "contact_email",
+          "active"
+        ],
+        "relevance_score": 0.8,
+        "reason": "Who to contact at each partner agency"
+      },
+      {
+        "source_id": "src_distributions",
+        "table_name": "distributions",
+        "role": "shipments",
+        "rows": 115,
+        "columns": [
+          "distribution_id",
+          "date",
+          "item_id",
+          "agency_id",
+          "quantity",
+          "unit",
+          "notes"
+        ],
+        "relevance_score": 0.9,
+        "reason": "Product sent out to partner agencies"
+      },
+      {
+        "source_id": "src_inventory",
+        "table_name": "inventory",
+        "role": "stock",
+        "rows": 180,
+        "columns": [
+          "item_id",
+          "received_date",
+          "donor_or_supplier",
+          "product_name_as_entered",
+          "brand_as_entered",
+          "upc",
+          "lot_code",
+          "best_by",
+          "quantity_received",
+          "unit",
+          "warehouse_location",
+          "notes"
+        ],
+        "relevance_score": 0.95,
+        "reason": "Stock received, with lot codes and shelf locations"
+      },
+      {
+        "source_id": "src_recall_products",
+        "table_name": "recall_products",
+        "role": "notice_lines",
+        "rows": 33,
+        "columns": [
+          "recall_id",
+          "line_id",
+          "brand",
+          "product",
+          "size",
+          "upc",
+          "lot_codes",
+          "best_by",
+          "other_names"
+        ],
+        "relevance_score": 0.6,
+        "reason": "Recalled product lines: UPCs, lot codes, best-by dates"
+      },
+      {
+        "source_id": "src_recalls",
+        "table_name": "recalls",
+        "role": "notices",
+        "rows": 15,
+        "columns": [
+          "recall_id",
+          "recall_number",
+          "source",
+          "company",
+          "brand",
+          "product",
+          "reason",
+          "announced_date",
+          "status",
+          "notice_url"
+        ],
+        "relevance_score": 0.4,
+        "reason": "Recall notices"
+      }
+    ],
+    "match_criteria": {
+      "recall_id": "R-001",
+      "lines": [
+        {
+          "line_id": "1",
+          "brand": "Nature's Own",
+          "product": "Hawaiian Bread",
+          "size": "20 oz",
+          "label": "Hawaiian Bread 20 oz",
+          "upcs": [
+            "072250916622"
+          ],
+          "upc_keys": [
+            "7225091662",
+            "72250916622"
+          ],
+          "lots": {
+            "kind": "list",
+            "specs": [
+              {
+                "kind": "range",
+                "start": "01882622006",
+                "end": "01882622205",
+                "text": "0188 262 20:06 - 0188 262 22:05"
+              },
+              {
+                "kind": "range",
+                "start": "01882650920",
+                "end": "01882651030",
+                "text": "0188 265 09:20 - 0188 265 10:30"
+              },
+              {
+                "kind": "range",
+                "start": "01882670450",
+                "end": "01882670600",
+                "text": "0188 267 04:50 - 0188 267 06:00"
+              },
+              {
+                "kind": "range",
+                "start": "01882700415",
+                "end": "01882700605",
+                "text": "0188 270 04:15 - 0188 270 06:05"
+              },
+              {
+                "kind": "range",
+                "start": "01882721715",
+                "end": "01882721925",
+                "text": "0188 272 17:15 - 0188 272 19:25"
+              }
+            ],
+            "source": "0188 262 20:06 - 0188 262 22:05; 0188 265 09:20 - 0188 265 10:30; 0188 267 04:50 - 0188 267 06:00; 0188 270 04:15 - 0188 270 06:05; 0188 272 17:15 - 0188 272 19:25"
+          },
+          "dates": {
+            "kind": "list",
+            "specs": [
+              {
+                "start": "2026-10-08",
+                "end": "2026-10-18",
+                "text": "2026-10-08 - 2026-10-18"
+              }
+            ],
+            "source": "2026-10-08 - 2026-10-18"
+          },
+          "terms": {
+            "words": [
+              "hawaiian",
+              "bread"
+            ],
+            "head": "bread"
+          },
+          "other_names": [
+            "Flowers Foods"
+          ]
+        },
+        {
+          "line_id": "2",
+          "brand": "Nature's Own",
+          "product": "2-pack Hawaiian Bread",
+          "size": "40 oz",
+          "label": "2-pack Hawaiian Bread 40 oz",
+          "upcs": [
+            "072250006835"
+          ],
+          "upc_keys": [
+            "7225000683",
+            "72250006835"
+          ],
+          "lots": {
+            "kind": "none",
+            "specs": [],
+            "source": ""
+          },
+          "dates": {
+            "kind": "none",
+            "specs": [],
+            "source": ""
+          },
+          "terms": {
+            "words": [
+              "hawaiian",
+              "bread"
+            ],
+            "head": "bread"
+          },
+          "other_names": [
+            "Flowers Foods"
+          ]
+        }
+      ],
+      "brands": [
+        "Nature's Own"
+      ],
+      "aliases": {
+        "Nature's Own": [
+          "NO"
+        ]
+      },
+      "learned": {
+        "Nature's Own": []
+      },
+      "brand_aliases": [
+        "Nature's Own",
+        "NO"
+      ],
+      "learned_aliases": []
+    },
+    "source_map": {
+      "stock": {
+        "table": "inventory",
+        "mapping": {
+          "item_id": "item_id",
+          "brand": "brand_as_entered",
+          "product": "product_name_as_entered",
+          "upc": "upc",
+          "lot_code": "lot_code",
+          "best_by": "best_by",
+          "quantity_received": "quantity_received",
+          "unit": "unit",
+          "location": "warehouse_location",
+          "received_date": "received_date",
+          "source": "donor_or_supplier",
+          "notes": "notes"
+        }
+      },
+      "shipments": {
+        "table": "distributions",
+        "mapping": {
+          "ship_id": "distribution_id",
+          "item_id": "item_id",
+          "agency_id": "agency_id",
+          "quantity": "quantity",
+          "unit": "unit",
+          "ship_date": "date"
+        }
+      },
+      "notice_lines": {
+        "table": "recall_products",
+        "mapping": {
+          "recall_id": "recall_id",
+          "line_id": "line_id",
+          "brand": "brand",
+          "product": "product",
+          "size": "size",
+          "upc": "upc",
+          "lot_codes": "lot_codes",
+          "best_by": "best_by",
+          "other_names": "other_names"
+        }
+      },
+      "contacts": {
+        "table": "agencies",
+        "mapping": {
+          "agency_id": "agency_id",
+          "name": "agency_name",
+          "contact_name": "contact_name",
+          "contact_email": "contact_email",
+          "contact_phone": "contact_phone",
+          "active": "active"
+        }
+      },
+      "notices": {
+        "table": "recalls",
+        "mapping": {
+          "recall_id": "recall_id",
+          "recall_number": "recall_number",
+          "source": "source",
+          "company": "company",
+          "brand": "brand",
+          "product": "product",
+          "reason": "reason",
+          "announced_date": "announced_date",
+          "status": "status",
+          "notice_url": "notice_url"
+        }
+      }
+    },
+    "mapping_method": "column names",
+    "data_gaps": [],
+    "searched_brands": [
+      "Nature's Own",
+      "Natures Own"
+    ],
+    "revision_rounds": 0,
+    "mode": "sample",
+    "model": "rules (sample mode)",
+    "world_model": {
+      "candidate": 13,
+      "critique": 13,
+      "recall": 1,
+      "shipment": 5,
+      "source": 5,
+      "relation": 36
+    },
+    "generated_at": "2026-10-22T12:57:23.699770+00:00"
+  },
+  "agents": [
+    {
+      "name": "Triage",
+      "role": "Turns each recalled product line into checkable criteria: UPCs, lot codes, best-by dates"
+    },
+    {
+      "name": "SourceScout",
+      "role": "Explores the data layer and maps each table and column to what it means"
+    },
+    {
+      "name": "Matcher",
+      "role": "Finds stock by brand spelling, UPC and product name, and works out what is still on hand"
+    },
+    {
+      "name": "Critic",
+      "role": "Judges every hit against each product line; Nemotron can escalate, never clear"
+    },
+    {
+      "name": "Tracer",
+      "role": "Follows flagged stock into shipments to partner agencies"
+    },
+    {
+      "name": "Reporter",
+      "role": "Builds the pull list, hand checks, and agency notices"
+    }
+  ],
+  "trace_id": "run_76def36b",
+  "log_file": "logs/trace-run_76def36b.jsonl",
+  "execution_time_seconds": 1.23
+}

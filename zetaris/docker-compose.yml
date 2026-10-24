@@ -1,0 +1,18 @@
+# The food bank's three systems as three PostgreSQL databases, for Zetaris to federate.
+# Start:  docker compose -f zetaris/docker-compose.yml up -d
+# Then:   python zetaris/load_postgres.py
+services:
+  lotline-db:
+    image: postgres:16-alpine
+    container_name: lotline-db
+    environment:
+      POSTGRES_USER: lotline
+      POSTGRES_PASSWORD: ${LOTLINE_DB_PASSWORD:-lotline-local-only}
+      POSTGRES_DB: warehouse
+    ports:
+      - "5433:5432"
+    volumes:
+      - lotline-db:/var/lib/postgresql/data
+
+volumes:
+  lotline-db:
