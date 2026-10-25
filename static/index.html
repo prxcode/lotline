@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap">
-  <link rel="stylesheet" href="/static/app.css?v=51">
+  <link rel="stylesheet" href="/static/app.css?v=52">
 </head>
 <body>
   <div class="app">
@@ -234,7 +234,7 @@
         <span class="avatar avatar-lg" id="account-avatar" aria-hidden="true">?</span>
         <div>
           <p class="acct-name" id="account-name">Set up your profile</p>
-          <p class="acct-sub" id="account-sub">Harbor City Food Bank</p>
+          <p class="acct-sub" id="account-sub">Your food bank</p>
         </div>
       </div>
       <section class="set-group">
@@ -242,8 +242,8 @@
         <input type="text" id="coord-input" class="text-input" placeholder="Your name" autocomplete="name" maxlength="60">
         <label class="field-label" for="role-input">Role</label>
         <input type="text" id="role-input" class="text-input" placeholder="Food Safety Coordinator" maxlength="60">
-        <label class="field-label">Food bank</label>
-        <p class="acct-static">Harbor City Food Bank</p>
+        <label class="field-label" for="foodbank-input">Food bank</label>
+        <input type="text" id="foodbank-input" class="text-input" placeholder="Your food bank's name" maxlength="80">
       </section>
       <p class="acct-note">Profiles are saved on this computer.</p>
     </div>
@@ -273,6 +273,6 @@
     </form>
   </dialog>
 
-  <script type="module" src="/static/app.js?v=51"></script>
+  <script type="module" src="/static/app.js?v=52"></script>
 </body>
 </html>

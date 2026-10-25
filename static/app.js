@@ -1132,7 +1132,7 @@ function buildPrintSheet() {
         el("p", { class: "ps-reason", text: `Recalled for: ${r.reason || ""}` })),
       el("dl", { class: "ps-meta" },
         el("dt", { text: "FDA notice" }), el("dd", { text: `${r.recall_number || p.recall_id}, announced ${fmtDate(r.announced_date)}` }),
-        el("dt", { text: "Food bank" }), el("dd", { text: "Harbor City Food Bank" }),
+        el("dt", { text: "Food bank" }), el("dd", { text: myFoodBank() }),
         el("dt", { text: "Printed" }), el("dd", { text: `${printed} by ${me() || "________________"}` }),
         el("dt", { text: "Lotline check" }), el("dd", { text: p.run_id }))),
     el("p", { class: "ps-instr", text: "Take every item below off the shelf and move it to the hold area. Do not give any of it out. Tick the box and initial each line when done." }),
@@ -1182,6 +1182,7 @@ async function boot() {
   for (const id of ["drawer", "settings"]) $(id).addEventListener("click", (e) => { if (e.target === e.currentTarget) e.currentTarget.close(); });
   $("coord-input").addEventListener("input", (e) => { store.set("lotline:reader", e.target.value.replace(/\s+/g, " ").trimStart()); renderUser(); });
   $("role-input").addEventListener("input", (e) => { store.set("lotline:role", e.target.value.replace(/\s+/g, " ").trimStart()); renderUser(); });
+  $("foodbank-input").addEventListener("input", (e) => { store.set("lotline:foodbank", e.target.value.replace(/\s+/g, " ").trimStart()); renderUser(); });
   $("user-btn").addEventListener("click", openAccount);
   $("account-close").addEventListener("click", () => $("account").close());
   $("account").addEventListener("click", (e) => { if (e.target === e.currentTarget) e.currentTarget.close(); });
@@ -1525,6 +1526,7 @@ function renderAliasList(aliases) {
 }
 
 const myRole = () => (store.get("lotline:role") || "").trim() || "Food Safety Coordinator";
+const myFoodBank = () => (store.get("lotline:foodbank") || "").trim() || "Your food bank";
 
 function initials(name) {
   const parts = name.trim().split(/\s+/).filter(Boolean);
@@ -1539,13 +1541,14 @@ function renderUser() {
   $("user-btn").classList.toggle("unset", !name);
   for (const id of ["user-avatar", "account-avatar"]) $(id).textContent = initials(name);
   $("account-name").textContent = name || "Set up your profile";
-  $("account-sub").textContent = `${role} · Harbor City Food Bank`;
+  $("account-sub").textContent = `${role} · ${myFoodBank()}`;
 }
 
 function openAccount() {
   renderUser();
   $("coord-input").value = me();
   $("role-input").value = store.get("lotline:role") || "";
+  $("foodbank-input").value = store.get("lotline:foodbank") || "";
   $("account").showModal();
 }
 
