@@ -9,7 +9,7 @@ Multi-agent recall tracing for food banks. When a recall lands, Lotline tells a 
 | **Track** | Solving Fragmented Intelligence, Open Agent Hackathon 2026 |
 | **Built with** | Zetaris, Meterless World Model engine, NVIDIA Nemotron |
 | **Team** | Illusionists: [Priyanshu Singh](https://github.com/prxcode), [Vaibhavi Singh](https://github.com/codedivaa) |
-| **Demo** | [Video](TODO) · [Slides](TODO) |
+| **Live demo** | [lotline-demo.onrender.com](https://lotline-demo.onrender.com): no install, no keys. Shared, so Settings → Reset demo data gives a clean start |
 
 ## In brief
 
