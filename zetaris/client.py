@@ -153,7 +153,9 @@ def check_backend() -> str | None:
     if os.getenv("DATA_BACKEND", "local").lower() != "zetaris":
         return None
     try:
-        _zetaris_query("SELECT 1", [])
+        # A real table, not SELECT 1: the engine can be up while the source database behind it is down
+        first = next(iter(_zetaris_tables().values()))
+        _zetaris_query(f"SELECT 1 FROM {'.'.join(f'`{p}`' for p in first.split('.'))} LIMIT 1", [])
     except DataError as exc:
         if os.getenv("DATA_FALLBACK", "true").lower() != "true":
             raise

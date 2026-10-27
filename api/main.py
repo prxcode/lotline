@@ -161,6 +161,7 @@ def health():
 
 @app.get("/api/config", dependencies=[Security(_check_api_key)])
 def config():
+    check_backend()
     return {
         "default_mode": "sample" if sample_mode_default() else "live",
         "live_available": live_available(),
