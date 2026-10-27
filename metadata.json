@@ -16,8 +16,8 @@
   },
   "repository": "https://github.com/prxcode/lotline",
   "live_demo": "https://lotline-demo.onrender.com",
-  "demo_video": "Linked in the HackOS submission",
-  "slides": "Linked in the HackOS submission",
+  "demo_video": "https://drive.google.com/file/d/1gucvOewz8RHkJfebhBigiB8FoFY6iTRS/view?usp=sharing",
+  "slides": "https://drive.google.com/file/d/1norPnyL44YTctyX5QU-vAvWbqZenU5Jl/view?usp=sharing",
   "entry_points": {
     "web_app": "python run.py",
     "api": "POST /run {\"recall_id\": \"R-001\", \"mode\": \"sample\"}",

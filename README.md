@@ -10,6 +10,8 @@ Multi-agent recall tracing for food banks. When a recall lands, Lotline tells a 
 | **Built with** | Zetaris, Meterless World Model engine, NVIDIA Nemotron |
 | **Team** | Illusionists: [Priyanshu Singh](https://github.com/prxcode), [Vaibhavi Singh](https://github.com/codedivaa) |
 | **Live demo** | [lotline-demo.onrender.com](https://lotline-demo.onrender.com): no install, no keys. Shared, so Settings → Reset demo data gives a clean start |
+| **Demo video** | [Watch on Google Drive](https://drive.google.com/file/d/1gucvOewz8RHkJfebhBigiB8FoFY6iTRS/view?usp=sharing) (4 min) |
+| **Pitch deck** | [Slides (PDF)](https://drive.google.com/file/d/1norPnyL44YTctyX5QU-vAvWbqZenU5Jl/view?usp=sharing) |
 
 ## In brief
 
